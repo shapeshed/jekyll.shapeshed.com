@@ -2,7 +2,10 @@
 layout: post
 title: Managing Unicorn Workers with Monit
 excerpt: A walkthrough on how to manage Unicorn worker processes using Monit
-categories: [Unix, Rails, Ruby]
+categories: 
+- Unix 
+- Rails 
+- Ruby
 ---
 ## Riding Unicorns
 
@@ -14,11 +17,13 @@ With all of the great stuff that comes with Unicorn there is more configuration 
 
 For Unicorn you need to set up a reverse proxy with nginx. I've [written before][4] about how to do that if you need a steer. You'll also need to use upstart or script in /etc/init.d/ to manage Unicorn. There are a few scripts around on the web. I've posted the one that I use up as [a gist on Github][10]. You can then use something like this in your capistrano recipes to do a hot restart.
 
-{% highlight ruby %}namespace :deploy do
+``` ruby Hot restarts with unicorn
+namespace :deploy do
   task :restart do
     sudo "/etc/init.d/unicorn upgrade"
   end
-end{% endhighlight %}
+end
+```
 
 This sends a `USR2` signal to the Unicorn master process to upgrade itself. It will create a new master process and then switch over when it is ready. See - zero downtime! 
 
@@ -30,33 +35,31 @@ So I want to monitor the Unicorn workers that are a child processes of the maste
 
 Unicorn's config file has an after\_fork method that allows you to write out the pid of a worker. Here's how 
 
-{% highlight ruby %}after_fork do |server, worker|
+``` ruby Writing worker pids in Unicorn
+after_fork do |server, worker|
   defined?(ActiveRecord::Base) && ActiveRecord::Base.establish_connection
   child_pid = server.config[:pid].sub('.pid', ".#{worker.nr}.pid")
   system("echo #{Process.pid} > #{child_pid}")
-end{% endhighlight %}
-
-If you want to see my full [unicorn.conf][11] it is here. This will write out the pid of each worker /tmp/pids/unicorn.[pid\_id].pid, so now we can use Monit to watch it. 
+end
+```
+If you want to see my full [unicorn.conf][11] it is here. This will write out the pid of each worker `/tmp/pids/unicorn.[pid_id].pid`, so now we can use Monit to watch it. 
 
 ## Adding in Monit
 
 Now that we have the pids of workers and an init.d script that can manage workers too (see kill\_worker) we can use Monit to keep everything in check. The only downside is that you need to tell Monit about each worker process that you have. If you are spawning and reaping Unicorn workers dynamically with `TTIN` and `TTOU` this probably isn't going to work for you. But if the numbers of workers are fixed you are good. 
 
-{% highlight bash %}
-# Monit script to monitor a Unicorn worker
+``` bash A monit script to monitor unicorn workers
 check process unicorn_worker_0
-with pidfile /path/to/your/app/shared/pids/unicorn.0.pid
-start program = "/bin/cat /dev/null"
-stop program = "/etc/init.d/unicorn kill_worker 0"
-if mem is greater than 175.0 MB for 1 cycles then restart
-if cpu is greater than 22% for 2 cycles then alert         
-if cpu is greater than 25% for 1 cycles then restart
-{% endhighlight %}
-
+    with pidfile /path/to/your/app/shared/pids/unicorn.0.pid
+    start program = "/bin/cat /dev/null"
+    stop program = "/etc/init.d/unicorn kill_worker 0"
+    if mem is greater than 175.0 MB for 1 cycles then restart
+    if cpu is greater than 22% for 2 cycles then alert         
+    if cpu is greater than 25% for 1 cycles then restart
+```
 Monit will watch the worker for memory growth and kill it off if it consumes too much. The unicorn master will spawn a new worker when it is killed so it is a neat solution to keep things running.
 
 Much of this article was derived from Andrew Grim's article ['Where Unicorns go to die: Watching unicorn workers with monit'][9], so thanks to Andrew for the pointers. 
-
 
 [1]: http://unicorn.bogomips.org/
 [2]: http://tomayko.com/
