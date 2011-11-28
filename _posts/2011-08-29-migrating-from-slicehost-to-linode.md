@@ -39,7 +39,9 @@ After the decision to migrate I was staring at a terminal with many hours of wor
 
 Firstly for migrating DNS records Rob Schultz created a short [Ruby script][8] to migrate DNS records from Slicehost to Linode. Once you've installed the script and necessary gem dependencies migrating your records is as simple at 
 
-{% highlight bash %}./slicedns2linode.rb domain1.com.{% endhighlight %}
+```
+./slicedns2linode.rb domain1.com.
+```
 
 Within a few minutes I had migrated all of my DNS records. 
 
@@ -47,7 +49,9 @@ Within a few minutes I had migrated all of my DNS records.
 
 If you are not already using Chef or Puppet there is a project called [Blueprint][9] that lets your reverse engineer a server configuration to a bash script, Puppet manifests or Chef cookbook. There is a [good tutorial][10] on a basic migration. Once you've installed blueprint and the dependencies you can create a shell script that will build another server with 
 
-{% highlight bash %}blueprint create -S tutorial{% endhighlight %}
+```
+blueprint create -S tutorial
+```
 
 Once you've created your scripts, just run them on the target server and it will build the server in the image of the old one.
 
@@ -59,15 +63,21 @@ The migration via blueprint went very smoothly. I had installed lots of packages
 
 Finally I had to copy over website, home folder files and a few config files. The perfect tool for this was scp. First I created a tar.bz2 archive for folders I wanted to copy.
 
-{% highlight bash %}tar -cjf vhosts.tar.bz2 /var/www/vhosts{% endhighlight %}
+```
+tar -cjf vhosts.tar.bz2 /var/www/vhosts
+```
 
 Then I copied over the archive to my new Linode instance
 
-{% highlight bash %}scp vhosts.tar.bz2 george@123.456.78.90:/var/www{% endhighlight %}
+```
+scp vhosts.tar.bz2 george@123.456.78.90:/var/www
+```
 
 Finally I unarchived it on the Linode instance
 
-{% highlight bash %}tar -xjf vhosts.tar.bz2{% endhighlight %}
+```
+tar -xjf vhosts.tar.bz2
+```
 
 The great thing about using this approach is that permissions are preserved. 
 
