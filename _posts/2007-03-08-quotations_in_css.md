@@ -2,7 +2,8 @@
 layout: post
 title: Quotations in CSS
 excerpt: Here's a short tutorial on how to style quotes with CSS whilst making sure you use the right XHTML tools for the job.
-categories: [CSS]
+categories: 
+- CSS
 ---
 ## Quotes on websites
 
@@ -20,7 +21,9 @@ XHTML offers two elements for quotes in the blockquote and quote. [Quote][3] is 
 
 [Blockquote][4] is used for larger quotes:
 
+{% blockquote [Oscar Wilde] %}
 "Most modern calendars mar the sweet simplicity of our lives by reminding us that each day that passes is the anniversary of some perfectly uninteresting event."
+{% endblockquote %}
 
 There is also the [cite][5] element which allows us to assign a citation to the quote.
 
@@ -28,37 +31,36 @@ There is also the [cite][5] element which allows us to assign a citation to the 
 
 Let's start with some solid markup. Then if we change our mind we can change the styling. 
 
-{% highlight html %}<blockquote>
+``` html An example of a blockquote with a citation
+<blockquote>
   <p>That was one of the best Pizzas I have ever eaten in my life. The cheese was so good it made me faint. </p>
 </blockquote>
 <cite>Elvis A. Presley</cite>
-{% endhighlight %}
+```
 
 ## Sprinkle in some CSS
 
 Then we add the some CSS: 
 
-{% highlight css %}blockquote p
-    {
-    padding: 0px 15px 0px 0px;
-    font-size: 1.2em;    
-    float: left;
-    background: url(../images/quote_down.png) bottom right no-repeat;
+``` css Blockquotes in CSS
+blockquote p {
+  padding: 0px 15px 0px 0px;
+  font-size: 1.2em;    
+  float: left;
+  background: url(../images/quote_down.png) bottom right no-repeat;
 }
 
-blockquote
-    {
-    padding: 20px;
-    font-size: 1.8em;    
-    background: url(../images/quote_up.png) top left no-repeat;
+blockquote {
+  padding: 20px;
+  font-size: 1.8em;    
+  background: url(../images/quote_up.png) top left no-repeat;
 }
 
-cite
-    {
-    font-size: 1.2em;
-    float: right;    
+cite {
+  font-size: 1.2em;
+  float: right;    
 }
-{% endhighlight %}
+```
 
 This applies the quotation marks to the top left and bottom right of the quote. The citation is floated right. And that's it! I combine this with a PHP script that produces random quotes. 
 
@@ -75,9 +77,9 @@ This code has been tested and works in the following browsers
 *   Mac Camino 1
 *   Mac Opera 9
 
- [1]: http://www.rickmann-design.co.uk/
- [2]: /images/articles/pizza_quote.png "Example of styling a quote using CSS"
- [3]: http://www.w3.org/TR/html4/struct/text.html#edef-Q
- [4]: http://www.w3.org/TR/html4/struct/text.html#edef-BLOCKQUOTE
- [5]: http://www.w3.org/TR/html4/struct/text.html#edef-CITE
- [6]: http://www.shapeshed.com/examples/quotations-in-css/
+[1]: http://www.rickmann-design.co.uk/
+[2]: /images/articles/pizza_quote.png "Example of styling a quote using CSS"
+[3]: http://www.w3.org/TR/html4/struct/text.html#edef-Q
+[4]: http://www.w3.org/TR/html4/struct/text.html#edef-BLOCKQUOTE
+[5]: http://www.w3.org/TR/html4/struct/text.html#edef-CITE
+[6]: http://www.shapeshed.com/examples/quotations-in-css/
