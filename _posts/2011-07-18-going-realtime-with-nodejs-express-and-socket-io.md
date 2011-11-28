@@ -21,25 +21,29 @@ This is a walkthrough on how to create a simple realtime counter of visitors to 
 
 [socket.io][3] is an amazing library that takes the pain out of websockets and provides a reliable fallback depending on browser capabilites. Here's a simple example from the socket.io site. 
 
-{% highlight javascript %}var io = require('socket.io').listen(80);
+``` javascript Setting up socket.io on the server side
+var io = require('socket.io').listen(80);
 
 io.sockets.on('connection', function (socket) {
   socket.emit('news', { hello: 'world' });
   socket.on('my other event', function (data) {
     console.log(data);
   });
-});{% endhighlight %}
+});
+```
 
 This sets up the server side. Then you just need to add some client-side JavaScript and you are ready to go
 
-{% highlight html %}<script src="/socket.io/socket.io.js"></script>
+``` javascript Setting up socket.io on the client side
+<script src="/socket.io/socket.io.js"></script>
 <script>
   var socket = io.connect('http://localhost');
   socket.on('news', function (data) {
     console.log(data);
     socket.emit('my other event', { my: 'data' });
   });
-</script>{% endhighlight %}
+</script>
+```
 
 I've used this setup to push the number of connected clients out to the browser and a simple counter to increment and decrement the number of connected clients on the relevant events. I've had some issues with different browsers on hosting environments. For now the demo works with Safari and Chrome.
 
