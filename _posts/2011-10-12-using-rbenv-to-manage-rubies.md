@@ -2,7 +2,10 @@
 layout: post
 title: Using rbenv to manage rubies
 excerpt: How I use rbenv to manage rubies and integrate with other tools
-categories: [Unix, Rails, Ruby]
+categories: 
+- Unix 
+- Rails
+- Ruby
 ---
 ## rbenv is great
 
@@ -14,42 +17,52 @@ We have a dev machine at work which runs a variety of Sinatra and Rails projects
 
 Each app has a UNIX user so rbenv is installed locally for each user when logged in as the user account
 
-{% highlight bash %}cd
+``` bash Cloning rbenv
+cd
 git clone git://github.com/sstephenson/rbenv.git .rbenv
-{% endhighlight %}
+```
 
 You need to load rbenv into the shell and you are good to go
 
-{% highlight bash %}echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+``` bash Adding rbenv to your PATH
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 source ~/.bashrc
-{% endhighlight %}
+```
 
 If you have installed [ruby-build][3] you can then install rubies with `rbenv install`.
 
-{% highlight bash %}rbenv install 1.9.3-rc1{% endhighlight %}
+``` bash Installing a ruby
+rbenv install 1.9.3-rc1
+```
 
 You can set a global ruby for the user account with
 
-{% highlight bash %}rbenv global 1.9.3-rc1{% endhighlight %}
+``` bash Setting a global ruby
+rbenv global 1.9.3-rc1
+```
 
-And you can also use an .rbenv-version file to set the version. I choose to use this in projects and check it into git.
+And you can also use an `.rbenv-version` file to set the version. I choose to use this in projects and check it into git.
 
 ## Deployment with capistrano
 
 I like that rbenv doesn't try and manage rubies for you - we have [bundler][4] for that. I deploy as the same user as the app accounts so I just need to add the following to my cap recipe to use rbenv since I'm already including `require 'bundler/capistrano'`.
 
-{% highlight ruby %}set :default_environment, {
+``` ruby Adding the PATH to Capistrano's Shell
+set :default_environment, {
   'PATH' => "/home/youruser/.rbenv/shims:/home/youruser/.rbenv/bin:$PATH"
-}{% endhighlight %}
+}
+```
 
 This loads rbenv into the shell that capistrano uses. That's pretty much all you need to use your rbenv installed ruby.
 
-Following a [thread on github][5] you can also apply a clever technique to allow you switch versions of ruby by pushing a new .rbenv-version file with capistrano. From version 1.1rc bundler allows you to specify a shebang for binstubs. To use this add the following to your capistrano recipe.
+Following a [thread on github][5] you can also apply a clever technique to allow you switch versions of ruby by pushing a new `.rbenv-version` file with capistrano. From version 1.1rc bundler allows you to specify a shebang for binstubs. To use this add the following to your capistrano recipe.
 
-{% highlight ruby %}set :bundle_flags, "--deployment --quiet --binstubs --shebang ruby-local-exec"{% endhighlight %}
+``` ruby Adding binstubs for easy ruby switching
+set :bundle_flags, "--deployment --quiet --binstubs --shebang ruby-local-exec"
+```
 
-This generates executables in the bin folder of your Rails app which reference `ruby-local-exec` as the shebang. This command will execute whichever ruby is specified in the .rbenv-version file. In my case I have an init.d script to manage unicorn that references bin/unicorn. If I wanted to upgrade the ruby used by the app I would install it on the remote machine and then just update my .rbenv-version file commit, cap deploy and I'm done. 
+This generates executables in the bin folder of your Rails app which reference `ruby-local-exec` as the shebang. This command will execute whichever ruby is specified in the `.rbenv-version file`. In my case I have an init.d script to manage unicorn that references bin/unicorn. If I wanted to upgrade the ruby used by the app I would install it on the remote machine and then just update my `.rbenv-version` file commit, cap deploy and I'm done. 
 
 ## Integrating with other tools
 
@@ -57,7 +70,8 @@ I like to use [monit][6] to monitor processes. Monit exexutes scripts with a ver
 
 Here's the script I'm using for starting a resque\_worker
 
-{% highlight bash %}#!/usr/bin/env bash
+``` bash resque_worker bash script
+#!/usr/bin/env bash
 USER=youruser
 APP_PATH=/srv/yourapp.com/current
 PATH=/home/$USER/.rbenv/bin:/home/$USER/.rbenv/shims:$PATH 
@@ -66,15 +80,16 @@ RAILS_ENV=production
 cd $APP_PATH
 RAILS_ENV=$RAILS_ENV bin/rake environment resque:work& > $APP_PATH/log/resque_worker.log 
 echo $! > $APP_PATH/tmp/pids/resque_worker.pid
-{% endhighlight %}
+```
 
 Then my monit task looks like this
 
-{% highlight bash %}check process yourapp_resque_worker
+``` bash resque_worker monit script
+check process yourapp_resque_worker
     with pidfile /srv/yourapp.com/current/tmp/pids/resque_worker.pid
     start program = "/bin/sh -c '/home/youruser/bin/start_resque_worker.sh'" as uid youruser and gid youruser
     stop program = "/bin/sh -c 'cd /srv/yourapp.com/current && kill -s quit `cat tmp/pids/resque_worker.pid` && rm -f tmp/pids/resque_worker.pid; exit 0;'"
-{% endhighlight %}
+```
 
 ## Better separation
 
@@ -92,7 +107,6 @@ By using binstubs with the `ruby-local-exec` shebang we also separate our app fr
 ## Thanks rvm, onwards with rbenv
 
 I'm really grateful to Wayne E Seguin and the work he has put into rvm and I hope the project continues to thrive. rbenv fits the way I work though and I'm really enjoying using it. It makes piecing tools like puppet, monit, init.d scripts, capistrano and bundler much easier, so a big thanks to [Sam Stephenson][7] for creating it.
-
 
 [1]: https://github.com/sstephenson/rbenv
 [2]: http://beginrescueend.com/
