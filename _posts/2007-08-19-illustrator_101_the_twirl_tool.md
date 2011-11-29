@@ -45,6 +45,6 @@ If you'd like to have the desktop you can get a copy for your screen resolution 
  [3]: /images/articles/warp_and_circle.jpg
  [4]: /images/articles/twirl_tool_options.jpg "Twirl Tool Options"
  [5]: /images/articles/multiple_twirl_shapes.jpg "Multiple Twirls"
- [6]: /downloads/twirl_wallpaper/800x600.png
- [7]: /downloads/twirl_wallpaper/1024x768.png
- [8]: /downloads/twirl_wallpaper/1400x900.png
+ [6]: http://cdn.shapeshed.com/downloads/twirl_wallpaper/800x600.png
+ [7]: http://cdn.shapeshed.com/downloads/twirl_wallpaper/1024x768.png
+ [8]: http://cdn.shapeshed.com/downloads/twirl_wallpaper/1400x900.png
