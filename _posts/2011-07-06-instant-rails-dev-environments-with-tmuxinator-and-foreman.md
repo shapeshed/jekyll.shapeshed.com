@@ -2,7 +2,9 @@
 layout: post
 title: Instant Rails dev environments with Tmuxinator and Foreman
 excerpt: How to start an entire development environment with a single command
-categories: [Unix, Rails]
+categories: 
+- Unix
+- Rails
 ---
 
 ## The problem
@@ -11,8 +13,9 @@ To begin working on a Rails app I need to do things like starting a server, star
 
 Doing all this is tedious. Wouldn't it be nice if we could just do something like?
     
-{% highlight bash %}start_myapp{% endhighlight %}
-
+```
+start_myapp
+```
 Well you can!
 
 ## Tmux
@@ -26,7 +29,9 @@ Well you can!
 
 You can install tmux with homebrew
 
-{% highlight bash %}brew install tmux{% endhighlight %}
+```
+brew install tmux
+```
 
 It takes a little reading and configuring but is well worth effort if you are a heavy terminal user. 
 
@@ -36,11 +41,13 @@ It takes a little reading and configuring but is well worth effort if you are a 
 
 You can install tmuxinator from RubyGems
 
-{% highlight bash %}gem install tmuxinator{% endhighlight %}
+```
+gem install tmuxinator
+```
 
 By defining a yaml file we can layout things exactly how we want them.
 
-{% highlight yaml %}
+``` yaml tmuxinator project layout file
 project_name: myapp
 project_root: ~/Sites/myapp
 tabs:
@@ -51,7 +58,7 @@ tabs:
   - console: bundle exec rails console
   - server: bundle exec rails server
   - logs: tail -f log/development.log
-{% endhighlight %}
+```
 
 Then you can start your session with `start_myapp` and your layout will be ready for you. Here's a screenshot from the documentation:
 
@@ -63,17 +70,19 @@ There's excellent documentation on using tmuxinator in the [project README][9]
 
 Enter the final piece of the jigsaw - [foreman][10]. Foreman is a gem that lets you manage background processes associated with your application through a Procfile. You just add any processes you want to be started into the Procfile and you are done. Here's an example
 
-{% highlight bash %}
+``` bash Procfile
 worker: bundle exec rake resque:work QUEUE=sweep_orders 
 apn_sender: bundle exec rake apn:sender 
 resque_scheduler: bundle exec rake resque:scheduler
 resque_web: bundle exec resque-web --foreground --server thin --port $PORT --no-launch
 sphinx: bundle exec rake ts:run_in_foreground
-{% endhighlight %}
+```
 
 You can then start these process by running
 
-{% highlight bash %}foreman start{% endhighlight %}
+```
+foreman start
+```
 
 The processes will run in the foreground and spit out any logs messages to standard output - perfect for development.
 
