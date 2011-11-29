@@ -10,6 +10,11 @@
   {% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ content | raw_content }}{% endif %}{% endcapture %}
   <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
   {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+  <!-- Google Verification -->
+  <meta name="verify-v1" content="vH7YjvNyhVphmJwkBU/VyV1oY2d5bJ9nMVKTuzb5rbw=" />
+  <!-- Open ID -->
+  <link rel="openid.server" href="http://www.myopenid.com/server" />
+  <link rel="openid.delegate" href="http://shapeshed.myopenid.com/" />
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
