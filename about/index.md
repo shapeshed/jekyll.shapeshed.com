@@ -3,6 +3,7 @@ layout: page
 title: "About"
 comments: true
 sharing: true
+description: George Ornbo is a web developer living in London, UK.
 footer: true
 ---
 I'm George Ornbo, a web developer with 8 years experience. I work at [pebble {code}][1] in London, UK.
