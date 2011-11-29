@@ -2,12 +2,16 @@
 layout: post
 title: Building a Rails server with Puppet
 excerpt: A short write up of my experience learning and configuring Puppet to build and manage servers to serve Rails applications.
-categories: [Puppet, Unix, Ruby, Rails]
+categories: 
+- Puppet
+- Unix
+- Ruby
+- Rails
 ---
 
 ## The goal
 
-On a regular basis at [pebble.it][21] where I work we have a requirement to provision servers for clients, mostly for Rails apps. In the past we have used a combination of Cloud PaaS providers like [Heroku][22] or [Engine Yard][23], we have built servers manually (gasp) or used bash scripts. 
+On a regular basis at [pebble.code][21] where I work we have a requirement to provision servers for clients, mostly for Rails apps. In the past we have used a combination of Cloud PaaS providers like [Heroku][22] or [Engine Yard][23], we have built servers manually (gasp) or used bash scripts. 
 
 [Puppet][20] is a tool for building and managing servers and looked like a great fit for our requirements. 
 
@@ -23,15 +27,18 @@ Puppet comes with a dashboard that can be run on the Puppet Master to give a gra
 
 I had some problems getting this going getting the error 
 
-{% highlight bash %}can't activate rack (~> 1.0.1), already activated rack-1.2.2 {% endhighlight %}
+```
+can't activate rack (~> 1.0.1), already activated rack-1.2.2
+```
 
 [This thread][15] on the puppet-users mailing list gives a fix
 
-{% highlight bash %}cd <path-to-dashboard> 
+```
+cd <path-to-dashboard> 
 git clone git://github.com/puppetlabs/puppet-dashboard.git 
 rm -r vendor/gems/rack-1.0.1 
 sed -i -e 's,~> 1.0.1,~> 1.2.2,' vendor/rails/actionpack/lib/action_controller.rb 
-{% endhighlight %}
+```
 
 After that I was able to see the nodes and updates.
 
@@ -70,7 +77,6 @@ There's more to learn but in my opinion the investment of time was well worth it
 
 After reading this article [Matt Tanase][25] contacted me about a great project called [Blueprint][24]. If you are porting existing infrastructure to Puppet have a look.
 
-
 [1]: http://www.amazon.com/Pulling-Strings-Puppet-Automated-Administration/dp/1590599780
 [2]: http://docs.puppetlabs.com/
 [3]: http://shapeshed.com/journal/setting-up-puppet-on-ubuntu-10-04/
@@ -91,7 +97,7 @@ After reading this article [Matt Tanase][25] contacted me about a great project 
 [18]: http://docs.puppetlabs.com/guides/installing_dashboard.html
 [19]: http://shapeshed.com/images/articles/puppet_dashboard.jpg
 [20]: http://www.puppetlabs.com/
-[21]: http://pebbleit.com/
+[21]: http://pebblecode.com/
 [22]: http://www.heroku.com/
 [23]: http://www.engineyard.com/
 [24]: https://github.com/devstructure/blueprint
