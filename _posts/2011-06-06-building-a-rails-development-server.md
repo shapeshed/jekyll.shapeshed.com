@@ -5,7 +5,7 @@ excerpt: An server stack to facilitate development against almost any Rails envi
 categories: [Rails]
 ---
 
-At [pebble.it][2] where I work we have a Ubuntu 10.04 LTS server for our Rails and Ruby projects. We use this mostly internally but sometimes expose sites outside of our network to allow clients to quickly review work. When we started the business we built the Rails stack using the standard tools - [Apache][3] and [Passenger][4]. As our client list grew and we took on a couple of legacy projects we found that this stack no longer matched the environments that we were deploying too and didn't give us the flexibility we wanted. So here's how we changed it. 
+At [pebble.coe][2] where I work we have a Ubuntu 10.04 LTS server for our Rails and Ruby projects. We use this mostly internally but sometimes expose sites outside of our network to allow clients to quickly review work. When we started the business we built the Rails stack using the standard tools - [Apache][3] and [Passenger][4]. As our client list grew and we took on a couple of legacy projects we found that this stack no longer matched the environments that we were deploying too and didn't give us the flexibility we wanted. So here's how we changed it. 
 
 ## Promoting nginx to port 80
 
@@ -17,29 +17,31 @@ From having the ability to serve Rails sites only from Apache and Passenger we h
 
 We've moved Apache to port 81 so if a site needs to be tested on that setup we can still do it. Otherwise we can proxy from nginx directly to Apache. The real flexibility comes from the server we use to serve the Rails app. We deploy by choice on [Thin][6] or [Unicorn][7] so we can replicate this stack easily. We are looking at [Goliath][8] at the moment so we could easily add this in beneath Nginx. We are playing with some other technologies like [node.js][9] too. With Nginx we can support this too. 
 
-
 ## Getting nginx
 
 If you want to make the switch on Ubuntu there is a PPA repo you can add 
-{% highlight bash %}sudo -s
+
+``` bash
+sudo -s
 nginx=stable # use nginx=development for latest development version
 add-apt-repository ppa:nginx/$nginx
 apt-get update 
-apt-get install nginx{% endhighlight %}
+apt-get install nginx
+```
 
 If you are currently using Apache you'll need to decide whether or not to keep it on port 80. We switched Apache to port 81 and promoted Nginx to port 80.
 
 ## Example configs
 
-The Ubuntu install uses sites-available and sites-enabled folders to allow you to create site configs. Here are some examples that you can use to get you started.
+The Ubuntu install uses `sites-available` and `sites-enabled` folders to allow you to create site configs. Here are some examples that you can use to get you started.
 
 Logs are disabled in these examples. If you want logging just add a path to the log file. 
 
 ### Default proxy settings
 
-To keep your Nginx configs nice and DRY you can add a file to hold common proxy settings under /etc/nginx/conf.d called in my case proxy.conf
+To keep your Nginx configs nice and DRY you can add a file to hold common proxy settings under `/etc/nginx/conf.d` called in my case proxy.conf
 
-{% highlight nginx %}
+``` nginx proxy.conf
 proxy_redirect     off;
 
 proxy_set_header   Host             $host;
@@ -57,13 +59,14 @@ proxy_read_timeout         90;
 proxy_buffer_size          4k;
 proxy_buffers              4 32k;
 proxy_busy_buffers_size    64k;
-proxy_temp_file_write_size 64k;{% endhighlight %}
+proxy_temp_file_write_size 64k;
+```
 
 ### Proxy to Apache
 
 This expects that you have setup an Apache virtual host on port 81.
 
-{% highlight nginx %}
+``` nginx Nginx proxy to Apache
 server {
     listen       80;
     server_name  site1.com;
@@ -74,12 +77,13 @@ server {
     location / {
         proxy_pass         http://127.0.0.1:81/;
     }
-}{% endhighlight %}
+}
+```
 
 ### Proxy to Thin
 
-{% highlight nginx %}
-upstream takefive {
+``` nginx Nginx proxy to Thin
+upstream thin {
     server unix:/var/www/vhosts/site2.com/httpdocs/current/tmp/sockets/thin.0.sock;
 }
 server {
@@ -90,14 +94,15 @@ server {
     error_log off;
 
     location / {
-        proxy_pass         http://127.0.0.1:81;
+        proxy_pass         http://thin;
     }
-}{% endhighlight %}
+}
+```
 
 ### Proxy to Unicorn
 
-{% highlight nginx %}
-upstream site3 {
+``` nginx Nginx proxy to Thin
+upstream unicorn {
     server unix:/var/www/vhosts/site3.com/httpdocs/current/tmp/sockets/unicorn.sock fail_timeout=0;
 }
 server {
@@ -108,9 +113,9 @@ server {
     error_log off;
 
     location / {
-        proxy_pass         http://127.0.0.1:81;
+        proxy_pass         http://unicorn;
     }
-}{% endhighlight %}
+```
 
 ## So which one is best?
 
@@ -127,7 +132,7 @@ If you are not interested in doing any sys admin work use [Heroku][12], [EngineY
 If you are rolling your own servers and using Apache switch to Nginx!
 
 [1]: http://shapeshed.com/images/articles/nginx_proxy_diagram.png
-[2]: http://pebbleit.com/
+[2]: http://pebblecode.com/
 [3]: http://www.apache.org/
 [4]: http://www.modrails.com/
 [5]: http://wiki.nginx.org/
