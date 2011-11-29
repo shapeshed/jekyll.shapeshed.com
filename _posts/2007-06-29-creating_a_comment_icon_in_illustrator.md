@@ -41,4 +41,4 @@ Why not [download the illustrator file][6] and work through the example yourself
  [3]: /images/articles/comment_stage_2.png "Comment icon stage 2"
  [4]: /images/articles/comment_stage_3.png "Comment icon stage 3"
  [5]: /images/articles/comment_stage_6.png "Comment icon stage 6"
- [6]: http://www.shapeshed.com/downloads/comment_icon.ai
+ [6]: http://cdn.shapeshed.com/downloads/comment_icon.ai

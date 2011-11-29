@@ -49,7 +49,7 @@ The real beauty of symbols is that if a client asks for the an amend you can do 
 
 Another bonus of symbols is that the more you work the more you will build up a library of symbols allowing you re-use symbols on projects and save time. Maybe you could go and lie on the beach instead...
 
- [1]: http://www.shapeshed.com/downloads/symbols.ai
+ [1]: http://cdn.shapeshed.com/downloads/symbols.ai
  [2]: /images/articles/symbol_final.png "Symbols in Illustrator"
  [3]: /images/articles/symbols_1.png "Creating a flower"
  [4]: /images/articles/symbols_2.png "Adding an illustration as a symbol"

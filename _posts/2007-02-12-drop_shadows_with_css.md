@@ -122,4 +122,4 @@ CSS3 will make this all much easier with border-image but for now we will have t
  [2]: http://www.shapeshed.com/examples/drop-shadows-css/
  [3]: /images/articles/drop_shadow.jpg "Making the drop shadow in Photoshop"
  [4]: images/fitzroy.jpg "My picture title"
- [5]: http://www.shapeshed.com/downloads/drop-shadows-css.zip
+ [5]: http://cdn.shapeshed.com/downloads/drop-shadows-css.zip

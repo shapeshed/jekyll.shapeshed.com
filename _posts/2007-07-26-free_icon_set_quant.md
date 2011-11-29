@@ -33,6 +33,6 @@ If you wish to use these icons in a commercial environment and do not want to po
 Comments for this set would be much appreciated. If you decide to use any of the icons please leave a comment below.
 
  [1]: /images/articles/quant.gif "Quant Icon Set"
- [2]: http://www.shapeshed.com/downloads/quant_icon_set.zip
+ [2]: http://cdn.shapeshed.com/downloads/quant_icon_set.zip
  [3]: http://en.wikipedia.org/wiki/Mary_Quant
  [4]: http://creativecommons.org/licenses/by-nd/3.0/

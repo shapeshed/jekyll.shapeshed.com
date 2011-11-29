@@ -5,7 +5,7 @@ description: How to use HTML5 video and make it work for Internet Explorer
 categories: [HTML5]
 ---
 
-Can't wait? You can view the <a href="http://shapeshed.com/examples/video-for-all/">example here</a> or <a href="http://shapeshed.com/downloads/video-for-all.zip">download</a> it here. Excuse my ugly mug..
+Can't wait? You can view the <a href="http://shapeshed.com/examples/video-for-all/">example here</a> or <a href="http://cdn.shapeshed.com/downloads/video-for-all.zip">download</a> it here. Excuse my ugly mug..
 
 ## In-browser video
 

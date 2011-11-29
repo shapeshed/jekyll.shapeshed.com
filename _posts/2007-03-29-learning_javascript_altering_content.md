@@ -103,6 +103,6 @@ Tested ok on:
 *   Mac Opera 9
 
  [1]: http://www.shapeshed.com/examples/altering-content/
- [2]: http://www.shapeshed.com/downloads/altering-content.zip
+ [2]: http://cdn.shapeshed.com/downloads/altering-content.zip
  [3]: http://simonwillison.net/2004/May/26/addLoadEvent/
 

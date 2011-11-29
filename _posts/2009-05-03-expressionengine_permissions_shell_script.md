@@ -26,7 +26,7 @@ The script sets file permssions as detailed on the [ExpressionEngine installatio
 
 The script is licensed under an [Apache License, Version 2.0][4].
 
- [1]: http://shapeshed.com/downloads/exp_permissions.sh
+ [1]: http://cdn.shapeshed.com/downloads/exp_permissions.sh
  [2]: http://shapeshed.com/journal/using_custom_shell_scripts_on_osx_or_linux/
  [3]: http://expressionengine.com/docs/installation/installation.html
  [4]: http://www.apache.org/licenses/LICENSE-2.0

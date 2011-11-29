@@ -97,6 +97,6 @@ If you've made it this far you can [download the source code][2] or [view the ex
 OK - you could go out and grab a Javascript library. But isn't it time you started learning what was really going on? If you disagree with anything written here please leave a comment. This is meant to help people learn.
 
  [1]: http://shapeshed.com/examples/keeping-markup-clean/
- [2]: http://shapeshed.com/downloads/keeping-markup-clean.zip
+ [2]: http://cdn.shapeshed.com/downloads/keeping-markup-clean.zip
  [3]: http://shapeshed.com/journal/dom_css_a_beautiful_couple/
  [4]: http://simonwillison.net/2004/May/26/addLoadEvent/

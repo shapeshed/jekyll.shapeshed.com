@@ -36,7 +36,7 @@ With the style in your Graphic Styles box it is pretty easy to give a curved edg
 
 Want to work through these examples? [Here's the illustrator file][1]
 
- [1]: http://www.shapeshed.com/downloads/curved_edges.ai
+ [1]: http://cdn.shapeshed.com/downloads/curved_edges.ai
  [2]: /images/articles/star.png "Star shape"
  [3]: /images/articles/rounded_star.png "Rounded star"
  [4]: /images/articles/two_stars.png "Two stars"

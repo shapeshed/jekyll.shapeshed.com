@@ -88,5 +88,5 @@ This seems to be very cross browser friendly. I've tested it ok in the following
 *   Mac Opera 9
 
  [1]: http://shapeshed.com/examples/creating-content/
- [2]: http://shapeshed.com/downloads/creating-content.zip
+ [2]: http://cdn.shapeshed.com/downloads/creating-content.zip
  [4]: http://simonwillison.net/2004/May/26/addLoadEvent/

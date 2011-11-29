@@ -33,7 +33,7 @@ Once you have drawn the stars using your brush you may wish to modify the brush 
 ![Brush options][6]
 
  [1]: /images/articles/nightscape.png "Nightscape image"
- [2]: http://www.shapeshed.com/downloads/custom_brushes.ai
+ [2]: http://cdn.shapeshed.com/downloads/custom_brushes.ai
  [3]: /images/articles/brushes_pathfinder.png "Pathfinder window"
  [4]: /images/articles/brushes_window.png "Dragging into the brushes window"
  [5]: http://www.shapeshed.com/journal/smarter_illustrator_with_symbols/
