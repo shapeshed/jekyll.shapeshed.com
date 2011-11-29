@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Book Review - HTML & XHTML - Musciano & Kennedy
-excerpt: "Although a good introduction to HTML this book suffers from its age but turns up some unexplored parts of HTML even for an experienced reader.  "
+description: "Although a good introduction to HTML this book suffers from its age but turns up some unexplored parts of HTML even for an experienced reader.  "
 categories: [XHTML, Book Reviews]
 ---
 <abbr class="dtreviewed" title="20070214T1800">Feb 14, 2007</abbr>

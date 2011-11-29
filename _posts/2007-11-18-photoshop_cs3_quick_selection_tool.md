@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photoshop CS3 - Quick Selection Tool
-excerpt: If you are not already using the quick select tool you should give it a go - it can be far more efficient than the magic wand or magnetic lasso tools.
+description: If you are not already using the quick select tool you should give it a go - it can be far more efficient than the magic wand or magnetic lasso tools.
 categories: [Photoshop, Photoshop 101]
 ---
 The quick select tool allows you to select areas of photographs more quickly than standard tools. Although it is not perfect it can give amazing results and save you time. 

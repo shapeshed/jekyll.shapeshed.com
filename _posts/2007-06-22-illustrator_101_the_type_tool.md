@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Illustrator 101 - The Type Tool
-excerpt: "Controlling typography is easy with the Type Tool but there are also some less well known features that can enhance your designs and save time. "
+description: "Controlling typography is easy with the Type Tool but there are also some less well known features that can enhance your designs and save time. "
 categories: [Illustrator 101]
 ---
 ## The Basics

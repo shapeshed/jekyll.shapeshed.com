@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: A Worthwhile Accessibility Guide for Clients
-excerpt: The PAS 78 Guide has been released by the Disability Rights Commission and is a must for anyone commissioning a website. The document gives guidance on how to choose a Design Agency, how to manage the process and how to maintain the site once it is up and running.
+description: The PAS 78 Guide has been released by the Disability Rights Commission and is a must for anyone commissioning a website. The document gives guidance on how to choose a Design Agency, how to manage the process and how to maintain the site once it is up and running.
 categories:  [Accessibility]
 ---
 A [previous journal][1] entry outlines the benefits of building an accessible site and this guide proves that with real figures. 

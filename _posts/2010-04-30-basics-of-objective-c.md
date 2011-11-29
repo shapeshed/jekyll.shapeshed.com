@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Basics of Objective-C
-excerpt: My notes from working through Assignment 1B of the Stanford iPhone development course
+description: My notes from working through Assignment 1B of the Stanford iPhone development course
 categories: [Objective-C]
 ---
 

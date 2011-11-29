@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Christmas Shopping
-excerpt: Choosing to shop from the comfort of your home can be as stressful as going to the high street. Just why are so many online retailers still getting it wrong?
+description: Choosing to shop from the comfort of your home can be as stressful as going to the high street. Just why are so many online retailers still getting it wrong?
 categories: [Opinion, Usability]
 ---
 ## It should be easy

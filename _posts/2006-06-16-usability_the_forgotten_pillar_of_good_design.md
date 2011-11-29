@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Usability - The Forgotten Pillar of Good Design
-excerpt: "Current trends in Web Design are rightly championing Accessibility and building websites to universally recognised standards. This article seeks to give a brief overview of the importance of Usability and suggests that there are many reasons why it is more important than building an Accessible site. "
+description: "Current trends in Web Design are rightly championing Accessibility and building websites to universally recognised standards. This article seeks to give a brief overview of the importance of Usability and suggests that there are many reasons why it is more important than building an Accessible site. "
 categories: [Usability]
 ---
 ## A quick recap

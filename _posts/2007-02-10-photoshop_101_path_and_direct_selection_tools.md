@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photoshop 101 - Path and Direct Selection Tools
-excerpt: The path and selection tools let you quickly move and manipulate any shape with a path. Part of the workhorse tools of Photoshop they will let you shift and change shapes quickly.
+description: The path and selection tools let you quickly move and manipulate any shape with a path. Part of the workhorse tools of Photoshop they will let you shift and change shapes quickly.
 categories: [Photoshop, Photoshop 101]
 ---
 ## Not very sexy but very useful

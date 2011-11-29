@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: How to add video to your site
-excerpt: A few people have asked how video is used on this site. So here's an overview of how it is done and the options available to you.
+description: A few people have asked how video is used on this site. So here's an overview of how it is done and the options available to you.
 categories: [Video]
 ---
 ## The [insert video site] revolution

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Goodbye Internet Explorer Hacks (well maybe)
-excerpt: "I had to do a template today and I took the opportunity to code using no hacks. With the impending launch of Internet Explorer 7 there are going to be many sites that won't render properly because of existing Internet Explorer hacks. "
+description: "I had to do a template today and I took the opportunity to code using no hacks. With the impending launch of Internet Explorer 7 there are going to be many sites that won't render properly because of existing Internet Explorer hacks. "
 categories: [XHTML, CSS, Microsoft, Browsers]
 ---
 ![IE7 Logo][1]

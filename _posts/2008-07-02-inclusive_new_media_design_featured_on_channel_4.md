@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Inclusive New Media Design Featured on Channel 4
-excerpt: Inclusive New Media Design, a project run by the Rix Centre was featured on Channel 4 News here in the UK.
+description: Inclusive New Media Design, a project run by the Rix Centre was featured on Channel 4 News here in the UK.
 categories: [Accessibility]
 ---
 ## The Project

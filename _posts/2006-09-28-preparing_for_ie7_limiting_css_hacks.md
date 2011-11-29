@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Preparing for IE7 - Limiting CSS Hacks
-excerpt: Internet Explorer 7 is just around the corner and there have been warnings from Microsoft that existing hacks will break layouts in IE7. By limiting the use of hacks your CSS can be both backwards and forwards compliant.
+description: Internet Explorer 7 is just around the corner and there have been warnings from Microsoft that existing hacks will break layouts in IE7. By limiting the use of hacks your CSS can be both backwards and forwards compliant.
 categories: [Browsers, CSS]
 ---
 ## A sigh of relief

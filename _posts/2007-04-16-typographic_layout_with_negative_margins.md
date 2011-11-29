@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Typographic layout with negative margins
-excerpt: "Negative margins in CSS have good cross-browser support and are underused. Using negative margins you can improve typographic layouts without compromising the semantics of your document. "
+description: "Negative margins in CSS have good cross-browser support and are underused. Using negative margins you can improve typographic layouts without compromising the semantics of your document. "
 categories: [Typography, CSS]
 ---
 [You can see the example in action here][1]

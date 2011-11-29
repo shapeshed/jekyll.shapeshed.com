@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Managing a site upgrade
-excerpt: Upgrading a site can be a nerve-wracking process. But it doesn't have to be. Here are some tips to make the whole process easier.
+description: Upgrading a site can be a nerve-wracking process. But it doesn't have to be. Here are some tips to make the whole process easier.
 categories: [Apache, Opinion]
 ---
 ## Backups

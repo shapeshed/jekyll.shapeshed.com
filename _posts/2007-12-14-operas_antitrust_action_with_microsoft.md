@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Opera's Antitrust Action With Microsoft
-excerpt: Opera have filed an antitrust complaint with the European Commission stating that Microsoft is abusing its market position by selling the Windows operating system together with its Internet Explorer browser.
+description: Opera have filed an antitrust complaint with the European Commission stating that Microsoft is abusing its market position by selling the Windows operating system together with its Internet Explorer browser.
 categories: [Browsers, Microsoft, Opinion, Web Standards]
 ---
 Opera have fired the latest salvo in the Browser Wars by [filing a complaint][1] with the European Commission.

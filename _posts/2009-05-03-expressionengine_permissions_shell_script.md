@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: ExpressionEngine permissions shell script
-excerpt: "Every ExpressionEngine install requires that a number of permissions are set on folders and files. Here's a shell script to do the hard work for you. "
+description: "Every ExpressionEngine install requires that a number of permissions are set on folders and files. Here's a shell script to do the hard work for you. "
 categories: [OSX, Linux, ExpressionEngine]
 ---
 ## Download

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Beating CSS Bloat
-excerpt: "After a hearty festive period I need to trim down my belly. Whilst I'm at it I might as well trim down a few CSS files. "
+description: "After a hearty festive period I need to trim down my belly. Whilst I'm at it I might as well trim down a few CSS files. "
 categories: [CSS]
 ---
 It is easy to get into good practices that will lower the size of your CSS files. You will save on bandwidth and increase the download speed of your site. 

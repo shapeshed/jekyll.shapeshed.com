@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Jakob Nielsen sees Red Green and Blue
-excerpt: Jakob Nielsen has published an article on screen resolutions. With his usual forthrightness he tells us we should design for 1024 x 768. Fair enough - no complaints there.
+description: Jakob Nielsen has published an article on screen resolutions. With his usual forthrightness he tells us we should design for 1024 x 768. Fair enough - no complaints there.
 categories: [Accessibility]
 ---
 <a href="http://www.useit.com/alertbox/screen_resolution.html">One sentence</a> is bolded for extra weight : **'anyone who makes at least $50,000 per year ought to have at least 1600x1200 screen resolution.'**

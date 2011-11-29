@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: DOM + CSS = A beautiful couple
-excerpt: Understanding how the DOM works and using it in your CSS can help produce mean, lean code. Here's a quick overview of how it works.
+description: Understanding how the DOM works and using it in your CSS can help produce mean, lean code. Here's a quick overview of how it works.
 categories: [DOM, CSS]
 ---
 ## What's on earth is the DOM?

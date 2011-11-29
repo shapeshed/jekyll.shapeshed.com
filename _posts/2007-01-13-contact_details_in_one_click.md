@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Contact details in one click
-excerpt: At some stage everyone has laboriously copied and pasted contact details from a website into their address book. Wouldn't it be nice if you could just click a graphic and see the details turn up in your address book?
+description: At some stage everyone has laboriously copied and pasted contact details from a website into their address book. Wouldn't it be nice if you could just click a graphic and see the details turn up in your address book?
 categories: [Microformats, CSS, XHTML]
 ---
 <p>This tutorial will show how to create a button that will import contact details into an address book. All you need is some knowledge of XHTML and a graphics editor. But before the explanation you want to see it working don't you?</p>

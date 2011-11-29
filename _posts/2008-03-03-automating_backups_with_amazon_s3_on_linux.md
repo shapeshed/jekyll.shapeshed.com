@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Automating backups with Amazon S3 on Linux
-excerpt: A tutorial on how to back up files on Linux using Amazon's S3 service. The end result is a cost-effective synchronised remote backup service.
+description: A tutorial on how to back up files on Linux using Amazon's S3 service. The end result is a cost-effective synchronised remote backup service.
 categories: [Linux]
 ---
 <h3>Backup Architecture</h3>

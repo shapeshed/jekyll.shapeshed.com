@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Creating usable forms
-excerpt: "Forms are often overlooked from a design perspective, resulting in frustrated users. With a bit of CSS and minimal effort you can easily make your forms more usable. "
+description: "Forms are often overlooked from a design perspective, resulting in frustrated users. With a bit of CSS and minimal effort you can easily make your forms more usable. "
 categories: [CSS, Usability]
 ---
 ## Forms are too often overlooked

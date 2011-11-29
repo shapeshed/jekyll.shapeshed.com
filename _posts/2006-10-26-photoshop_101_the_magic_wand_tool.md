@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photoshop 101 - The Magic Wand Tool
-excerpt: |
+description: |
   Especially for high contrast images the Magic Wand tool makes selection simple. A tool for daily use this example shows how to remove a background quickly and easily.
 
 categories: [Photoshop, Photoshop 101]

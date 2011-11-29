@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photoshop 101 - The Gradient Tool
-excerpt: "The Gradient and Paint Bucket tools are both useful gems in Photoshop and can be used to quickly fill in areas as well as create backgrounds for websites. "
+description: "The Gradient and Paint Bucket tools are both useful gems in Photoshop and can be used to quickly fill in areas as well as create backgrounds for websites. "
 categories: [Photoshop, Photoshop 101]
 ---
 ## The Gradient Tool - does what it says on the tin

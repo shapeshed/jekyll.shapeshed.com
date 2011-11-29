@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Magento and ePDQ - Part 2
-excerpt: "Having successfully set up a Magento install I have now moved onto integrating ePDQ with Magento. I discovered there is no off the shelf gateway available for ePDQ so I had to write my own. "
+description: "Having successfully set up a Magento install I have now moved onto integrating ePDQ with Magento. I discovered there is no off the shelf gateway available for ePDQ so I had to write my own. "
 categories: [ePDQ, Magento]
 ---
 

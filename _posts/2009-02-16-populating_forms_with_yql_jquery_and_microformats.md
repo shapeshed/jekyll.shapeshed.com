@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Populating forms with YQL, jQuery and Microformats
-excerpt: YQL recently began supporting Microformats. This is great because we can do useful things easily like populate form data without even refreshing the page.
+description: YQL recently began supporting Microformats. This is great because we can do useful things easily like populate form data without even refreshing the page.
 categories: [Yahoo, JavaScript, Microformats]
 ---
 ## Demo

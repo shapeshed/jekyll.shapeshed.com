@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "Book Review: Web Designer's Reference - Craig Grannell"
-excerpt: "If you are looking to understand almost everything you will need to run a small web design agency then this is the book for you. The Web Designer's Reference covers a staggering array of topics from XHTML editors to CSS layout to forms and multimedia. "
+description: "If you are looking to understand almost everything you will need to run a small web design agency then this is the book for you. The Web Designer's Reference covers a staggering array of topics from XHTML editors to CSS layout to forms and multimedia. "
 categories: [Book Reviews]
 ---
 <abbr class="dtreviewed" title="20060905T1522">Sep 05, 2006</abbr>

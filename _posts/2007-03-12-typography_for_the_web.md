@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Typography for the Web
-excerpt: "Until recently typography on the web has been overlooked. This article discusses issues to consider and some of the techniques available to create strong typography. "
+description: "Until recently typography on the web has been overlooked. This article discusses issues to consider and some of the techniques available to create strong typography. "
 categories: [Typography]
 ---
 ## Why not just use images?

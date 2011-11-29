@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: How to Sync iCal and Google Calendar
-excerpt: A short tutorial on syncing iCal with Google Calendar for free with iCal on your Mac being the master calendar.
+description: A short tutorial on syncing iCal with Google Calendar for free with iCal on your Mac being the master calendar.
 categories: [Apple, Google]
 ---
 ## The setup

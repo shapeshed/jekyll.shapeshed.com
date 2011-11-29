@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Securing Plesk on a Media Temple (dv)3 server
-excerpt: By taking a few simple steps with SSH, FTP and the firewall you can make your Plesk server more secure than the default configuration.
+description: By taking a few simple steps with SSH, FTP and the firewall you can make your Plesk server more secure than the default configuration.
 categories: [Media Temple, Plesk, Linux]
 ---
 This information is provided as advice only. No responsibility will be taken for following this advice. 

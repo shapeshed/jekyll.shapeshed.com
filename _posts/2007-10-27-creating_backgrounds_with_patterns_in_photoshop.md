@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Creating backgrounds with Patterns in Photoshop
-excerpt: "Often designs need a background to fill space behind navigation or other page elements. Here one way to create them. "
+description: "Often designs need a background to fill space behind navigation or other page elements. Here one way to create them. "
 categories: [Design, Photoshop]
 ---
 ## Using patterns

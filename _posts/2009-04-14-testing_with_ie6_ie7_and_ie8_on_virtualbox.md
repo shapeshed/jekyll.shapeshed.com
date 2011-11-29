@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Testing with IE6, IE7 and IE8 on VirtualBox
-excerpt: "I've recently moved from using Parallels for browser testing to Sun's Open Source VirtualBox. Here's a walkthrough on how to get a browser testing suite for free on OSX or Ubuntu. "
+description: "I've recently moved from using Parallels for browser testing to Sun's Open Source VirtualBox. Here's a walkthrough on how to get a browser testing suite for free on OSX or Ubuntu. "
 categories: [Ubuntu, Linux, Browsers, Apple]
 ---
 ## Microsoft's Virtual Hard Drives

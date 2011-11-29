@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Building a Rails development server
-excerpt: An server stack to facilitate development against almost any Rails environment.
+description: An server stack to facilitate development against almost any Rails environment.
 categories: [Rails]
 ---
 

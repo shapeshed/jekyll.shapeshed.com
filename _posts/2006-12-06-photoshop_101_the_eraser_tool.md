@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photoshop 101 - The Eraser Tool
-excerpt: "A common task in Photoshop is to remove pixels entirely from images. The Eraser tool offers a number of techniques to achieve this. "
+description: "A common task in Photoshop is to remove pixels entirely from images. The Eraser tool offers a number of techniques to achieve this. "
 categories: [Photoshop, Photoshop 101]
 ---
 ## Removing sections of images

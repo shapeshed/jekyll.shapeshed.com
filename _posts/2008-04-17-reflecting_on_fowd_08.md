@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Reflecting on FOWD '08
-excerpt: I attended the Future of Web Design Conference in London. For me the conference did not deliver on ideas but did on meeting people.
+description: I attended the Future of Web Design Conference in London. For me the conference did not deliver on ideas but did on meeting people.
 categories: [Opinion]
 ---
 ## Not far from home

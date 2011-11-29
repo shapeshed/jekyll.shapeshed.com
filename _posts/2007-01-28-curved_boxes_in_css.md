@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Curved boxes in CSS
-excerpt: "Curved boxes are straight forward to do in CSS. Here's a quick tutorial of how to achieve curved boxes in CSS and what's to come in CSS 3. "
+description: "Curved boxes are straight forward to do in CSS. Here's a quick tutorial of how to achieve curved boxes in CSS and what's to come in CSS 3. "
 categories: [CSS, XHTML]
 ---
 ## What we want to achieve

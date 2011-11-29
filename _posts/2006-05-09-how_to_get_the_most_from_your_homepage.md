@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: How To Get The Most From Your Homepage
-excerpt: " A Homepage is like a shop window. It is invariably the most commonly visited page and if it does not draw customers or viewers in, it has failed. This paper looks at what makes a successful Hompeage. "
+description: " A Homepage is like a shop window. It is invariably the most commonly visited page and if it does not draw customers or viewers in, it has failed. This paper looks at what makes a successful Hompeage. "
 categories: [Usability, Design]
 ---
 ## Think about your Homepage last

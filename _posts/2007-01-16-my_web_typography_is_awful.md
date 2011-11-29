@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: My web typography is awful
-excerpt: Inpired by Robert Bringhurst's "Elements of Typographic Style" I decided to explore the typographic capabilities of CSS further. What I found was that browser support is much better than thought and that my own approach to Typography is woefully lacking.
+description: Inpired by Robert Bringhurst's "Elements of Typographic Style" I decided to explore the typographic capabilities of CSS further. What I found was that browser support is much better than thought and that my own approach to Typography is woefully lacking.
 categories: [Typography]
 ---
 ## Everyone knows web typography is lacking

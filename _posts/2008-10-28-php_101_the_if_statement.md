@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: PHP 101 - The if statement
-excerpt: "I get a fair few requests from designers asking for help with basic PHP. So I'm going to write a series on very basic PHP. It is not hard so let's start with a robot and the if statement. "
+description: "I get a fair few requests from designers asking for help with basic PHP. So I'm going to write a series on very basic PHP. It is not hard so let's start with a robot and the if statement. "
 categories: [PHP 101, PHP]
 ---
 

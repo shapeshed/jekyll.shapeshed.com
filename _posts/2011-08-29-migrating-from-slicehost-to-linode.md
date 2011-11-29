@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Migrating from Slicehost to Linode
-excerpt: Why I'm moving and how to do it
+description: Why I'm moving and how to do it
 categories: [Unix]
 ---
 ## Slicehost was a game changer

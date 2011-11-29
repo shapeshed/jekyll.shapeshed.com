@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Cloud Foundry - a Ruby and node.js developer's perspective
-excerpt: This week VMware announced Cloud Foundry, their open source PaaS offering. Here's my take. 
+description: This week VMware announced Cloud Foundry, their open source PaaS offering. Here's my take. 
 categories: [JavaScript, node.js, Ruby, Rails]
 ---
 

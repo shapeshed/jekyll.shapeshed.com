@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Preparing for a site launch
-excerpt: "Creating a website is often a chaotic process. As the deadline looms it is easy to let quality slip. Here is the checklist I follow to ensure things are not left out. "
+description: "Creating a website is often a chaotic process. As the deadline looms it is easy to let quality slip. Here is the checklist I follow to ensure things are not left out. "
 categories: [CSS, XHTML, Opinion]
 ---
 ## Final cross browser test

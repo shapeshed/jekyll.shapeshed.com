@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Installing Passenger 3 with RVM and Nginx on OSX
-excerpt: A multi-ruby development environment on Nginx is easier than ever with the release of Passenger 3
+description: A multi-ruby development environment on Nginx is easier than ever with the release of Passenger 3
 categories: [Rails, Ruby, Nginx]
 ---
 

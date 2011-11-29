@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Getting email through spam filters from a Rails App
-excerpt: Recently I did some work on ideapi a Rails app that was consistently delivering email to spam folders of major email providers. After the work email is consistently delivered to Gmail, Google Hosted Accounts, Hotmail, Yahoo and AOL Mail. Here are the details on how it was achieved.
+description: Recently I did some work on ideapi a Rails app that was consistently delivering email to spam folders of major email providers. After the work email is consistently delivered to Gmail, Google Hosted Accounts, Hotmail, Yahoo and AOL Mail. Here are the details on how it was achieved.
 categories: [Rails, Unix]
 ---
 

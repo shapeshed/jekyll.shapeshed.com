@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Nifty Unix Tools - sort
-excerpt: Sort is a great little UNIX tool for sorting text files and streams. Here's a quick overview of how it works.
+description: Sort is a great little UNIX tool for sorting text files and streams. Here's a quick overview of how it works.
 categories: [Unix]
 ---
 

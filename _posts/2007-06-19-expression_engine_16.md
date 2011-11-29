@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Expression Engine 1.6
-excerpt: The release of ExpressionEngine 1.6 is imminent. To celebrate ExpressionEngine are having a competition. Here's my entry.
+description: The release of ExpressionEngine 1.6 is imminent. To celebrate ExpressionEngine are having a competition. Here's my entry.
 categories: [ExpressionEngine]
 ---
 [ExpressionEngine][1] is an off the shelf Content Management System with a small price tag but with a long list of features. I've used it for many projects now and have found it to be an excellent and flexible piece of software. The next release is 1.6 and features a new multi-site manager, allowing multiple sites to be run from a single install. 

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: IE6 not going anywhere soon
-excerpt: "I've been monitoring browser statistics on clients over the last few months in order to understand the effects of the IE7 forced update by Microsoft. Among corporate clients it doesn't seem to have had much effect and IE6 looks set to be around for a while.  "
+description: "I've been monitoring browser statistics on clients over the last few months in order to understand the effects of the IE7 forced update by Microsoft. Among corporate clients it doesn't seem to have had much effect and IE6 looks set to be around for a while.  "
 categories: [Browsers, Microsoft, Opinion]
 ---
 ## The Sample

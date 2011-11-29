@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photoshop 101 - The Marquee Tool
-excerpt: The first in a new series on Photoshop Tools from a web perspective. The Marquee Tool is undoubtedly one of the most useful at your disposal and holds some unexpected capabilities.
+description: The first in a new series on Photoshop Tools from a web perspective. The Marquee Tool is undoubtedly one of the most useful at your disposal and holds some unexpected capabilities.
 categories: [Photoshop, Photoshop 101]
 ---
 ## A Tool for Daily Use

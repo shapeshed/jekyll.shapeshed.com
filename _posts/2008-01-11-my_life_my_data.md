@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: My life, my data
-excerpt: "Data portability is one of the biggest issues facing the web in the next year or so. Applications need to concede that users own their information and should be able to share it and move it between applications easily. "
+description: "Data portability is one of the biggest issues facing the web in the next year or so. Applications need to concede that users own their information and should be able to share it and move it between applications easily. "
 categories: [Opinion]
 ---
 ## Web Applications

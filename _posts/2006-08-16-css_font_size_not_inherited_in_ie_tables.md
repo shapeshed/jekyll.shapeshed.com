@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: CSS Font Size not inherited in IE tables
-excerpt: |
+description: |
   I recently came across a problem that I couldn't find a solution to. In IE6, IE5.5 and IE5 text within tables was not inheriting the font declarations from my CSS. I declared the font size on the body tag and for all other elements it works fine:
 
 categories: [XHTML, CSS]

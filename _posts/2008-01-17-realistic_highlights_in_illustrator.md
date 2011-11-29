@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Realistic highlights in Illustrator
-excerpt: "A short tutorial on creating realistic highlights in Illustrator using clipping masks. The tutorial covers creating a path, adding a gradient and then creating a clipping mask. "
+description: "A short tutorial on creating realistic highlights in Illustrator using clipping masks. The tutorial covers creating a path, adding a gradient and then creating a clipping mask. "
 categories: [Illustrator, Design]
 ---
 ## An example

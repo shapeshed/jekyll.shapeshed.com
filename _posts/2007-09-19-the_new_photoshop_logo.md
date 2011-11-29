@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: The New Photoshop Logo
-excerpt: I'm not often moved to criticise other designers work. It is their livelihood after all. But the new Photoshop logo falls well short of the mark.
+description: I'm not often moved to criticise other designers work. It is their livelihood after all. But the new Photoshop logo falls well short of the mark.
 categories: [Opinion, Design, Photoshop]
 ---
 ## Another Photoshop Logo!

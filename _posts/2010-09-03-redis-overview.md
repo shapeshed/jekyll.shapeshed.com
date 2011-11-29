@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: An overview of Redis
-excerpt: Redis has moved to a 2.0.0 release and is a serious solution for building high-performance, scalable web applications.
+description: Redis has moved to a 2.0.0 release and is a serious solution for building high-performance, scalable web applications.
 categories: [redis]
 ---
 ## A key-value store and more

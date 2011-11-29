@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Using rbenv to manage rubies
-excerpt: How I use rbenv to manage rubies and integrate with other tools
+description: How I use rbenv to manage rubies and integrate with other tools
 categories: 
 - Unix 
 - Rails

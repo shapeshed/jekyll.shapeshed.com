@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Glossy badges in Illustrator
-excerpt: "The star tool and opacity masks make it easy to make eye-catching glossy badges for websites and user interface designs. Here's an example of how to do it, including a downloadable Illustrator file to work with. "
+description: "The star tool and opacity masks make it easy to make eye-catching glossy badges for websites and user interface designs. Here's an example of how to do it, including a downloadable Illustrator file to work with. "
 categories: [Illustrator, Design]
 ---
 Here's what we are going to get to:

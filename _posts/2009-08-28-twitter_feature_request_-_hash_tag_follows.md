@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Twitter feature request - hash tag follows
-excerpt: "Hash tag follows would eliminate pointless retweets and provide users with a looser way of creating relationships. "
+description: "Hash tag follows would eliminate pointless retweets and provide users with a looser way of creating relationships. "
 categories: [Opinion]
 ---
 ## My situation

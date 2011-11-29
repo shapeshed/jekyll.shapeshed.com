@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Screen Modes in Photoshop
-excerpt: "When designing in Photoshop there are a couple of options that allow you to review your design without noise around it. Here's a quick overview of how you can take a step back from the digital canvas. "
+description: "When designing in Photoshop there are a couple of options that allow you to review your design without noise around it. Here's a quick overview of how you can take a step back from the digital canvas. "
 categories: [Design, Photoshop]
 ---
 ## Step away from the canvas

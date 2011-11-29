@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Illustrator 101 - Selection tools
-excerpt: Understanding the selection tools is a must for working with icons or illustrations. Master the basics and you will save yourself a great deal of time.
+description: Understanding the selection tools is a must for working with icons or illustrations. Master the basics and you will save yourself a great deal of time.
 categories: [Illustrator 101, Illustrator]
 ---
 

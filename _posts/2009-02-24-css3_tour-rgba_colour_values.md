@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: CSS3 Tour - RGBa Colour Values
-excerpt: "RGBa adds the alpha channel to colour declarations in CSS3. This is great news for designers who are now able to declare an alpha channel percentage on individual elements. "
+description: "RGBa adds the alpha channel to colour declarations in CSS3. This is great news for designers who are now able to declare an alpha channel percentage on individual elements. "
 categories: [CSS]
 ---
 Not interested in the explanation? Go straight to [the demonstration.][1]

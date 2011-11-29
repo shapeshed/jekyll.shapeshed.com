@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Stroke a stroke in Photoshop
-excerpt: Sometimes you might want to add a stroke to a stroke on the same layer in Photoshop. Thankfully with a simple technique you can.
+description: Sometimes you might want to add a stroke to a stroke on the same layer in Photoshop. Thankfully with a simple technique you can.
 categories: [Photoshop]
 ---
 ## Making the stroke

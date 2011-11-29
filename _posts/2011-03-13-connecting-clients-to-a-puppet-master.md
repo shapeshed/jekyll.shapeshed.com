@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Connecting clients to a Puppet Master
-excerpt: A walkthrough of how to connect a client server to a Puppet Master and how to manage basic services
+description: A walkthrough of how to connect a client server to a Puppet Master and how to manage basic services
 categories: [Unix, Puppet, Ubuntu]
 ---
 

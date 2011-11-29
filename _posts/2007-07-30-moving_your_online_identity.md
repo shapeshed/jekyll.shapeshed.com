@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Moving your online identity
-excerpt: "I have recently moved house. Updating my online identity has been a tedious and time consuming task. A change in approach to managing online identity is desperately required. "
+description: "I have recently moved house. Updating my online identity has been a tedious and time consuming task. A change in approach to managing online identity is desperately required. "
 categories: [Opinion]
 ---
 ## I have moved!

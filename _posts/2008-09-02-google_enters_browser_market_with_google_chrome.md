@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Google enters browser market with Google Chrome
-excerpt: The news that Google is to launch Google Chrome, a web browser is good news for the browser market and web applications in general.
+description: The news that Google is to launch Google Chrome, a web browser is good news for the browser market and web applications in general.
 categories: [Browsers, Google]
 ---
 ## Why a new browser?

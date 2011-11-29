@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Branding and logos - from ideas to implementation
-excerpt: Getting branding right is a difficult process. Often both clients and designers fail to understand what each party needs or is looking for. This article seeks to give some advice on how to issue a brief and issues to consider for small to medium sized enterprises.
+description: Getting branding right is a difficult process. Often both clients and designers fail to understand what each party needs or is looking for. This article seeks to give some advice on how to issue a brief and issues to consider for small to medium sized enterprises.
 categories:  [Design, Strategy]
 ---
 ## Before you contact a designer

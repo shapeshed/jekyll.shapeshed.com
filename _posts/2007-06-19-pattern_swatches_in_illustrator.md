@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Pattern Swatches in Illustrator
-excerpt: Pattern Swatches are a hidden gem in illustrator. You can use them to quickly fill shapes with patterns and illustrations. Here's a short tutorial using a t-shirt design.
+description: Pattern Swatches are a hidden gem in illustrator. You can use them to quickly fill shapes with patterns and illustrations. Here's a short tutorial using a t-shirt design.
 categories: [Illustrator, Design]
 ---
 ## A simple example

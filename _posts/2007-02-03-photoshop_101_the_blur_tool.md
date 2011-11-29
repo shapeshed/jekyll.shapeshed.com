@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photoshop 101 - The Blur Tool
-excerpt: The Blur Sharpen and Smudge tools are artworking tools that can give photos a different perspective. Also useful for graphical work they are well worth learning. Here's a short overview and a video showing how to use them.
+description: The Blur Sharpen and Smudge tools are artworking tools that can give photos a different perspective. Also useful for graphical work they are well worth learning. Here's a short overview and a video showing how to use them.
 categories: [Photoshop, Photoshop 101]
 ---
 The shortcut for the blur tool is R

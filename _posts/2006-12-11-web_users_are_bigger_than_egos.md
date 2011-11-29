@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Web users are bigger than egos
-excerpt: Placing users at the centre of the design process is imperative for a usable website. Leave your ego at the door and find out what matters in creating usable websites.
+description: Placing users at the centre of the design process is imperative for a usable website. Leave your ego at the door and find out what matters in creating usable websites.
 categories: [Opinion, Usability]
 ---
 ## Web design is not Rock 'n Roll

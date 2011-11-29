@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Creating a comment icon in Illustrator
-excerpt: A short tutorial on creating a vector-based comment icon in Illustrator. The tutorial includes a downloadable illustrator file to work through the example with.
+description: A short tutorial on creating a vector-based comment icon in Illustrator. The tutorial includes a downloadable illustrator file to work through the example with.
 categories: [Illustrator, Design]
 ---
 <h3>What want to achieve</h3> 

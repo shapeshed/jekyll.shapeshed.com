@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: ExpressionEngine plugin - Friendly 404 pages
-excerpt: I've written a simple plugin for ExpressionEngine that suggests valid pages to users based on the final segement of a 404 page.
+description: I've written a simple plugin for ExpressionEngine that suggests valid pages to users based on the final segement of a 404 page.
 categories: [ExpressionEngine, PHP]
 ---
 ## Where am I?

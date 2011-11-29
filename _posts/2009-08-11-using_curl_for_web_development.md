@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Using cURL for web development
-excerpt: Pre-installed on most OSX and Linux/Unix systems cURL is a great tool for testing and developing a website. Here's a quick overview of what you can do.
+description: Pre-installed on most OSX and Linux/Unix systems cURL is a great tool for testing and developing a website. Here's a quick overview of what you can do.
 categories: [Linux]
 ---
 cURL provides developers with a useful toolkit to help in developing and debugging websites. 

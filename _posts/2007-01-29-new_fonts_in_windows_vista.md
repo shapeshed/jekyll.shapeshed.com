@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: New fonts in Windows Vista
-excerpt: A tour of the new fonts in Windows Vista. We can use more fonts!
+description: A tour of the new fonts in Windows Vista. We can use more fonts!
 categories: [Microsoft, Typography]
 ---
 Here they are:

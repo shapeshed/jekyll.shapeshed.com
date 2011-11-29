@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Chrismas 2007 Wallpaper
-excerpt: Here's some wallpaper for the festive season, that I have also sent out to friends and clients. Thanks to <a href="http://www.jlwdesign.com/">jlwDesign</a> and <a href="http://www.blog.spoongraphics.co.uk">Spoon Graphics</a> for the vectors.
+description: Here's some wallpaper for the festive season, that I have also sent out to friends and clients. Thanks to <a href="http://www.jlwdesign.com/">jlwDesign</a> and <a href="http://www.blog.spoongraphics.co.uk">Spoon Graphics</a> for the vectors.
 categories: [Personal, Design]
 ---
 ## Get your resolution

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: How not to launch a browser
-excerpt: "Mozilla's launch of Firefox 3 was a poorly conceived marketing exercise and has let down an excellent product. "
+description: "Mozilla's launch of Firefox 3 was a poorly conceived marketing exercise and has let down an excellent product. "
 categories: [Browsers]
 ---
 ## Some history

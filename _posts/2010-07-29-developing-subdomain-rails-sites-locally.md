@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Developing subdomain Rails sites locally
-excerpt: Developing local Rails sites with subdomains can be a pain but thanks to a couple of public URLs it can be much simpler.
+description: Developing local Rails sites with subdomains can be a pain but thanks to a couple of public URLs it can be much simpler.
 categories: [Rails]
 ---
 ## The problem

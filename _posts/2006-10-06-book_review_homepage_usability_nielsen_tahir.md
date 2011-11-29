@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "Book Review: Homepage Usability - Nielsen &amp; Tahir"
-excerpt: "Although four years old this book delivers invaluable insights into Homepage usability. At the same time though you find yourself wishing Nielsen and Tahir would relax just a little bit. "
+description: "Although four years old this book delivers invaluable insights into Homepage usability. At the same time though you find yourself wishing Nielsen and Tahir would relax just a little bit. "
 categories: [Book Reviews]
 ---
 

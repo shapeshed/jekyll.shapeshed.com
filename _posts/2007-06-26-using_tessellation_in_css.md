@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Using tessellation in CSS
-excerpt: "Tessellation has been used for many years in wallpaper and other design environments where a large space of indeterminate size needs to be covered. Using CSS similar techniques can be used to deliver designs that look good and stretch to the width of the screen. "
+description: "Tessellation has been used for many years in wallpaper and other design environments where a large space of indeterminate size needs to be covered. Using CSS similar techniques can be used to deliver designs that look good and stretch to the width of the screen. "
 categories: [CSS, Design]
 ---
 ## What is tessellation?

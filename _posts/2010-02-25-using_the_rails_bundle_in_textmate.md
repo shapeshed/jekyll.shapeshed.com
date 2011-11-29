@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Using the Rails bundle in TextMate
-excerpt: I've been exploring the Rails bundle in TextMate. It is really useful but I had a few issues getting it up and running so if it helps anyone else I'm documenting them here. 
+description: I've been exploring the Rails bundle in TextMate. It is really useful but I had a few issues getting it up and running so if it helps anyone else I'm documenting them here. 
 categories: [Rails, TextMate]
 ---
 

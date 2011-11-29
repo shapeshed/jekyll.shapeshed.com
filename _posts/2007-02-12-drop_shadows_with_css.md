@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Drop Shadows with CSS
-excerpt: "A short tutorial showing how to apply drop shadows to images on your site with CSS. "
+description: "A short tutorial showing how to apply drop shadows to images on your site with CSS. "
 categories: [CSS, XHTML]
 ---
 ## What we want to achieve

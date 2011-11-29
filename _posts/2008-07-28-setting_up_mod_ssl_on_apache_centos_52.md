@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Setting up mod_ssl on Apache Centos 5.2
-excerpt: This tutorial will explain how to set up a site over https on Centos 5.2, although it should work on most linux distributions. The tutorial uses a self signed key so will work well for a personal website or testing purposes. This is provided as is so proceed at your own risk and take backups!
+description: This tutorial will explain how to set up a site over https on Centos 5.2, although it should work on most linux distributions. The tutorial uses a self signed key so will work well for a personal website or testing purposes. This is provided as is so proceed at your own risk and take backups!
 categories: [Linux, Apache]
 ---
 ## Getting the required software

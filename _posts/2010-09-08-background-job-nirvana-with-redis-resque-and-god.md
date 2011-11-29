@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Background job nirvana with Resque, Redis and God
-excerpt: Recently a requirement came up to add a background job queue to a Rails application. Thanks to a couple of excellent open source libraries I was up and running in no time. 
+description: Recently a requirement came up to add a background job queue to a Rails application. Thanks to a couple of excellent open source libraries I was up and running in no time. 
 categories: [Ruby, Rails]
 ---
 ## Resque

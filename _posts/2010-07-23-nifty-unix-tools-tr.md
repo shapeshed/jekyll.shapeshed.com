@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Nifty Unix Tools - tr
-excerpt: tr is a simple but effective tool for translating or deleting characters in a string
+description: tr is a simple but effective tool for translating or deleting characters in a string
 categories: [Unix]
 ---
 

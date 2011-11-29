@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photoshop 101 - The Type Tool
-excerpt: "Adding type to designs is a daily task in Photoshop. Especially if you are interested in Typography mastering this tool is a must. "
+description: "Adding type to designs is a daily task in Photoshop. Especially if you are interested in Typography mastering this tool is a must. "
 categories: [Typography, Photoshop, Photoshop 101]
 ---
 <h3>Horizontal type tool</h3>

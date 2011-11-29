@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "Book Review: The Elements of Typographic Style - Bringhurst"
-excerpt: Bringhurst's book on Typography is a joy to read and savour. It offers inpsiration and insight into typography on the web.
+description: Bringhurst's book on Typography is a joy to read and savour. It offers inpsiration and insight into typography on the web.
 categories: [Book Reviews]
 ---
 <abbr class="dtreviewed" title="20061105T1500">November 5th, 2006</abbr>

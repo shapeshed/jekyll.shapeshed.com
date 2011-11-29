@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Going realtime with node.js, Express and socket.io
-excerpt: A simple realtime counter in node.js
+description: A simple realtime counter in node.js
 categories: [node.js, JavaScript]
 ---
 

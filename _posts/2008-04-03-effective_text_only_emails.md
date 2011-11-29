@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Effective text only emails
-excerpt: "Text only emails are a reliable alternative to HTML emails. They work in any email client and can be read by all. Here are some tips on how to make text only emails more user friendly. "
+description: "Text only emails are a reliable alternative to HTML emails. They work in any email client and can be read by all. Here are some tips on how to make text only emails more user friendly. "
 categories: [Usability]
 ---
 ## Structure content

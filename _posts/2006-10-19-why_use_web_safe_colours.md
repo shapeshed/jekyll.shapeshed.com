@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Why use Web Safe Colours?
-excerpt: I've always designed using the web safe colour palette. Recently I realised I didn't actually know why. After a bit of research it would seem it is less relevant than I thought.
+description: I've always designed using the web safe colour palette. Recently I realised I didn't actually know why. After a bit of research it would seem it is less relevant than I thought.
 categories: [Browsers, Web Standards, Photoshop]
 ---
 ## Background

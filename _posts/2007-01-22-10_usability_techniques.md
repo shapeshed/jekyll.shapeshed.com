@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: 10 Usability Techniques
-excerpt: "A great looking site is of no use if it is difficult to use. Here are ten techniques to help improve the usability of your site. "
+description: "A great looking site is of no use if it is difficult to use. Here are ten techniques to help improve the usability of your site. "
 categories: [Usability]
 ---
 ## Resizable text

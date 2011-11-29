@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Magento and ePDQ - Part 1
-excerpt: I am currently working on an ePDQ integration with Magento, the Open Source eCommerce platform. I'm going to be documenting the process on this blog outlining any recommendations or issues that come up.
+description: I am currently working on an ePDQ integration with Magento, the Open Source eCommerce platform. I'm going to be documenting the process on this blog outlining any recommendations or issues that come up.
 categories: [ePDQ, Magento]
 ---
 

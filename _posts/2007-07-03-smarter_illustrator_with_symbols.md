@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Smarter Illustrator with Symbols
-excerpt: "Symbols are an extremely powerful aspect of Illustrator allowing you to create illustrations more rapidly, build a library and respond quickly to client amends and changes. If you are not already using them here is why you should. "
+description: "Symbols are an extremely powerful aspect of Illustrator allowing you to create illustrations more rapidly, build a library and respond quickly to client amends and changes. If you are not already using them here is why you should. "
 categories: [Illustrator]
 ---
 Why not [download the illustrator file][1] so you can work through this too?

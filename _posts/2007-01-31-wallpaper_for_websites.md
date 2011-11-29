@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Wallpaper for websites
-excerpt: Here's a quick look about how you can give your site some wallpaper. Whilst you are moving the furniture around there is also some traditional wallpaper design for inspiration.
+description: Here's a quick look about how you can give your site some wallpaper. Whilst you are moving the furniture around there is also some traditional wallpaper design for inspiration.
 categories: [CSS, XHTML, Design]
 ---
 ## Adding wallpaper to a site

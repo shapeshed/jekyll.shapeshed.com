@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photoshop 101 - Transparent Fills
-excerpt: Photoshop doesn't come with the same one-click ability as Illustrator to make the fill of shapes or objects transparent. Here's a workaround.
+description: Photoshop doesn't come with the same one-click ability as Illustrator to make the fill of shapes or objects transparent. Here's a workaround.
 categories: [Photoshop, Photoshop 101]
 ---
 ## What we want to achieve

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: 10 ways to spot a good front-end coder
-excerpt: "Front-end coding is certainly a craft and there are some amazing people doing it. When I visit a good site I often rummage around in the undergrowth to learn from the Masters. Here are ten practices I commonly see from the best coders.  "
+description: "Front-end coding is certainly a craft and there are some amazing people doing it. When I visit a good site I often rummage around in the undergrowth to learn from the Masters. Here are ten practices I commonly see from the best coders.  "
 categories: [XHTML, Opinion, Web Standards, CSS]
 ---
 ## It looks good naked

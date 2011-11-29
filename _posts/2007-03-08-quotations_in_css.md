@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Quotations in CSS
-excerpt: Here's a short tutorial on how to style quotes with CSS whilst making sure you use the right XHTML tools for the job.
+description: Here's a short tutorial on how to style quotes with CSS whilst making sure you use the right XHTML tools for the job.
 categories: 
 - CSS
 ---

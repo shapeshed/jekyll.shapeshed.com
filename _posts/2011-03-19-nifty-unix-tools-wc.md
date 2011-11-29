@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Nifty Unix Tools - wc
-excerpt: Word Count (wc) is a great tool to quickly give information on text files and becomes very powerful when piped with other commands
+description: Word Count (wc) is a great tool to quickly give information on text files and becomes very powerful when piped with other commands
 categories: [Unix]
 ---
 

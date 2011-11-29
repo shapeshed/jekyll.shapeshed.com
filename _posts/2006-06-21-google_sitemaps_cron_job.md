@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Google Sitemaps Cron Job
-excerpt: "I've recently set up a cron job to run the <a href=\"http://www.google.com/webmasters/sitemaps/docs/en/sitemap-generator.html\">Google Sitemaps Python Script</a> automatically each day. This automatically notifies Google of any changes to the site. I've found that new pages are being indexed very quickly. "
+description: "I've recently set up a cron job to run the <a href=\"http://www.google.com/webmasters/sitemaps/docs/en/sitemap-generator.html\">Google Sitemaps Python Script</a> automatically each day. This automatically notifies Google of any changes to the site. I've found that new pages are being indexed very quickly. "
 categories: [SEO, Google]
 ---
 There are plenty of good articles out there about how to use the script provided by Google but I struggled to find information on how to set up the cron job for the task. 

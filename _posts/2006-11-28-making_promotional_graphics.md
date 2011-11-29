@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Making promotional graphics
-excerpt: A well designed promotional graphic can be a great way to drive traffic through your site. Here's one way to do it.
+description: A well designed promotional graphic can be a great way to drive traffic through your site. Here's one way to do it.
 categories: [Design, Photoshop]
 ---
 This tutorial shows you how to make a graphic like this:

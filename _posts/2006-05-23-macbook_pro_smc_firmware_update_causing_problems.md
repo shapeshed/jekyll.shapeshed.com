@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: MacBook Pro SMC Firmware Update Causing Problems
-excerpt: In the hope that this might help someone out I'm posting the slightly unpleasant experience I had this morning after running the SMC Firmware update from <a href="http://www.apple.com/support/downloads/macbookprosmcfirmwareupdate.html">Apple</a>
+description: In the hope that this might help someone out I'm posting the slightly unpleasant experience I had this morning after running the SMC Firmware update from <a href="http://www.apple.com/support/downloads/macbookprosmcfirmwareupdate.html">Apple</a>
 categories: [Apple]
 ---
 Imagine if you can the cold palms and nervous sweat that occurred when my Mac refused to boot. I do back everything up but I haven't really got time or the inclination to reinstall all my software etc etc. Thankfully after a quick search it seems that Adobe Version Cue is the problem. If you have it as a start up item it is likely that it is causing the problem. 

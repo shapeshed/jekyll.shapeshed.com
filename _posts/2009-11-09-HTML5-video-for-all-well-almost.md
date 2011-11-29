@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: HTML5 video for all (well almost)
-excerpt: How to use HTML5 video and make it work for Internet Explorer
+description: How to use HTML5 video and make it work for Internet Explorer
 categories: [HTML5]
 ---
 

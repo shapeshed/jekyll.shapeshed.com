@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Circular shapes and patterns in Illustrator
-excerpt: "Making circular shapes and patterns in Illustrator is straightforward using a simple technique. Here's how to save yourself some time. "
+description: "Making circular shapes and patterns in Illustrator is straightforward using a simple technique. Here's how to save yourself some time. "
 categories: [Illustrator, Design]
 ---
 ## A simple start

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photoshop 101 - The Clone Tool
-excerpt: The clone tool allows you to retouch images and remove blemishes. Understanding how it works will allow you to adapt images to your requirements.
+description: The clone tool allows you to retouch images and remove blemishes. Understanding how it works will allow you to adapt images to your requirements.
  [Photoshop, Photoshop 101]
 ---
 ## Cloning parts of images

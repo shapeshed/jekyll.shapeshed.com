@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Creating custom shapes in Photoshop
-excerpt: "A less well known feature of Photoshop is that you can create custom vector shapes and use them throughout your designs. Here's an of examples of how to do it. "
+description: "A less well known feature of Photoshop is that you can create custom vector shapes and use them throughout your designs. Here's an of examples of how to do it. "
 categories: [Design, Photoshop]
 ---
 Custom shapes work in much the same way as custom patterns. First you make the shape using a standard empty document and using any of the vector based tools or selection tools. This can be the pen tool or any of the custom shape tools. Here's my way of doing it although there are many others. 

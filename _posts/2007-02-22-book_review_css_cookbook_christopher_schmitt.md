@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "Book Review: CSS Cookbook - Christopher Schmitt"
-excerpt: "CSS Cookbook is a solid practical guide to using CSS on a day to day basis.  A great book for a beginners, it shows how to resolve common CSS problems. "
+description: "CSS Cookbook is a solid practical guide to using CSS on a day to day basis.  A great book for a beginners, it shows how to resolve common CSS problems. "
 categories: [CSS, Book Reviews]
 ---
 <abbr class="dtreviewed" title="20070222T1343">Feb 22nd, 2007</abbr>

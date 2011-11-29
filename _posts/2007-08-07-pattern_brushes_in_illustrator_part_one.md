@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Pattern Brushes in Illustrator Part One
-excerpt: Pattern Brushes in Illustrator are a great way to create complicated designs in no time. Part one shows an example of how to use Pattern Brushes with circles.
+description: Pattern Brushes in Illustrator are a great way to create complicated designs in no time. Part one shows an example of how to use Pattern Brushes with circles.
 categories: [Illustrator, Design]
 ---
 ## A simple start

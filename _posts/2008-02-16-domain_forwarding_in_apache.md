@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Domain forwarding in Apache
-excerpt: Here's a short tutorial on one way to forward one domain to another in Apache, keeping Google happy as we go along.
+description: Here's a short tutorial on one way to forward one domain to another in Apache, keeping Google happy as we go along.
 categories: [Linux, Apache]
 ---
 ## The disclaimer bit

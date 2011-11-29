@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Running ExpressionEngine on Media Temple's (dv) Part 2
-excerpt: The second article in the series looking at optimising Apache and MySQL to run ExpressionEngine at optimum speed
+description: The second article in the series looking at optimising Apache and MySQL to run ExpressionEngine at optimum speed
 categories: [Apache, ExpressionEngine, Media Temple]
 ---
 ## Working with 256k

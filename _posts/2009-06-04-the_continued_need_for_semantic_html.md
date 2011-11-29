@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: The continued need for semantic HTML
-excerpt: Two new search tools in Wolfram and Google Squared have been released that demonstrate the need for a standards based approach to web semantics and data.
+description: Two new search tools in Wolfram and Google Squared have been released that demonstrate the need for a standards based approach to web semantics and data.
 categories: [Yahoo, Google, XHTML, Opinion, Web Standards]
 ---
 ## HTML is king

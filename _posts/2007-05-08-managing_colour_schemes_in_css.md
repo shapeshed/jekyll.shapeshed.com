@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Managing colour schemes in CSS
-excerpt: Managing colour schemes in CSS can be difficult. With a bit of PHP you can take control of colour schemes in your stylesheets.
+description: Managing colour schemes in CSS can be difficult. With a bit of PHP you can take control of colour schemes in your stylesheets.
 categories: [CSS, Design, PHP]
 ---
 ## Why bother?

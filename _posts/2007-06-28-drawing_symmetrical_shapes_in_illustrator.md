@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Drawing symmetrical shapes in Illustrator
-excerpt: "Drawing symmetrical shapes in illustrator can be a little bit tricky but once mastered it is a technique you can use over and over again. "
+description: "Drawing symmetrical shapes in illustrator can be a little bit tricky but once mastered it is a technique you can use over and over again. "
 categories: [Illustrator, Design]
 ---
 ## What we want to achieve

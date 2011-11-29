@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Illustrator 101 - Guides and Smart Guides
-excerpt: Guides help you to line control objects and paths easily in Illustrator. Here's a short overview of the options and how Smart Guides can take it a step further.
+description: Guides help you to line control objects and paths easily in Illustrator. Here's a short overview of the options and how Smart Guides can take it a step further.
 categories: [Illustrator 101, Illustrator, Design]
 ---
 ## Basic Guides

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "Book Review : DOM Scripting - Jeremy Keith"
-excerpt: "Jeremy Keith's book is an excellent, gentle introduction to applying dynamic effects to websites using Javascript and the DOM. Covering best practices and techniques that degrade gracefully this is a must read. "
+description: "Jeremy Keith's book is an excellent, gentle introduction to applying dynamic effects to websites using Javascript and the DOM. Covering best practices and techniques that degrade gracefully this is a must read. "
 categories: [Book Reviews]
 ---
 <abbr class="dtreviewed" title="20070205T1800">Feb 05, 2007</abbr>

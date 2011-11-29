@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photoshop 101 - The Move Tool
-excerpt: The second in a series on Photoshop Tools from a web perspective. The Move Tool is simple but has some advanced features that can save you serious time.
+description: The second in a series on Photoshop Tools from a web perspective. The Move Tool is simple but has some advanced features that can save you serious time.
 categories: [Photoshop, Photoshop 101]
 ---
 ## More than just moving elements

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Instant Rails dev environments with Tmuxinator and Foreman
-excerpt: How to start an entire development environment with a single command
+description: How to start an entire development environment with a single command
 categories: 
 - Unix
 - Rails

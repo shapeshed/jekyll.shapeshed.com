@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Auto-blend photographs in Photoshop
-excerpt: "If you have Photoshop CS3 you can automatically merge two different photographs to create a new one, with Photoshop doing all of the hard work for you. "
+description: "If you have Photoshop CS3 you can automatically merge two different photographs to create a new one, with Photoshop doing all of the hard work for you. "
 categories: [Photoshop]
 ---
 ## Two different photos

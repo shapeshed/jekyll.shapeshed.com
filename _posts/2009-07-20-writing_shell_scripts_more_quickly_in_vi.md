@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Writing shell scripts more quickly in vi
-excerpt: A couple of useful tips for writing shell scripts more quickly using the vi editor.
+description: A couple of useful tips for writing shell scripts more quickly using the vi editor.
 categories: [Linux]
 ---
 ## Shell scripts

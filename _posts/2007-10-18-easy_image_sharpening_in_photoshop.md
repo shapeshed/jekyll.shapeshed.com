@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Easy image sharpening in Photoshop
-excerpt: Here's a simple tip I picked up to quickly sharpen images in Photoshop using the High Pass Filter.
+description: Here's a simple tip I picked up to quickly sharpen images in Photoshop using the High Pass Filter.
 categories: [Photoshop]
 ---
 ## Quick sharpening

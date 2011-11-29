@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Why Isn't My Site Top Of Google?
-excerpt: One of the most common questions asked by clients is 'Why isn't my site top of Google?' This is totally understandable but explaining rankings in search engines can be a mystery. This article attempts to discuss some general principles to improve rankings.
+description: One of the most common questions asked by clients is 'Why isn't my site top of Google?' This is totally understandable but explaining rankings in search engines can be a mystery. This article attempts to discuss some general principles to improve rankings.
 categories: [SEO, Google]
 ---
 ## The mystery of Google

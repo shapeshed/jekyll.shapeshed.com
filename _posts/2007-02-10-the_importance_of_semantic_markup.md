@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: The importance of semantic markup
-excerpt: "Creating web documents that have meaning behind the page rendered in a browser is very important. Here are some pointers as to how to understand and write semantic markup. "
+description: "Creating web documents that have meaning behind the page rendered in a browser is very important. Here are some pointers as to how to understand and write semantic markup. "
 categories: [XHTML]
 ---
 ## What does semantic markup mean?

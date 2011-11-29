@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: IE7 one year on
-excerpt: "Today is the launch of Leopard, Apple's latest version of the OSX operating system. With it comes Safari 3, a product that almost a year on from the launch of Vista highlights the stagnant performance of Internet Explorer 7. "
+description: "Today is the launch of Leopard, Apple's latest version of the OSX operating system. With it comes Safari 3, a product that almost a year on from the launch of Vista highlights the stagnant performance of Internet Explorer 7. "
 categories: [Browsers, Apple, Microsoft, Opinion]
 ---
 ## Vista - A brave new world?

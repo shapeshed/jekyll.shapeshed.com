@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Content is King
-excerpt: Content is key in creating a successful website both for attracting visitors and good search engine rankings.
+description: Content is key in creating a successful website both for attracting visitors and good search engine rankings.
 categories: [Copy]
 ---
 Copy is often the last thing that is considered when creating a website. It is easy to get caught up in the excitement of a new design and how the site will function. Writing considered content will improve the usability of your site and allow users to find things quickly and easily.

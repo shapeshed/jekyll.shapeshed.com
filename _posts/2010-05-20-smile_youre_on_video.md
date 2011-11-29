@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Smile You're on Video
-excerpt: In a big step for the open web Google open sourced the VP8 video codec yesterday at the I/O conference in San Francisco. 
+description: In a big step for the open web Google open sourced the VP8 video codec yesterday at the I/O conference in San Francisco. 
 categories: [Google, HTML5]
 ---
 

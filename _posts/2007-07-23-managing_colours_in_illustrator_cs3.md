@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Managing colours in Illustrator CS3
-excerpt: "Illustrator CS3 makes it easier than ever to create and manage colours in your illustrations. Here's a short tutorial exploring what's available and how to use it. "
+description: "Illustrator CS3 makes it easier than ever to create and manage colours in your illustrations. Here's a short tutorial exploring what's available and how to use it. "
 categories: [Illustrator]
 ---
 ## Creating colour schemes

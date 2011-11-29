@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Illustrator 101 - The Pen Tool
-excerpt: "A tool worth learning you can soon have the same control as you do when sketching. It is tricky to master but you can soon be up and running with a little practice. "
+description: "A tool worth learning you can soon have the same control as you do when sketching. It is tricky to master but you can soon be up and running with a little practice. "
 categories: [Illustrator 101, Illustrator]
 ---
 

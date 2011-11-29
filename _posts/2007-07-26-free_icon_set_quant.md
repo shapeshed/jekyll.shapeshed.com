@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Free icon set - Quant
-excerpt: "Icon design is something I have wanted to explore for a while. Today I'm releasing a free black and white icon set, the first of many I hope. "
+description: "Icon design is something I have wanted to explore for a while. Today I'm releasing a free black and white icon set, the first of many I hope. "
 categories: [Icons, Design]
 ---
 ## The Set

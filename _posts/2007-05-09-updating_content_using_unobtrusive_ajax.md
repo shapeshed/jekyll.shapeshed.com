@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Updating content using unobtrusive ajax
-excerpt: Pulling in content from external providers can cause page load times to increase dramatically. Using unobtrusive ajax and caching you can keep content up to date for everyone (including those with javascript turned off) whilst minimising the impact on page load times.
+description: Pulling in content from external providers can cause page load times to increase dramatically. Using unobtrusive ajax and caching you can keep content up to date for everyone (including those with javascript turned off) whilst minimising the impact on page load times.
 categories: [AJAX, JavaScript, DOM]
 ---
 ## The issue

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Choosing a colour scheme for the web
-excerpt: "Choosing a colour scheme, or swatch, is one of the first things you need to do in planning a design. Thankfully Adobe provides a number of tools that make creating and managing swatches simple. "
+description: "Choosing a colour scheme, or swatch, is one of the first things you need to do in planning a design. Thankfully Adobe provides a number of tools that make creating and managing swatches simple. "
 categories: [Design, Photoshop]
 ---
 ## Different approaches to colour schemes

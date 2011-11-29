@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Sass is a beautiful thing
-excerpt: Sass, or Syntactically Awesome Stylesheets, is a great tool to make managing CSS files more intelligent and easier to maintain. 
+description: Sass, or Syntactically Awesome Stylesheets, is a great tool to make managing CSS files more intelligent and easier to maintain. 
 categories: [Rails, Ruby, CSS]
 ---
 

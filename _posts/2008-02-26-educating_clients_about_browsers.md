@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Educating clients about browsers
-excerpt: "Recently I have had some success in changing browser usage within a client network. Here's a short summary of what I have learnt. "
+description: "Recently I have had some success in changing browser usage within a client network. Here's a short summary of what I have learnt. "
 categories: [Browsers, Opinion]
 ---
 ## A disclaimer

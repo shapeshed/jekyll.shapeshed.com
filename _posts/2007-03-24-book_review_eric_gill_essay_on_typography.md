@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "Book Review : Eric Gill - Essay on Typography"
-excerpt: "First published in 1931 Eric Gill's short book is as much an essay on culture as it is Typography. A brilliant book this still influences modern design with interesting relevance to the web.  "
+description: "First published in 1931 Eric Gill's short book is as much an essay on culture as it is Typography. A brilliant book this still influences modern design with interesting relevance to the web.  "
 categories: [Typography, Book Reviews]
 ---
 <abbr class="dtreviewed" title="20070324T0930">Mar 24th, 2007</abbr>

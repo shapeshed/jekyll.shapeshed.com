@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: In bed with HTML5, CSS3 and Jekyll
-excerpt: I've redesigned my portfolio site to take advantage of HTML5, CSS3 and Jekyll, a static site generator.
+description: I've redesigned my portfolio site to take advantage of HTML5, CSS3 and Jekyll, a static site generator.
 categories: [HTML5, CSS3, Ruby, Personal]
 ---
 ## Oh no - not again! 

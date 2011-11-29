@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Using PHP to enhance CSS
-excerpt: "With a bit of PHP you can add an additional layer of logic to your CSS. You might choose to add seasonality to your site or change the layout entirely.  You are limited only by your imagination. "
+description: "With a bit of PHP you can add an additional layer of logic to your CSS. You might choose to add seasonality to your site or change the layout entirely.  You are limited only by your imagination. "
 categories: [CSS, PHP]
 ---
 ## An example

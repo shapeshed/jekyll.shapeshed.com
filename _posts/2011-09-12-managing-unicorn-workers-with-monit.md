@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Managing Unicorn Workers with Monit
-excerpt: A walkthrough on how to manage Unicorn worker processes using Monit
+description: A walkthrough on how to manage Unicorn worker processes using Monit
 categories: 
 - Unix 
 - Rails 

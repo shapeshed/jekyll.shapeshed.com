@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Dotted lines in Photoshop
-excerpt: Designing for the web in Photoshop has one thing missing - dotted lines. Here's how to create dotted lines so you can show clients how links will look.
+description: Designing for the web in Photoshop has one thing missing - dotted lines. Here's how to create dotted lines so you can show clients how links will look.
 categories: [Design, Photoshop]
 ---
 ## No dotted line preset

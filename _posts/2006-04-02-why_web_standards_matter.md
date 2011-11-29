@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Why Web Standards Matter
-excerpt: "At Shape Shed we have a philosophy of hand coding websites to International Standards. Why go to the trouble of validating code? This article explains why and outlines the benefits we can give to our clients as a result. "
+description: "At Shape Shed we have a philosophy of hand coding websites to International Standards. Why go to the trouble of validating code? This article explains why and outlines the benefits we can give to our clients as a result. "
 categories:  [Web Standards]
 ---
 ## The problem

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Colour sampling outside Photoshop
-excerpt: Here a simple tip that will save time if you need to sample colours from outside Photoshop for use in your artwork.
+description: Here a simple tip that will save time if you need to sample colours from outside Photoshop for use in your artwork.
 categories: [Photoshop]
 ---
 ## An admission

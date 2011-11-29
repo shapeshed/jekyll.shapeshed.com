@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Writing Good XHTML and CSS Part 2
-excerpt: The second in a series of good practices for writing XHTML and CSS looking at writing clean, maintainable code and dealing with browser hell problems.
+description: The second in a series of good practices for writing XHTML and CSS looking at writing clean, maintainable code and dealing with browser hell problems.
 categories: [CSS, XHTML]
 ---
 In [Part 1][1] we went over the production environment you will need to write Professional XHTML and CSS. This included software and hardware as some excellent extensions you can get for the [Firefox browser][2]. Part two looks at good practices for writing maintainable and lasting code. 

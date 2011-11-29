@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: WebKit to support font-face
-excerpt: The news that the open source browser engine WebKit is to follow Opera and support font-face is great news for web typography. But more work needs to be done by the web community, browser manufacturers and font foundries.
+description: The news that the open source browser engine WebKit is to follow Opera and support font-face is great news for web typography. But more work needs to be done by the web community, browser manufacturers and font foundries.
 categories: [Typography, Browsers, Opinion]
 ---
 ## What's new

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Windows Vista and XP Dual Boot
-excerpt: Today I successfully completed a dual installation of Windows XP and Windows Vista Beta. I've now got a PC that will boot to either operating system. This is great for being able to test things on either platform with a variety of browsers.
+description: Today I successfully completed a dual installation of Windows XP and Windows Vista Beta. I've now got a PC that will boot to either operating system. This is great for being able to test things on either platform with a variety of browsers.
 categories: [Microsoft]
 ---
 ![image][1]

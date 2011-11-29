@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Setting up Puppet on Ubuntu 10.04
-excerpt: A walkthrough of setting up a basic Puppet configuration on Ubuntu 10.04 LTS
+description: A walkthrough of setting up a basic Puppet configuration on Ubuntu 10.04 LTS
 categories: [Unix, Puppet, Ubuntu]
 ---
 

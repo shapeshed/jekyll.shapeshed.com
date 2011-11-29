@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "Book Review: Don't Make Me Think - Steve Krug"
-excerpt: "Don't Make Me Think is a solid dose of common sense at a time when hype is back on the Web Design menu. It is a gem of a book that tells you what you already know but too often overlook. "
+description: "Don't Make Me Think is a solid dose of common sense at a time when hype is back on the Web Design menu. It is a gem of a book that tells you what you already know but too often overlook. "
 categories: [Book Reviews, Usability]
 ---
 <abbr class="dtreviewed" title="20070127T1100">Jan 27, 2007</abbr>

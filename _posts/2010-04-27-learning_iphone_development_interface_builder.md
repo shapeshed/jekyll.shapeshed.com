@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Learning iPhone Development - Interface Builder
-excerpt: I'm following along with the Stanford University iPhone development Winter 2009 course. In this article I walk-through assignment 1A and create a simple view using Interface Builder. 
+description: I'm following along with the Stanford University iPhone development Winter 2009 course. In this article I walk-through assignment 1A and create a simple view using Interface Builder. 
 categories: [iPhone, Objective-C]
 ---
 

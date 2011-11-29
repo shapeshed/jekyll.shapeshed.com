@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Abstracting the design layer
-excerpt: Abstracting the entire front-end layer may seem like a drastic measure but with some excellent tools available there are compelling reasons to do it. 
+description: Abstracting the entire front-end layer may seem like a drastic measure but with some excellent tools available there are compelling reasons to do it. 
 categories: [HTML, CSS, JavaScript]
 ---
 

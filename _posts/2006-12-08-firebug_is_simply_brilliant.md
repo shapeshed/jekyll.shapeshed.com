@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Firebug is simply brilliant
-excerpt: "Software comes and goes and rarely is there a piece of 'must have' software. Firebug, an extension for Firefox, deserves to be to be heralded as an outstanding piece of software and something no web developer should be without. "
+description: "Software comes and goes and rarely is there a piece of 'must have' software. Firebug, an extension for Firefox, deserves to be to be heralded as an outstanding piece of software and something no web developer should be without. "
 categories: [CSS, XHTML]
 ---
 ## Making web development easier

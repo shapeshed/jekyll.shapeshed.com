@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Mac motifs on Windows Messenger Live design
-excerpt: I don't think I'll be the only one to notice that the design of <a href="http://imagine-msn.com/messenger/launch80/default.aspx?locale=en-us?source=spotlightmain">Windows Messenger Live</a> seems to be heavily influenced by Mac design even down to the OSX style motifs in the background.
+description: I don't think I'll be the only one to notice that the design of <a href="http://imagine-msn.com/messenger/launch80/default.aspx?locale=en-us?source=spotlightmain">Windows Messenger Live</a> seems to be heavily influenced by Mac design even down to the OSX style motifs in the background.
 categories: [Microsoft, Apple]
 ---
 ![Mac Motifs on Windows Messenger][1]

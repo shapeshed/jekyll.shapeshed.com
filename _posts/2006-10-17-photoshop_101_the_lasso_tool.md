@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photoshop 101 - The Lasso Tool
-excerpt: |
+description: |
   The Lasso Tool is another invaluable tool for making selections. For those with an unsteady hand or a hangover the Magnetic Lasso Tool will also save serious time in cutting out selections. 
 
 categories: [Photoshop, Photoshop 101]

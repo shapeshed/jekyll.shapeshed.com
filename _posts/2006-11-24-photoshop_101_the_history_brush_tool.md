@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photoshop 101 - The History Brush Tool
-excerpt: The History Brush Tool allows you to paint and reveal previous states of images. This can be very useful in creating effects.
+description: The History Brush Tool allows you to paint and reveal previous states of images. This can be very useful in creating effects.
 categories: [Photoshop, Photoshop 101]
 ---
 ## Revealing previous states of images

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Setting up Git for multiple developers
-excerpt: How to set up git for multiple developers with granular access permissions
+description: How to set up git for multiple developers with granular access permissions
 categories: git
 ---
 

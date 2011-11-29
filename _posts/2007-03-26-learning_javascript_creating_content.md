@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Learning Javascript - Creating Content
-excerpt: Using Javascript and the DOM you can create content on the fly. You can also make sure that if Javascript is turned off things won't go wrong.
+description: Using Javascript and the DOM you can create content on the fly. You can also make sure that if Javascript is turned off things won't go wrong.
 categories: [JavaScript, DOM]
 ---
 ## Creating content

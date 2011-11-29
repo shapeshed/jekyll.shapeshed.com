@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: The Benefits of Usablity, Accessibility and Web Standards
-excerpt: "Sourcing a professional web developer can be daunting task for clients. This article is a guide for clients and outlines the many benefits of employing a professional Agency focussing on Usability, Accessiblity and Web Standards. "
+description: "Sourcing a professional web developer can be daunting task for clients. This article is a guide for clients and outlines the many benefits of employing a professional Agency focussing on Usability, Accessiblity and Web Standards. "
 categories: [Web Standards, Accessibility, Usability]
 ---
 ## Usability

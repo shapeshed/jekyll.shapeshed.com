@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: The browser market is still broken
-excerpt: The current state of the browser market is harming the development of the web and things need to change
+description: The current state of the browser market is harming the development of the web and things need to change
 categories: [Browsers, Opinion]
 ---
 

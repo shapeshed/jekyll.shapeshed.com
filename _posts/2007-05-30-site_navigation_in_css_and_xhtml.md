@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Site Navigation in CSS and XHTML
-excerpt: Coding navigation in CSS and XHTML properly is important for both search engines and accessibility. Here's my take on how to do it, although I would be very interested to hear what others think.
+description: Coding navigation in CSS and XHTML properly is important for both search engines and accessibility. Here's my take on how to do it, although I would be very interested to hear what others think.
 categories: [CSS, XHTML]
 ---
 Not interested in the explanation? [See the demo][1] and [download the source code here][2]

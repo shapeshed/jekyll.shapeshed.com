@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Securing upload folders in PHP on Unix Servers
-excerpt: On many sites upload folders are set to 777 permissions. For many developers this is the easiest and quickest way of allowing Content Management Systems to upload files to the server. A more secure method is too use 755 permissions. <br />
+description: On many sites upload folders are set to 777 permissions. For many developers this is the easiest and quickest way of allowing Content Management Systems to upload files to the server. A more secure method is too use 755 permissions. <br />
 categories: [PHP]
 ---
 

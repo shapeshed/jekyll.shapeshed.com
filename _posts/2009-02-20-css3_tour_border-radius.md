@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "CSS3 Tour: border-radius"
-excerpt: "Border-radius allows you to create rounded corners with just CSS without the need for graphics or JavaScript. If you are not using it yet here's an explanation. "
+description: "Border-radius allows you to create rounded corners with just CSS without the need for graphics or JavaScript. If you are not using it yet here's an explanation. "
 categories: [CSS, Browsers]
 ---
 Not interested in the explanation? Head straight to [the example page.][1]

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: First WSG London Event
-excerpt: "I was very pleased to be able to attend the first Web Standards Group event in London that was very well organised by <a href=\"http://muffinresearch.co.uk/about/\">Stuart</a> at Muffin Research. I discovered two excellent speeches and a community intent on not resting on their laurels. "
+description: "I was very pleased to be able to attend the first Web Standards Group event in London that was very well organised by <a href=\"http://muffinresearch.co.uk/about/\">Stuart</a> at Muffin Research. I discovered two excellent speeches and a community intent on not resting on their laurels. "
 categories: [Web Standards]
 ---
 This was the first time I've attended a meetup and I didn't really know what to expect.

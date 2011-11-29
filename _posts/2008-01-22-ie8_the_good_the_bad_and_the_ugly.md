@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: IE8 - The Good, The Bad and The Ugly
-excerpt: "The news that IE8 is considering using meta tags to determine rendering modes is a bad idea from everyone's perspective and Microsoft should reconsider.  "
+description: "The news that IE8 is considering using meta tags to determine rendering modes is a bad idea from everyone's perspective and Microsoft should reconsider.  "
 categories: [Browsers, Microsoft, Opinion]
 ---
 ## IE8 - The Good

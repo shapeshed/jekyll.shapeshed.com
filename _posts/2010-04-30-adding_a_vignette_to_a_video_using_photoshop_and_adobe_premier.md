@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Adding a vignette to a video using Photoshop and Abobe Premier
-excerpt: How to create a vignette frame in Photoshop and add it to a video using Adobe Premier
+description: How to create a vignette frame in Photoshop and add it to a video using Adobe Premier
 categories: [Photoshop]
 ---
 

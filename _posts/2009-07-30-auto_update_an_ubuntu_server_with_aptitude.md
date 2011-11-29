@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Auto update an Ubuntu Server with Aptitude
-excerpt: How to keep software up-to-date automatically on Ubuntu Server using Aptitude
+description: How to keep software up-to-date automatically on Ubuntu Server using Aptitude
 categories: [Ubuntu, Linux]
 ---
 ## Usual disclaimer

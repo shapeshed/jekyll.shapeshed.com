@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Adding SFTP Users with a limited Shell in CentOS 5.2
-excerpt: A quick way to add SFTP users with a limited shell in CentOS
+description: A quick way to add SFTP users with a limited shell in CentOS
 categories: [Linux]
 ---
 ## FTP or SFTP?

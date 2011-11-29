@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Working with scans in Photoshop
-excerpt: Photoshop comes with a handy feature that allows you to quickly crop and use scanned images or sketches.
+description: Photoshop comes with a handy feature that allows you to quickly crop and use scanned images or sketches.
 categories: [Photoshop]
 ---
 ## Scanned images

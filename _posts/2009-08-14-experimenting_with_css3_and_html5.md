@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Experimenting with CSS3 and HTML5
-excerpt: I've been creating more and more code examples and increasingly using GitHub for sharing code. I wanted to experiment with a few things so I <a href="http://shapeshed.github.com/">created a site</a> on <a href="http://pages.github.com/">GitHub pages</a>.
+description: I've been creating more and more code examples and increasingly using GitHub for sharing code. I wanted to experiment with a few things so I <a href="http://shapeshed.github.com/">created a site</a> on <a href="http://pages.github.com/">GitHub pages</a>.
 categories: [CSS3, HTML5, JavaScript, CSS, Design]
 ---
 [![Experimental Site on Github Pages][1]][2] 

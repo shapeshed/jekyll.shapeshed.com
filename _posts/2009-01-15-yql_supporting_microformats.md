@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: YQL supporting microformats
-excerpt: If you missed the post on the Yahoo Developer Network blog, YQL now supports microformats. This is a great addition to the YQL.
+description: If you missed the post on the Yahoo Developer Network blog, YQL now supports microformats. This is a great addition to the YQL.
 categories: [Yahoo]
 ---
 ## Yahoo Query Language

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: IE6 Notice - Encourage users to upgrade IE6
-excerpt: "IE6 is evil and must die so I've created IE6 Notice a 2kb JavaScript file that adds a notice to sites encouraging users to upgrade from IE6. "
+description: "IE6 is evil and must die so I've created IE6 Notice a 2kb JavaScript file that adds a notice to sites encouraging users to upgrade from IE6. "
 categories: [Browsers, Microsoft, Web Standards]
 ---
 ## What it is 

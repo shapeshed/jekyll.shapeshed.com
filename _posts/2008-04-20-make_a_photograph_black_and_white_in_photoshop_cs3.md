@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Make a photograph black and white in Photoshop CS3
-excerpt: Until recently I'd been using desaturate to convert photographs to black and white in Photoshop. In fact there is a much better non-destructive method.
+description: Until recently I'd been using desaturate to convert photographs to black and white in Photoshop. In fact there is a much better non-destructive method.
 categories: [Design, Photoshop]
 ---
 ## New for CS3

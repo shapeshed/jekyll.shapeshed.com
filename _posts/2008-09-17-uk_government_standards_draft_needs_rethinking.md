@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: UK Government standards draft needs rethinking
-excerpt: The UK Govenrnment's Central Office of Information has published a <a href="http://www.coi.gov.uk/documents/guidance/browser-standards-draft-v0-13.pdf">Browser Standards Draft</a> suggesting browser support should be based on usage. The draft document has misinterpreted the browser market and needs to be reconsidered.
+description: The UK Govenrnment's Central Office of Information has published a <a href="http://www.coi.gov.uk/documents/guidance/browser-standards-draft-v0-13.pdf">Browser Standards Draft</a> suggesting browser support should be based on usage. The draft document has misinterpreted the browser market and needs to be reconsidered.
 categories: [Browsers, Opinion, Yahoo]
 ---
 ## Much to admire

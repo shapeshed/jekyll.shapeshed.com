@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photoshop 101 - The Pen Tool
-excerpt: "My favorite tool of all the pen tool allows you maximum control over drawing shapes and paths. It can be a little tricky to master at first but once you are up and running you won't look back. "
+description: "My favorite tool of all the pen tool allows you maximum control over drawing shapes and paths. It can be a little tricky to master at first but once you are up and running you won't look back. "
 categories: [Photoshop, Photoshop 101]
 ---
 

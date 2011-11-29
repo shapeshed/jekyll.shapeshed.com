@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Batch resizing in Photoshop
-excerpt: If you have lots of images you want to resize Photoshop can take care of it for you. Using Actions and Automate you can do it once then put your feet up. Here's how it works.
+description: If you have lots of images you want to resize Photoshop can take care of it for you. Using Actions and Automate you can do it once then put your feet up. Here's how it works.
 categories: [Design, Photoshop]
 ---
 ## The scenario

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Setting up local websites on Snow Leopard
-excerpt: A short tutorial on setting up local websites on Snow Leopard.
+description: A short tutorial on setting up local websites on Snow Leopard.
 categories: [OSX, Apache, PHP]
 ---
 Not keen on the command line? Using something like [MAMP][1] may be a better option for you. I'm using vi to edit the files but feel free to use your text editor of choice (TextMate, emacs etc). 

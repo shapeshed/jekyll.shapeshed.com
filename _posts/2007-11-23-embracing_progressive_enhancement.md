@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Embracing progressive enhancement
-excerpt: Striving to make sites the same cross-browser at the presentation and behaviour layers is a bad philosophy for the web and for the browser market. Instead designers and developers should embrace Progressive Enhancement and accept a lesser experience for less capable browsers.
+description: Striving to make sites the same cross-browser at the presentation and behaviour layers is a bad philosophy for the web and for the browser market. Instead designers and developers should embrace Progressive Enhancement and accept a lesser experience for less capable browsers.
 categories: [Browsers, Opinion, Web Standards]
 ---
 ## What is progressive enhancement?

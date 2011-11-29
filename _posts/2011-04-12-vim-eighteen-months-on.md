@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Vim eighteen months on
-excerpt: I switched to Vim for editing text about 18 months ago. Here's an overview of my experience.
+description: I switched to Vim for editing text about 18 months ago. Here's an overview of my experience.
 categories: [Unix, Vim]
 ---
 

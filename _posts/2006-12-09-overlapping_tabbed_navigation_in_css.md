@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Overlapping tabbed navigation in CSS
-excerpt: A tutorial showing how overlapping tabbed navigation is possible in CSS and can be cross-browser compatible, accessible and javascript free.
+description: A tutorial showing how overlapping tabbed navigation is possible in CSS and can be cross-browser compatible, accessible and javascript free.
 categories: [CSS]
 ---
 Not interested in the explanation? You can find the [demo and download the source code here.][1]

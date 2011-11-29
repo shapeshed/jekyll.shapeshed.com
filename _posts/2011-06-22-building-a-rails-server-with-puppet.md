@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Building a Rails server with Puppet
-excerpt: A short write up of my experience learning and configuring Puppet to build and manage servers to serve Rails applications.
+description: A short write up of my experience learning and configuring Puppet to build and manage servers to serve Rails applications.
 categories: 
 - Puppet
 - Unix

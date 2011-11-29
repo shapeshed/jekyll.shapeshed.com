@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Rounding edges in Illustrator
-excerpt: Using a simple technique you can round the edges of pretty much anything in Illustrator. Furthermore with the Graphic Styles Panel you can reuse your style over and over again.
+description: Using a simple technique you can round the edges of pretty much anything in Illustrator. Furthermore with the Graphic Styles Panel you can reuse your style over and over again.
 categories: [Illustrator, Design]
 ---
 Here's the [Illustrator file][1] for these examples

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Can the traditional agency last?
-excerpt: More and more websites are not just supporting businesses; they are the business. Is the traditional agency model dead or is it just time for an evolution?
+description: More and more websites are not just supporting businesses; they are the business. Is the traditional agency model dead or is it just time for an evolution?
 categories: [Opinion, Strategy]
 ---
 ## Agency Model 1.0

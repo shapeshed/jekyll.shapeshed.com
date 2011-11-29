@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Vienna - A Great Free Mac Newsreader
-excerpt: I have been looking around for a good Newsreader for the Mac for a while now. There are many out there on the market. Here's a quick overview
+description: I have been looking around for a good Newsreader for the Mac for a while now. There are many out there on the market. Here's a quick overview
 categories: [Apple, RSS]
 ---
 ![Vienna Screenshot][1]

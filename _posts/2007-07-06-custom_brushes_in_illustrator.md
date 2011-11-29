@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Custom brushes in Illustrator
-excerpt: Custom Brushes in Illustrator are an excellent way to add to designs. Here's a short tutorial how they work and how to use them.
+description: Custom Brushes in Illustrator are an excellent way to add to designs. Here's a short tutorial how they work and how to use them.
 categories: [Illustrator, Design]
 ---
 In this tutorial we are going to show how to create a simple brush that will create a starry sky for a nighttime illustration. This tutorial will focus on scatter brushes.

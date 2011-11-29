@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Illustrator 101 - The Twirl Tool
-excerpt: "The twirl tool is a great tool that can make complex and eye-catching objects in no time. Here's one way to use it. "
+description: "The twirl tool is a great tool that can make complex and eye-catching objects in no time. Here's one way to use it. "
 categories: [Illustrator 101, Illustrator, Design]
 ---
 Here's what we are going to get to. It is a simple wallpaper design.

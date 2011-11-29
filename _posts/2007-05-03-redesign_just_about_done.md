@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Redesign just about done
-excerpt: Apart from a huge amount of client work I've been working on a redesign of shapeshed.com. With a few things to clean up it goes into the wild today.
+description: Apart from a huge amount of client work I've been working on a redesign of shapeshed.com. With a few things to clean up it goes into the wild today.
 categories: [Personal, Design]
 ---
 ## Focussing on typography

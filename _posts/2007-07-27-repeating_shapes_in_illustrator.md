@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Repeating shapes in Illustrator
-excerpt: "Here's a simple tip I came across for quickly creating repeating shapes in Illustrator. Give it a try it. "
+description: "Here's a simple tip I came across for quickly creating repeating shapes in Illustrator. Give it a try it. "
 categories: [Illustrator, Design]
 ---
 ## The effect

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: 10 Steps to Better CSS
-excerpt: |
+description: |
   Coding CSS can quickly get out of control. By following a few simple guidelines you can make your life a lot easier.
 
 categories: [CSS]

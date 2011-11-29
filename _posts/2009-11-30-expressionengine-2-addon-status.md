@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: ExpressionEngine 2 add-on status
-excerpt: An overview of the compatibility of my ExpressionEngine add-ons for the 2.0 release
+description: An overview of the compatibility of my ExpressionEngine add-ons for the 2.0 release
 categories: [ExpressionEngine]
 published: true
 ---

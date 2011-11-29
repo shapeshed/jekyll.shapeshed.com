@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Prevent your SSH connection from freezing
-excerpt: "Recently I was finding that my SSH connection to a Media Temple (dv) Centos 5 server was freezing. Creating a local config file fixed it. For anyone else suffering the same problem here's how to do it. "
+description: "Recently I was finding that my SSH connection to a Media Temple (dv) Centos 5 server was freezing. Creating a local config file fixed it. For anyone else suffering the same problem here's how to do it. "
 categories: [Media Temple, Linux]
 ---
 ## The Issue

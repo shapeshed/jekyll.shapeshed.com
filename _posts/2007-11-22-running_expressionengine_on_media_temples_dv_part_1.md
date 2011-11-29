@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Running ExpressionEngine on Media Temple's (dv) Part 1
-excerpt: In a series of articles I'm going to look at running ExpressionEngine on Media Temple's (dv) Base Server and optimising both ExpressionEngine and the server for optimum performance.
+description: In a series of articles I'm going to look at running ExpressionEngine on Media Temple's (dv) Base Server and optimising both ExpressionEngine and the server for optimum performance.
 categories: [Apache, ExpressionEngine, Media Temple]
 ---
 Like many web developers I use [Plesk][1] on Media Temple's [(dv) Base server][2]. Owing to growing popularity of this blog the server is straining a little. I've followed the excellent articles over at [David Seah's site][3] and also the [performance optimsation tips][4] on the Media Temple site with good results. But I was still getting memory issues. Whilst the tips are specific to a Media Temple (dv) 3 server they should be good for most linux distros. I must stress I take no responsibility for using this article. Use at your own risk. Everyone is here to learn so if you feel you can add something please do so by leaving a comment. 

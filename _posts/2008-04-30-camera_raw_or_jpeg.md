@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Camera RAW or JPEG?
-excerpt: |
+description: |
   If your camera can shoot in RAW format should you be using it? Here's a quick overview of the difference and what you can do with the RAW format in Photoshop.
 
 categories: [Photoshop]

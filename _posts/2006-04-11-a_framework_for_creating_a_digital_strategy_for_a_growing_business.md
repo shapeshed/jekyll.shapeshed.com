@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Creating A Digital Strategy For A Growing Business
-excerpt: Forming an online strategy can be a daunting task. Typically the task is given to individuals who do not have a huge amount of experience in the digital environment. But by following a simple process good results can be achieved without the need for technical expertise.
+description: Forming an online strategy can be a daunting task. Typically the task is given to individuals who do not have a huge amount of experience in the digital environment. But by following a simple process good results can be achieved without the need for technical expertise.
 categories:  [Strategy]
 ---
 ## The process

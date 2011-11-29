@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Illustrator 101 - Opacity Masks
-excerpt: Opacity Masks are all over the web. Here's a short tutorial on how they work in Illustrator and how you can use them in your designs.
+description: Opacity Masks are all over the web. Here's a short tutorial on how they work in Illustrator and how you can use them in your designs.
 categories: [Illustrator 101, Illustrator]
 ---
 ## Creating highlights

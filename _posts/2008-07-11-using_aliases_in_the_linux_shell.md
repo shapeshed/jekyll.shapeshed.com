@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Using Aliases in the Linux Shell
-excerpt: Creating aliases to use in the command line is a simple way to increase productivity and shows the simplicity and power of using the shell. Here's how to do it.
+description: Creating aliases to use in the command line is a simple way to increase productivity and shows the simplicity and power of using the shell. Here's how to do it.
 categories: [Linux]
 ---
 This tutorial is written for Centos 5.2 and bash, but should work on most linux distributions. 

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Windows Vista User Interface Design
-excerpt: If you haven't seen the Windows Vista site I think you should have a look. I'm quite impressed with it. For a moment I was quite excited at seeing a strong design used with tableless layout. What was a shame was that the site failed to validate. It wouldn't take much effort to get the site through the validator either.
+description: If you haven't seen the Windows Vista site I think you should have a look. I'm quite impressed with it. For a moment I was quite excited at seeing a strong design used with tableless layout. What was a shame was that the site failed to validate. It wouldn't take much effort to get the site through the validator either.
 categories: [Microsoft, Apple]
 ---
 ![Vista Aero][1]

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Two new Yahoo goodies
-excerpt: "Two new goodies worth a look were released this week. The first Fire Eagle allows applications to access details of your location. The second is a preview of the update to the YUI the Yahoo interface library. "
+description: "Two new goodies worth a look were released this week. The first Fire Eagle allows applications to access details of your location. The second is a preview of the update to the YUI the Yahoo interface library. "
 categories: [Yahoo]
 ---
 ## Another Sugar Daddy

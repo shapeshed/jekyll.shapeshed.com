@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Microsoft and IE8 default behaviour
-excerpt: "Microsoft has changed its mind about the proposal to use a meta tag to trigger IE8 to use the standards rendering mode. "
+description: "Microsoft has changed its mind about the proposal to use a meta tag to trigger IE8 to use the standards rendering mode. "
 categories: [Browsers, Microsoft, Opinion]
 ---
 ## A change of mind

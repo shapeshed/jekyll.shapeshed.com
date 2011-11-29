@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Learning Javascript - Keeping Markup Clean
-excerpt: Like many front end developers I've come to Javascript late. Of course I could go and grab one of the many Javascript libraries out there. But I'm making an effort to learn Javascript. Thankfully it isn't as hard as you might think.
+description: Like many front end developers I've come to Javascript late. Of course I could go and grab one of the many Javascript libraries out there. But I'm making an effort to learn Javascript. Thankfully it isn't as hard as you might think.
 categories: [JavaScript, DOM]
 ---
 ## Learning Javascript

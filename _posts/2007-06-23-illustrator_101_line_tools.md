@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Illustrator 101 - Line Tools
-excerpt: The line tools offer you flexibility to draw anything from straight lines to spirals. Hidden within the menu you will also find tools to draw rectangles and polar grids.
+description: The line tools offer you flexibility to draw anything from straight lines to spirals. Hidden within the menu you will also find tools to draw rectangles and polar grids.
  [Illustrator 101, Illustrator]
 ---
 ## A simple line

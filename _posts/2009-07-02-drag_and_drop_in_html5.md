@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Drag and drop in HTML5
-excerpt: "HTML 5 has the ability to create drag and drop events. This example only works in Firefox 3.5 and Safari 4 but here's a quick tour of how it works. "
+description: "HTML 5 has the ability to create drag and drop events. This example only works in Firefox 3.5 and Safari 4 but here's a quick tour of how it works. "
 categories: [HTML5]
 ---
 Not interested in the explanation? Go straight to the [demo page][1] or [download the source code][2] from Github

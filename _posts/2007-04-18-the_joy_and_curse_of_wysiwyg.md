@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: The joy and curse of WYSIWYG
-excerpt: Allowing sites to be updated by non-technical staff is essential. WYSIWYG editors are a must in Content Management Systems, but can cause frustration too.
+description: Allowing sites to be updated by non-technical staff is essential. WYSIWYG editors are a must in Content Management Systems, but can cause frustration too.
 categories: [Typography, CSS, XHTML]
 ---
 ## HTML for everyone

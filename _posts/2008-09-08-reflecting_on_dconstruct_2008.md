@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Reflecting on dConstruct 2008
-excerpt: My first attendance at dConstruct found a well organised conference and thought-provoking speeches.
+description: My first attendance at dConstruct found a well organised conference and thought-provoking speeches.
 categories: [dconstruct08, Conferences, Opinion]
 ---
 ## Steven Johnson

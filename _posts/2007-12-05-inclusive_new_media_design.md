@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Inclusive New Media Design
-excerpt: In January I will taking part in a research project aiming to identify the best ways to encourage designers and developers to make websites accessible to people with intellectual disabilities.
+description: In January I will taking part in a research project aiming to identify the best ways to encourage designers and developers to make websites accessible to people with intellectual disabilities.
 categories: [Accessibility]
 ---
 ## The Project

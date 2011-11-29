@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photoshop 101 - Burn, Dodge and Sponge Tools
-excerpt: More art-working tools that come straight from the darkroom to Photoshop. You can use these to fine tune your images and correct malformed exposure.
+description: More art-working tools that come straight from the darkroom to Photoshop. You can use these to fine tune your images and correct malformed exposure.
 categories: [Photoshop, Photoshop 101]
 ---
 ## Straight from the darkroom

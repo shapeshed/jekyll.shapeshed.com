@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Looking through grid-tinted glasses
-excerpt: Grids are everywhere in the world. Appreciating grids can give you a visual language to understand how many designs work and in my opinion can help you greatly improve your own designs.
+description: Grids are everywhere in the world. Appreciating grids can give you a visual language to understand how many designs work and in my opinion can help you greatly improve your own designs.
 categories: [Design]
 ---
 ## Grids, Grids, Grids

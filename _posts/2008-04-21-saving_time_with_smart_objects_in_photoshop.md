@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Saving time with Smart Objects in Photoshop
-excerpt: Smart Objects can save you a great deal of time if you are designing for the web in Photoshop. Furthermore they allow you to manipulate images without destroying the original.
+description: Smart Objects can save you a great deal of time if you are designing for the web in Photoshop. Furthermore they allow you to manipulate images without destroying the original.
 categories: [Design, Photoshop]
 ---
 ## What are Smart Objects?

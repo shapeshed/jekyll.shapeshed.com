@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: What's wrong with Plesk
-excerpt: "Increasingly I'm growing disillusioned with Plesk and SWsoft the company behind it. For me it is a stagnant product and a lack of competition is the root cause. "
+description: "Increasingly I'm growing disillusioned with Plesk and SWsoft the company behind it. For me it is a stagnant product and a lack of competition is the root cause. "
 categories: [Media Temple, Plesk, Linux, Opinion]
 ---
 ## The good part

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: 10 Steps to Improving Usability
-excerpt: "Nobody likes a website they cannot use. Usability, or making a site easy to use, is the holy grail of web design. It is impossible to please everyone but by taking sensible steps you can significantly improve the usability of your site. "
+description: "Nobody likes a website they cannot use. Usability, or making a site easy to use, is the holy grail of web design. It is impossible to please everyone but by taking sensible steps you can significantly improve the usability of your site. "
 categories: [Usability]
 ---
 ## Simple standards based design

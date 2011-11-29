@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Using the iPhone alarm
-excerpt: "Coming from a Nokia I found it frustrating that you can't completely turn an iPhone off at night and be woken by the alarm. Thankfully there is a workaround. "
+description: "Coming from a Nokia I found it frustrating that you can't completely turn an iPhone off at night and be woken by the alarm. Thankfully there is a workaround. "
 categories: [iPhone, Apple]
 ---
 ## The problem

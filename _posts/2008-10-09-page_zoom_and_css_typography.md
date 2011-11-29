@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Page zoom and CSS typography
-excerpt: With most browsers now using Page Zoom rather than just enlarging text is this the end of the road for em based typography?
+description: With most browsers now using Page Zoom rather than just enlarging text is this the end of the road for em based typography?
 categories: [Browsers, CSS, Opinion]
 ---
 ## Em based typography

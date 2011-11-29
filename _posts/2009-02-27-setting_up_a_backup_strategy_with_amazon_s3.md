@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Setting up a backup strategy with Amazon S3
-excerpt: "I've recently put a fairly rigorous backup procedure in place for local, staging and production servers. Partly so I don't forget I've written up the process. "
+description: "I've recently put a fairly rigorous backup procedure in place for local, staging and production servers. Partly so I don't forget I've written up the process. "
 categories: [Linux]
 ---
 <h3>The setup</h3>

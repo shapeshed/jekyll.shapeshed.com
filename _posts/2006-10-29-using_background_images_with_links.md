@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Using background images with links
-excerpt: Associating icons with links can in my opinion be a powerful design device. With a small amount of CSS it is simple to add icons into your links.
+description: Associating icons with links can in my opinion be a powerful design device. With a small amount of CSS it is simple to add icons into your links.
 categories: [CSS]
 ---
 To apply an icon to links in CSS you use background-image. Although you should use icons on links sparingly icons can greatly improve the usability of a site. In this example we have a link that goes to a journal entry page. Make an icon using Illustrator, Photoshop or your favorite imaging software. Make sure that it relates well to the size of the text it appears next to. Here I've made a simple pencil: ![Pencil icon][1]

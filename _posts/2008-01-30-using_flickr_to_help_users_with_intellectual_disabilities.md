@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Using Flickr to help users with Intellectual Disabilities
-excerpt: |
+description: |
   I'm currently taking part in a study at the University of East London looking at making the web more accessible to users with Intellectual Disabilities. Along with Lisa Haskel I'm looking at ways to use image library APIs to help improve accessibility for ID users.
 
 categories: [AJAX, JavaScript, DOM, Accessibility]

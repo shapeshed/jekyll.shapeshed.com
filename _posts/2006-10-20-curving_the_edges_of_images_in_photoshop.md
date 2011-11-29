@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Curving The Edges of Images in Photoshop
-excerpt: "I get a lot of search engine referrals from people looking to create curved images or curved rectangles in Photoshop. So here's a quick tutorial to show you how. "
+description: "I get a lot of search engine referrals from people looking to create curved images or curved rectangles in Photoshop. So here's a quick tutorial to show you how. "
 categories: [Design, Photoshop]
 ---
 **UPDATE 15/02/07**: Quite a few people seem to have been having trouble with this so I've added a video at the bottom. There are some good comments below too that should help you if you have difficulties

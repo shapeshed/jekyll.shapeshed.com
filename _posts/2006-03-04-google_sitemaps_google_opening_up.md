@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Google Sitemaps. Google opening up?
-excerpt: Google&rsquo;s patent filing started the inevitable process of Google being more transparent in the way it conducts its business. Slowly but surely Google is beginning to help web developers to produce sites that help Google to do its job, namely indexing the internet. The Google Sitemaps site describes clearly what Google would like you to do. After modifying a config file, a bit of root access and a cron job you can be there in minutes.
+description: Google&rsquo;s patent filing started the inevitable process of Google being more transparent in the way it conducts its business. Slowly but surely Google is beginning to help web developers to produce sites that help Google to do its job, namely indexing the internet. The Google Sitemaps site describes clearly what Google would like you to do. After modifying a config file, a bit of root access and a cron job you can be there in minutes.
 categories: [SEO, Google]
 ---
 

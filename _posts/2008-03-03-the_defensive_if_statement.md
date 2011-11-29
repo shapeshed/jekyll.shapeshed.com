@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: The Defensive If Statement
-excerpt: The if statement is probably the most common in any programming language. But using it with a defensive philosphy can make applications more bulletproof and extensible.
+description: The if statement is probably the most common in any programming language. But using it with a defensive philosphy can make applications more bulletproof and extensible.
 categories: [Opinion]
 ---
 ## A hostile environment

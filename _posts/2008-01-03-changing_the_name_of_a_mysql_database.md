@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Changing the name of a MySQL database
-excerpt: MySQL doesn't currently support altering the name of a database using SQL so here's a workaround.
+description: MySQL doesn't currently support altering the name of a database using SQL so here's a workaround.
 categories: [MySQL]
 ---
 ## Support added then removed

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Mobile sites are more than mini-mes
-excerpt: Mobile versions of websites can be better than their bigger, richer web versions. Moreover user-focussed, task-driven mobile sites can inform and improve their bigger brothers.
+description: Mobile versions of websites can be better than their bigger, richer web versions. Moreover user-focussed, task-driven mobile sites can inform and improve their bigger brothers.
 categories: [Opinion, Design]
 ---
 ## Task-driven on steroids

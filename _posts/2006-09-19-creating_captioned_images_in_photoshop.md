@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Creating Captioned Images in Photoshop
-excerpt: In creating a website branding is as important as any other discipline. One of the techniques I like to use to evoke brand messages is to use captioned images. Using a photoshop and a bit of knowledge of masks and opacity you can have a powerful brand motif in no time.
+description: In creating a website branding is as important as any other discipline. One of the techniques I like to use to evoke brand messages is to use captioned images. Using a photoshop and a bit of knowledge of masks and opacity you can have a powerful brand motif in no time.
 categories: [Photoshop]
 ---
 ## Choosing the image

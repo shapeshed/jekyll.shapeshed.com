@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "Book Review: Cascading Style Sheets - Eric Meyer"
-excerpt: "Eric Meyer's book is a thorough technical guide to the ins and outs of CSS.  The book is a classic but won't offer much creative inspiration. What you will find is a thorough technical explanation of the ins and outs of CSS. "
+description: "Eric Meyer's book is a thorough technical guide to the ins and outs of CSS.  The book is a classic but won't offer much creative inspiration. What you will find is a thorough technical explanation of the ins and outs of CSS. "
 categories: [Book Reviews]
 ---
 <abbr class="dtreviewed" title="20070124T0700">Jan 24, 2007</abbr>

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Bored by Web 2.0 Design
-excerpt: "Glossy buttons, reflective logos and beta buttons are everywhere. Designers have become magpies taking anything shiny and using it without thinking whether it makes a website better. "
+description: "Glossy buttons, reflective logos and beta buttons are everywhere. Designers have become magpies taking anything shiny and using it without thinking whether it makes a website better. "
 categories: [Opinion, Design]
 ---
 ## Web 2.0 design 

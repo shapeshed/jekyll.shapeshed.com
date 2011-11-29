@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "Book Review: Prioritizing Web Usability"
-excerpt: Neilsen delivers another brilliant book full of timely advice to help avoid common usability mistakes. A must read.
+description: Neilsen delivers another brilliant book full of timely advice to help avoid common usability mistakes. A must read.
 categories: [Book Reviews, Usability]
 ---
 <abbr class="dtreviewed" title="20070127T1100">Jan 27, 2007</abbr>

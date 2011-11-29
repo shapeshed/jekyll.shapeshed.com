@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Learning from Inclusive New Media Design
-excerpt: Last week I attended the final session of Inclusive New Media design, a project at the Rix Centre, The University of East London. I'm sure the project team will be publishing their findings in due course, but until then here is what I learned from the study.
+description: Last week I attended the final session of Inclusive New Media design, a project at the Rix Centre, The University of East London. I'm sure the project team will be publishing their findings in due course, but until then here is what I learned from the study.
 categories: [Accessibility]
 ---
 ## Not the same

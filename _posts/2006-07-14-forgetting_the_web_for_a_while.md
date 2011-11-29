@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Forgetting the Web For a While
-excerpt: |+
+description: |+
   Not that I'm complaining about how well work is going but it has been great over the last few days to get on my bike and forget about the web for a while. I discovered a great tow-path that goes from Putney Bridge all the way to Richmond. The tow-path is good enough for road bikes to go down and some of the views were just great.
   
 categories: [Personal]

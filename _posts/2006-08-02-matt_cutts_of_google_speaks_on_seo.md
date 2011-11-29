@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Matt Cutts Of Google Speaks On SEO
-excerpt: Matt Cutts of Google has published six videos where he speaks on SEO from Google's perspective (well his own but he works there). He gives some interesting insights and offers a few recommendations. Most of the recommendations we know about but it is good to hear them from the horse's mouth.
+description: Matt Cutts of Google has published six videos where he speaks on SEO from Google's perspective (well his own but he works there). He gives some interesting insights and offers a few recommendations. Most of the recommendations we know about but it is good to hear them from the horse's mouth.
 categories: [SEO,Google]
 ---
 *   Make sure your site is crawlable. Use Lynx to see how search engines will see the site and ensure you can navigate it with a text browser.

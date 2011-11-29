@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Reflecting on two years in business
-excerpt: "The end of the tax year marks my second full year in business. Shape Shed has come a long way but there is much more to do. "
+description: "The end of the tax year marks my second full year in business. Shape Shed has come a long way but there is much more to do. "
 categories: [Personal]
 ---
 ## A good choice

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Back Buttons and POST data
-excerpt: An overview of how to stop browser warning messages appearing to users
+description: An overview of how to stop browser warning messages appearing to users
  [PHP]
 ---
 I had a problem whereby users were returning to a page to which POST data had already been submitted and were receiving an ugly message from the browser saying that their POST data had expired. 

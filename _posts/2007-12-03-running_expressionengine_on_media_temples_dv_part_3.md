@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Running ExpressionEngine on Media Temple's (dv) Part 3
-excerpt: In the final part of the series we look at how to optimise the front end code on your site and cut response times by up to 50%.
+description: In the final part of the series we look at how to optimise the front end code on your site and cut response times by up to 50%.
 categories: [ExpressionEngine, JavaScript, CSS, XHTML, Media Temple]
 ---
 ## Optimising front end code

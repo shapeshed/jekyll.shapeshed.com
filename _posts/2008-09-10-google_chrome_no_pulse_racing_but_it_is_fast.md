@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Google Chrome - no pulse racing but it is fast
-excerpt: Last week Google launched a new web browser <a href="http://www.google.com/chrome">Google Chrome</a>. Built to facilitate the next generation of web applications the browser is an exciting newcomer to the market that wins on performance and features but looks like 'my first web browser'.
+description: Last week Google launched a new web browser <a href="http://www.google.com/chrome">Google Chrome</a>. Built to facilitate the next generation of web applications the browser is an exciting newcomer to the market that wins on performance and features but looks like 'my first web browser'.
 categories: [Browsers, Google, Opinion]
 ---
 ## Built on open source software

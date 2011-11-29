@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Safer Linux administration with sudo
-excerpt: "The root account is all powerful in Linux. As humans make mistakes it is very dangerous to use root on a regular basis. By using sudo you can limit the risk of human error and prevent mistakes from happening. "
+description: "The root account is all powerful in Linux. As humans make mistakes it is very dangerous to use root on a regular basis. By using sudo you can limit the risk of human error and prevent mistakes from happening. "
 categories: [Linux]
 ---
 ## Using root in Linux

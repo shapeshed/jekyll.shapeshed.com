@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photoshop 101 - The Healing Brush Tool
-excerpt: |
+description: |
   Primarily an artworking and retouching tool, the Healing Brush allows you to correct blemishes and errors and remove parts of your photos and images. 
 
 categories: [Photoshop, Photoshop 101]

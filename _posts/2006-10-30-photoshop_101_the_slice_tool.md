@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photoshop 101 - The Slice Tool
-excerpt: For precise interpretation of PSDs to XHTML I recommend avoiding this tool. But there may well be a time when you can use this tool so here's a quick overview.
+description: For precise interpretation of PSDs to XHTML I recommend avoiding this tool. But there may well be a time when you can use this tool so here's a quick overview.
 categories: [Photoshop, Photoshop 101]
 ---
 I do not recommend using this tool for creating web pages from PSDs. A more useful tool for slicing up PSDs is the [Marquee Tool][1]

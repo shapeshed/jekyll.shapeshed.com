@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Illustrator 101 - The Magic Wand Tool
-excerpt: No wizards just a solid tool that allows you to select objects based on defined criteria and make quick changes to your drawings and illustrations.
+description: No wizards just a solid tool that allows you to select objects based on defined criteria and make quick changes to your drawings and illustrations.
 categories: [Illustrator 101, Illustrator]
 ---
 <h3>Les Dawson - a great comedian</h3>

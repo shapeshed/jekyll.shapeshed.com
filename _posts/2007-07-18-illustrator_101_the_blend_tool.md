@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Illustrator 101 - The Blend Tool
-excerpt: The blend tool is a great way to build out shapes and design elements in Illustrator. Here's a quick overview of how it works and some techniques to apply.
+description: The blend tool is a great way to build out shapes and design elements in Illustrator. Here's a quick overview of how it works and some techniques to apply.
 categories: [Illustrator 101, Illustrator, Design]
 ---
 ## What the blend tool does

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Beginning iPhone Development
-excerpt: I've recently started to learn to develop for the iPhone and iPad platforms. There are plenty of resources available for beginners and if it helps anyone I'm listing them here.
+description: I've recently started to learn to develop for the iPhone and iPad platforms. There are plenty of resources available for beginners and if it helps anyone I'm listing them here.
 categories: [iPhone, Objective-C]
 ---
 

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: An Explanation of RSS (Really Simple Syndication)
-excerpt: A non-technical explantion of RSS (Really Simple Syndication) for clients and anyone else who is interested.
+description: A non-technical explantion of RSS (Really Simple Syndication) for clients and anyone else who is interested.
 categories: [RSS]
 ---
 			

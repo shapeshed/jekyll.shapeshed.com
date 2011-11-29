@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: New UK Postal Prices Will Impact Online Businesses
-excerpt: "Recent changes to postal prices in the UK will make online buinesses less competitive. "
+description: "Recent changes to postal prices in the UK will make online buinesses less competitive. "
 categories: [Opinion]
 ---
 The UK's postal service the [Royal Mail][1] has today moved to [a new pricing model][2]. The model combines both weight and size to calculate the price of the postage.

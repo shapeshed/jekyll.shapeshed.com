@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: User testing with intellectually disabled users
-excerpt: Two days of user testing with a group of users from <a href="http://www.ellingham.org.uk/">Ellingham Employment Services</a> was invaluable in learning about how intellectually disabled users use the internet.
+description: Two days of user testing with a group of users from <a href="http://www.ellingham.org.uk/">Ellingham Employment Services</a> was invaluable in learning about how intellectually disabled users use the internet.
 categories: [Accessibility]
 ---
 ## Inclusive New Media Design

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Ubuntu v OSX smackdown
-excerpt: In the left corner is my beloved OSX. In the right corner is Ubuntu, the Open Source upstart. Let battle commence..
+description: In the left corner is my beloved OSX. In the right corner is Ubuntu, the Open Source upstart. Let battle commence..
 categories: [Ubuntu, Linux, Apple]
 ---
 ## Round one - Appearance

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Illustrator 101 - The Lasso Tool
-excerpt: The final selection tool this allows you to select using a freehand shape. Very useful for intricate drawings it can be much quicker than the other selection tools.
+description: The final selection tool this allows you to select using a freehand shape. Very useful for intricate drawings it can be much quicker than the other selection tools.
 categories: [Illustrator 101, Illustrator]
 ---
 ## Freehand selection

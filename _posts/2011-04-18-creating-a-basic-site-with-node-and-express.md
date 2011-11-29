@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Creating a basic site with node.js and Express
-excerpt: A walkthrough on how to create and deploy a basic site with node.js and the Express framework
+description: A walkthrough on how to create and deploy a basic site with node.js and the Express framework
 categories: 
 - Node.js
 - JavaScript

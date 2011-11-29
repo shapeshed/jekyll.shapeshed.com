@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Deploying ExpressionEngine with Git and Capistrano
-excerpt: "A tutorial on how to publish an ExpressionEngine website using Git and Capistrano. "
+description: "A tutorial on how to publish an ExpressionEngine website using Git and Capistrano. "
 categories: [Linux, ExpressionEngine]
 ---
 <h3>Prerequisites</h3>

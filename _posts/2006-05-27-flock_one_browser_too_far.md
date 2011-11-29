@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Flock - One browser too far?
-excerpt: After my browser love-in yesterday I was reminded of <a href="http://www.flock.com">Flock</a>. It was launched as preview in late 2005. Built on Mozilla's open source code the business model was to gain market share by offering users an excellent experience. What was that excellent experience? Well not much - RSS, easy blogging and maybe instant messaging. Errr.... what's different from most of the other major browsers?
+description: After my browser love-in yesterday I was reminded of <a href="http://www.flock.com">Flock</a>. It was launched as preview in late 2005. Built on Mozilla's open source code the business model was to gain market share by offering users an excellent experience. What was that excellent experience? Well not much - RSS, easy blogging and maybe instant messaging. Errr.... what's different from most of the other major browsers?
 categories: [Browsers]
 ---
 ![Flock Image][1]

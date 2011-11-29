@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: 10 Tips for Good Web Copy
-excerpt: "Well written copy is often overlooked but is an integral part of a successful website. Here are 10 tips to tighten up your copy. "
+description: "Well written copy is often overlooked but is an integral part of a successful website. Here are 10 tips to tighten up your copy. "
 categories: [Copy]
 ---
 ## Keep it short

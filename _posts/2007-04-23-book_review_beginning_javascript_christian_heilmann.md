@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "Book Review : Beginning Javascript - Christian Heilmann"
-excerpt: "Christian Heilmann's book is a great grounding for exploring Javascript further. It covers best practice techniques and solutions to real world problems.  "
+description: "Christian Heilmann's book is a great grounding for exploring Javascript further. It covers best practice techniques and solutions to real world problems.  "
 categories: [JavaScript, DOM, Book Reviews]
 ---
 <span class="reviewer vcard" id="reviewer-vcard">

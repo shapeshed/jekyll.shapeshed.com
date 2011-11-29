@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Apple iPhone - Another small object of desire
-excerpt: |
+description: |
   Whilst on my travels today I came across this photo of an Apple iPod phone.  Yes please is all I can say. It seems that the development is not going too well and that an initial release of Q3 2006 may be delayed until 2007. 
 
 categories: [Apple]
