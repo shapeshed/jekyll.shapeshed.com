@@ -32,6 +32,7 @@ node -v
 v0.4.5
 npm -v
 1.0.1rc7
+```
 
 You'll see I'm using the RC of version 1 of npm. I encourage you to install this as this will soon become the default.
 
@@ -152,7 +153,7 @@ This is a common template we can reuse. The line `section#wrapper!= body` pulls 
 
 Again Express is agnostic to what you use to generate your CSS - you can use vanilla CSS but for this example I'm using [Stylus][20]. This is very similar to [Sass][30] and supports variables, mixins, functions and more. I really like it! Here's an example from our stylesheet
 
-``` stylus
+``` 
 body
   font 62.5%/1.5  Helvetica, Arial, "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif
   text-align center
