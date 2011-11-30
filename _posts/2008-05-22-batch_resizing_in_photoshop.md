@@ -30,12 +30,7 @@ On the options you want to select your Action under Play - Action (pick the one 
 
 If you feel you've missed something watch the video. If you'd like the HD version you'll have to [watch it on Vimeo.][4]
 
-<object width="400" height="300">	
-<param name="allowfullscreen" value="true" />	
-<param name="allowscriptaccess" value="always" />	
-<param name="movie"
-value="http://www.vimeo.com/moogaloop.swf?clip_id=1050103&amp;server=www.vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" />	
-<embed src="http://www.vimeo.com/moogaloop.swf?clip_id=1050103&amp;server=www.vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="300"></embed></object><br /><a href="http://www.vimeo.com/1050103?pg=embed&sec=1050103">Batch resizing in Photoshop</a> from <a href="http://www.vimeo.com/user472031?pg=embed&sec=1050103">George Ornbo</a> on <a href="http://vimeo.com?pg=embed&sec=1050103">Vimeo</a>.
+<iframe src="http://player.vimeo.com/video/1050103?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><p><a href="http://vimeo.com/1050103">Batch resizing in Photoshop</a> from <a href="http://vimeo.com/shapeshed">George Ornbo</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 
  [1]: /images/articles/create_new_action.jpg
  [2]: /images/articles/stop_action.jpg
