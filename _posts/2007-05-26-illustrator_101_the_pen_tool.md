@@ -38,7 +38,6 @@ Creativetechs have produced a great cheat sheet for this tool. You can [get a co
 In the video below I've drawn a face. But there are areas I am not happy with. So I am going to use the Direct Selection tool to fix a few things.
 
 <iframe src="http://player.vimeo.com/video/32964527?title=0&amp;byline=0&amp;portrait=0" width="640" height="480" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><p><a href="http://vimeo.com/32964527">Illustrator 101 - The Pen Tool</a> from <a href="http://vimeo.com/shapeshed">George Ornbo</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
-<video controls>
 
  [1]: /images/articles/pen_line.jpg "Drawing a line using the pen tool"
  [2]: /images/articles/pen_curve_copy.jpg "Anchor and direction points"
