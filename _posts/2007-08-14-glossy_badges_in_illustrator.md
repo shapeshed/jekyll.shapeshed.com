@@ -32,11 +32,7 @@ Finally round the edges a little by going to Filter > Stylize > Round Corners. I
 
 Now we need to add the gloss so it is time for the good old Opacity Mask. First create a highlight shape. I like to use a circle and then use the Direct Selection Tool to achieve this. Have a look at the video below for how I create the shape. It helps me to turn Smart Guides on so if you want that go to View > Smart Guides. Once you have the shape label the layer. I've called mine "curve" in the download. 
 
-<video controls>
-  <source src="/movies/mp4/create_highlight.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-  <source src="/movies/ogv/create_highlight.ogv" type='video/ogg; codecs="theora, vorbis"' />
-  To view this video you need the latest version of <a href="http://www.apple.com/safari/">Safari</a>, <a href="http://www.mozilla.com/firefox/">Firefox</a> or <a href="http://www.google.com/chrome">Chrome</a>. Alterantively download the videos and watch them offline. <a href="/movies/mp4/create_highlight.mp4">Windows / Mac (mp4)</a>, <a href="/movies/ogv/create_highlight.ogv">Linux (ogv)</a>
-</video>
+<iframe src="http://player.vimeo.com/video/32934091?title=0&amp;byline=0&amp;portrait=0" width="640" height="436" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><p><a href="http://vimeo.com/32934091">Glossy Badges in Illustrator</a> from <a href="http://vimeo.com/shapeshed">George Ornbo</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 
 Now copy the inner star that you have drawn and paste it in front of the original (Edit > Paste in Front). Call this layer "highlight". Now make sure you have the correct layer selected and give your copy have a white fill. No call up the transparency menu and in the fly-out menu in the top right click Make Opacity Mask. Now go back to your layer "curve" and copy this. Return to the opacity mask and paste it in to show the highlight. Add a gradient to complete the effect. This is a little complex so watch the video below if you are struggling. Sorry for the poor video - it is the best I can do at the moment!
 

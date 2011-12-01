@@ -4,8 +4,6 @@ title: Curving The Edges of Images in Photoshop
 description: "I get a lot of search engine referrals from people looking to create curved images or curved rectangles in Photoshop. So here's a quick tutorial to show you how. "
 categories: [Design, Photoshop]
 ---
-**UPDATE 15/02/07**: Quite a few people seem to have been having trouble with this so I've added a video at the bottom. There are some good comments below too that should help you if you have difficulties
-
 ## Curved rectangles
 
 Curved rectanges are simple - there is tool in photoshop that will create the shape for you. You can access this tool by pressing U. This selects the Custom Shape Tool. To create a curved rectangle you need the Rounded Rectangle Tool, which is the second one down.
@@ -54,12 +52,7 @@ You can use any shape to create a Vector mask so why not explore the elements wi
 
 ### Still don't get it? Watch the movie!
 
-<video controls>
-  <source src="/movies/mp4/curving.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-  <source src="/movies/ogv/curving.ogv" type='video/ogg; codecs="theora, vorbis"' />
-  To view this video you need the latest version of <a href="http://www.apple.com/safari/">Safari</a>, <a href="http://www.mozilla.com/firefox/">Firefox</a> or <a href="http://www.google.com/chrome">Chrome</a>. Alterantively download the videos and watch them offline. <a href="/movies/mp4/curving.mp4">Windows / Mac (mp4)</a>, <a href="/movies/mp4/curving.mp4">Linux (ogv)</a>
-</video>
-
+<iframe src="http://player.vimeo.com/video/32934122?title=0&amp;byline=0&amp;portrait=0" width="640" height="370" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><p><a href="http://vimeo.com/32934122">Curving the Edges of Images in Photoshop</a> from <a href="http://vimeo.com/shapeshed">George Ornbo</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 
  [1]: /images/articles/rectangle_tool.jpg "The Curved Rectangle Tool"
  [2]: /images/articles/curved_rectangles.png "Examples of Curved Rectangles"
