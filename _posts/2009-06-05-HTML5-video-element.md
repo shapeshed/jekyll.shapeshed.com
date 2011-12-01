@@ -14,10 +14,11 @@ Current best practice is to use [SWFObject][2] to write a player like the [JW FL
 
 Enter HTML 5 and the video element. No need to use a third party player - video is available within the HTML specification. Here's how you would add a video to your page: 
 
-{% highlight html %}<video src="/video/your_video.ogg" controls="true">
+``` html 
+<video src="/video/your_video.ogg" controls="true">
 Your browser doesnt support the video tag. You can <a href="/video/your_video.ogg">download the video here.</a>
 </video>
-{% endhighlight %}
+```
 
 The following attributes are available:
 

@@ -29,14 +29,15 @@ During the life of an upgrade it is possible that errors will occur and that pat
 
 When you are ready upload the maintenance page to your server. Check it is ok. We will now hide the site and redirect everyone to the maintenance page using an .htaccess file. Using a texteditor create the following file and save it as .htaccess 
 
-{% highlight apache %}# Don't redirect the redirect
+``` apache 
+# Don't redirect the redirect
 RewriteCond %{REQUEST_URI} !/maintenance.html$
 # Allow access to the stylesheet
 RewriteCond %{REQUEST_URI} !/css/screen.css$
 # Allow access to the site from your IP
 RewriteCond %{REMOTE_HOST} !^000.000.000.000
 RewriteRule $ /maintenance.html [R=302,L]
-{% endhighlight %}
+```
 
 You need to replace 000.000.000.000 with your IP address. You can find out your IP address [here][1]. So if your IP address is 123.456.789.123 you should change it to 123.456.789.123. If you are using any image files on your maintenance page you will also need a rule to allow those files to be served.
 

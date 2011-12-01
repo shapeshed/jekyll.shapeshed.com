@@ -14,16 +14,19 @@ The more I explore HTML5 the more I feel that a browser based Operating System i
 
 To make an element draggable you can do this. 
 
-{% highlight html %}<li draggable="true" id="file1" ondragstart="drag(this, event)"><span>filename.txt</span></li>  
-{% endhighlight %}
+``` html 
+<li draggable="true" id="file1" ondragstart="drag(this, event)"><span>filename.txt</span></li>  
+```
 To create a draggable area you can do this. 
 
-{% highlight html %}<div id="trash" ondrop="drop(this, event)" ondragenter="return false" ondragover="return false"></div>    
-{% endhighlight %}
+``` html 
+<div id="trash" ondrop="drop(this, event)" ondragenter="return false" ondragover="return false"></div>    
+```
 
 Then you just need a bit of JavaScript to hook it all up 
 
-{% highlight javascript %}function drag(target, e) {
+``` javascript 
+function drag(target, e) {
     e.dataTransfer.setData('Text', target.id);
 }
 function drop(target, e) {
@@ -31,7 +34,7 @@ function drop(target, e) {
     target.appendChild(document.getElementById(id));
     e.preventDefault();
 } 
-{% endhighlight %}
+```
 
 ## A dose of CSS3
 

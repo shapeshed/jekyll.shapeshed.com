@@ -15,7 +15,9 @@ SFTP requires a standard Linux account which means that users can log into the b
 There are a few options to limit user accounts. The simplest is to change the SFTP user's shell to use the sftp server as a shell. In order to do this as root edit /etc/shells and add /usr/libexec/openssh/sftp-server.
 
 Then for the SFTP user change their shell to the SFTP server 
-{% highlight bash %} chsh -s /usr/libexec/openssh/sftp-server yoursftpuser {% endhighlight %} 
+``` bash 
+ chsh -s /usr/libexec/openssh/sftp-server yoursftpuser 
+``` 
 
 This means that the user will be able to use the SFTP server but nothing else.
 

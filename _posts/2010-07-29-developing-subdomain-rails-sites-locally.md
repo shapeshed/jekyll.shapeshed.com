@@ -14,7 +14,9 @@ The problem arises if you are developing an application that relies on subdomain
 
 To test subdomains you can just add a record to your hosts file. On Unix style systems you can generally find this at /etc/hosts
 
-{% highlight bash %}127.0.0.1   theateam.example.com{% endhighlight %}
+``` bash 
+127.0.0.1   theateam.example.com
+```
 
 This will resolve the domain to the application running on your localhost, but you'll still need to apply the port number. So accessing http://theateam.example.com:3000 will serve the site. You'll need to do the logic as to what to show based on the subdomain in your application of course. 
 
@@ -26,11 +28,15 @@ A much better way is to serve your site locally from Passenger. If you deploy us
 
 First you'll need to [install Passenger][1]. This is reasonably straightforward:
 
-{% highlight bash %}gem install passenger{% endhighlight %}
+``` bash 
+gem install passenger
+```
 
 Followed by 
 
-{% highlight bash %}passenger-install-apache2-module{% endhighlight %}
+``` bash 
+passenger-install-apache2-module
+```
 
 There will be some instructions after the second command that you'll need to add passenger.conf file. Once that's done you need to set up the virtual host.
 
@@ -38,7 +44,8 @@ I've covered [serving sites locally on OSX][2] before so if you need a brush up 
 
 [Tim Pope][4] recognised the problem of subdomains and [registered the domain smackaho.st][3] and pointed it to 127.0.0.1. This means it will resolve to your local machine without any configuration. This means that we can set up a virtual host based on this domain and use a wildcard to also serve subdomains on that domain. Here's how my virtual host setup looks:
 
-{% highlight apache %}<VirtualHost *:80>
+``` apache 
+<VirtualHost *:80>
         <Directory /Users/george/Sites/mysite>
         Options +FollowSymlinks +SymLinksIfOwnerMatch
         AllowOverride All
@@ -49,11 +56,13 @@ I've covered [serving sites locally on OSX][2] before so if you need a brush up 
         RackEnv development 
         # RailsEnv development # for Rails 2.x.x apps
 </VirtualHost>
-{% endhighlight %}
+```
 
 Restart Apache and you should be good to go
 
-{% highlight bash %}sudo apachectl restart{% endhighlight %}
+``` bash 
+sudo apachectl restart
+```
 
 Now any subdomain you visit on smackahost.st will be served from your Rails application. No need to keep adding subdomains to your hosts file. 
 

@@ -32,9 +32,13 @@ There are some useful comments in these articles here that can help you squeeze 
 
 Plesk is configured to start services on boot even if you are not using them so you can go through and disable them. To do this you remove execute permissions from the start up scripts in the /etc/init.d/ folder. So for example I'm not using the courier-imap service so the following command stops it from starting. 
 
-{% highlight bash %} chmod a-x /etc/init.d/courier-imap {% endhighlight %}
+``` bash 
+ chmod a-x /etc/init.d/courier-imap 
+```
 
-If I want to turn it back on at a later date I can just use {% highlight bash %} chmod a+x /etc/init.d/courier-imap {% endhighlight %}
+If I want to turn it back on at a later date I can just use ``` bash 
+ chmod a+x /etc/init.d/courier-imap 
+```
 
 Here are the services I disabled - remember I'm not using email on the (dv).
 

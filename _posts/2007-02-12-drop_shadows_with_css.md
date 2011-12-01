@@ -34,18 +34,20 @@ Save this out as a .png and preserve transparency and then a gif too. I've calle
 
 For the CSS we are going to create a div and use the image we have just created as a background image. I'm going to give it a class name of drop-shadow. I'm using a class rather than an id as we may wish to use it more than once on a page. 
 
-{% highlight css %}.drop-shadow
+``` css 
+.drop-shadow
     {
     margin: 20px;
     width:250px; 
     background: url(../images/drop_border.png) top left no-repeat;    
     float: right;
 }
-{% endhighlight %}
+```
 
 You will note that the div is being floated right and we have given it a margin too. This is so text will wrap nicely around it. The background image is of course the one we just created. Next comes the image itself: 
 
-{% highlight css %}.drop-shadow img
+``` css 
+.drop-shadow img
     {
     margin: 0px;
     padding: 5px;
@@ -53,13 +55,14 @@ You will note that the div is being floated right and we have given it a margin 
     height: 170px;
     float: left;
 }
-{% endhighlight %}
+```
 
 The padding of 5px allows a white border to show on all sides before the drop shadow. 
 
 Finally we want to add a caption: 
  
-{% highlight css %}.drop-shadow p
+``` css 
+.drop-shadow p
     {
     color: #666666;
     padding: 5px 5px 0px 0px;
@@ -67,34 +70,37 @@ Finally we want to add a caption:
     clear: left;
     font-style: italic;
 }
-{% endhighlight %}
+```
 
 ## XTHML
 
 Now for the markup. Quite simple really:  
 
-{% highlight html %}<div class="drop-shadow">
+``` html 
+<div class="drop-shadow">
   <img src="images/fitzroy.jpg" alt="My picture alt" title="My picture title" />
   <p>Every picture deserves a good caption. Thankfully with this method you can give it one.</p>    
 </div>
-{% endhighlight %}
+```
 
 ## To PNG or not to PNG
 
 I mentioned I would come back to the background image and why we save it as both a .png and a .gif. Internet Explorer 6 and below sadly do not support alpha transparencies. This is the nice see through bit on the drop shadow and why we use a .png file. You might decide to not save your drop shadow as a png but I choose to use a conditional stylesheet to give IE6 and below the dog food it deserves.  
 
-{% highlight html %}<!--[if lte IE 6]>
+``` html 
+<!--[if lte IE 6]>
   <link rel="stylesheet" href="css/ie6_and_below.css" type="text/css" media="screen" />
 <![endif]-->
-{% endhighlight %}
+```
 
 Then I put this rule in the IE 6 and below stylesheet so it gets a gif rather than a png  
 
-{% highlight html %}.drop-shadow
+``` html 
+.drop-shadow
     {
     background: url(../images/drop_border.gif) top left no-repeat;    
 }
-{% endhighlight %}
+```
 
 Make sure this comes after your main style sheet so it will override it in the cascade.
 

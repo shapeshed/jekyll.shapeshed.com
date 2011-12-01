@@ -14,16 +14,18 @@ categories: [Microformats, CSS, XHTML]
 
 <p>Take this example of contact details on a web page:</p>
 
-{% highlight html %}<p>George Ornbo</p>
+``` html 
+<p>George Ornbo</p>
 <p>Shape Shed</p>
 <p>email: george@shapeshed.com</p>
 <p>address: 22 Centre Square, 17 Hardwicks Way, London SW18 4AG, UK</p>
 <p>tel: +44 (0)2081419116</p>
-{% endhighlight %}
+```
 
 <p>Microformats sprinkle in some class names to give further semantic meaning to the code. They also allow other programs to access the information contained within the class names.  There is even a handy <a href="http://microformats.org/code/hcard/creator">hcard generator</a> to do the work for you. Otherwise you can review the <a href="http://microformats.org/wiki/hcard">hcard specification</a>. You can attach the class name to any element so you are free to use the full power of XHTML to display it. So now my contact details look like this:</p>
 
-{% highlight html %}<div class="vcard">
+``` html 
+<div class="vcard">
  <a class="url fn" href="http://www.shapeshed.com">George Ornbo</a>
  <div class="org">Shape Shed</div>
  <a class="email" href="mailto:george@shapeshed.com">george@shapeshed.com</a>
@@ -35,7 +37,7 @@ categories: [Microformats, CSS, XHTML]
  </div>
  <div class="tel">+44(0)208 1419116</div>
 </div>
-{% endhighlight %}
+```
 
 <p class="highlight">Have a look at <a href="http://www.shapeshed.com/examples/hcard/">the example page</a>. You can place this XHTML in the same page or a page anywhere on the web - it doesn't matter.</p>
 
@@ -44,8 +46,9 @@ categories: [Microformats, CSS, XHTML]
 
 <p>Now I've got my contact details in semantic code I can do things with it. Like send it to a page that will generate a vCard. This is what we use with the image link. <a href="http://suda.co.uk">Brian Suda</a> has a big Microformat brain and has written <a href="http://suda.co.uk/projects/X2V/">code to transfer an hCard on any page into a vCard</a>. Amazing. So to generate a vCard from my XTHML page I just send the details to the script with the link: http://suda.co.uk/projects/X2V/get-vcard.php?uri=http://www.shapeshed.com/examples/hcard/. The user doesn't care of course and they get my contact details in just one click.</p>
 
-{% highlight html %}<a href="http://suda.co.uk/projects/X2V/get-vcard.php?uri=http://www.shapeshed.com/examples/hcard/"><img src="/images/articles/hcard_example.jpg" alt="Add me to your address book" title="Add me to your address book" width="400" height="121" /></a>
-{% endhighlight %}
+``` html 
+<a href="http://suda.co.uk/projects/X2V/get-vcard.php?uri=http://www.shapeshed.com/examples/hcard/"><img src="/images/articles/hcard_example.jpg" alt="Add me to your address book" title="Add me to your address book" width="400" height="121" /></a>
+```
 
 <h3>Amazed? This is just the beginning</h3>
 

@@ -14,11 +14,14 @@ cURL can handle all of these and there are libraries for most of the major progr
 
 Let's say you want to check the response headers of a site. Easy using cURL.
 
-{% highlight bash %}curl -I http://www.telegraph.co.uk/{% endhighlight %}
+``` bash 
+curl -I http://www.telegraph.co.uk/
+```
 
 Outputs the HTTP response headers 
 
-{% highlight bash %}HTTP/1.1 200 OK
+``` bash 
+HTTP/1.1 200 OK
 Server: Apache
 Last-Modified: Tue, 11 Aug 2009 10:12:19 GMT
 ETag: 63-1249985539438
@@ -26,34 +29,37 @@ Content-Language: en-GB
 Content-Type: text/html;charset=ISO-8859-1
 Date: Tue, 11 Aug 2009 10:15:09 GMT
 Connection: keep-alive
-{% endhighlight %}
+```
 
 
 ## Profiling responsiveness
 
 cURL comes with a massive array of options. You can find these on [the manpage][2]. We can use some of these to profile the responsiveness a site. In this example we look at the Twitter API. 
 
-{% highlight bash %}curl -w '\nLookup time:\t%{time_namelookup}\nConnect time:\t%{time_connect}\nPreXfer time:\t%{time_pretransfer}\nStartXfer time:\t%{time_starttransfer}\n\nTotal time:\t%{time_total}\n' -o /dev/null -s http://twitter.com/statuses/public_timeline.xml  
-{% endhighlight %}
+``` bash 
+curl -w '\nLookup time:\t%{time_namelookup}\nConnect time:\t%{time_connect}\nPreXfer time:\t%{time_pretransfer}\nStartXfer time:\t%{time_starttransfer}\n\nTotal time:\t%{time_total}\n' -o /dev/null -s http://twitter.com/statuses/public_timeline.xml  
+```
 
 We are using a number of the variables available to show how long it took to resolve the domain name, how long it took to make the connection, the pretransfer time, then how long it took to start the transfer.
 
 The output we get is  
 
-{% highlight bash %}Lookup time:    0.024
+``` bash 
+Lookup time:    0.024
 Connect time:    0.181
 PreXfer time:    0.181
 StartXfer time:    0.554
 
 Total time:    1.591
-{% endhighlight %}
+```
 
 Nearly 1.6 seconds - that's pretty slow.
 
 You can even up your Twitter status using cURL if you want.
 
-{% highlight bash %}curl --basic --user "username:password" --data-ascii "status=dancing round in high heels" http://twitter.com/statuses/update.json 
-{% endhighlight %}
+``` bash 
+curl --basic --user "username:password" --data-ascii "status=dancing round in high heels" http://twitter.com/statuses/update.json 
+```
 
 cURL is a great tool for web developers and I'll certainly be using it more.
 

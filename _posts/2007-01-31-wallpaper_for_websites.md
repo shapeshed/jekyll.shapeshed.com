@@ -10,7 +10,8 @@ With a bit of simple CSS you can add wallpaper to a site quickly and easily. App
 
 ## XHTML 
 
-{% highlight html %}<html>
+``` html 
+<html>
 <head>
     <title>
          Your title here
@@ -23,11 +24,12 @@ With a bit of simple CSS you can add wallpaper to a site quickly and easily. App
     </div>
 </body>
 </html>
-{% endhighlight %}
+```
 
 ## CSS
 
-{% highlight css %}body
+``` css 
+body
     {
     font: 62.5%/1.5  "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
     background: url(../images/wallpaper.gif) repeat;
@@ -44,7 +46,7 @@ With a bit of simple CSS you can add wallpaper to a site quickly and easily. App
         background-color: #FFFFFF;
 }
 
-{% endhighlight %}
+```
 
 See this code in action [in the example][1]
 

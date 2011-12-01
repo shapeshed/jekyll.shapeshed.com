@@ -8,7 +8,9 @@ categories: [Browsers, Microsoft, Opinion]
 
 Back in January like many others [I blogged][1] about Microsoft's decision to use 
 
-{% highlight html %}<meta http-equiv="X-UA-Compatible" content="IE=8" />{% endhighlight %} 
+``` html 
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+``` 
 
 to tell Internet Explorer 8 that the page should be rendered in Standards Mode. Although the community was divided my opinion was that it was not the right decision. I'm pleased therefore that Microsoft have reconsidered this decision and have announced that IE8 [will render in Standards Mode by default][2]. The justification is based on the newly announced [Interoperability Principles][3] (which I also welcome).
 

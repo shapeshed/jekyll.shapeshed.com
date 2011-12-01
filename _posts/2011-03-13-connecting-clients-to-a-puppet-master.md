@@ -13,39 +13,50 @@ Following on from a [previous post][1] where I outlined how to set up a Puppet M
 
 For the purpose of this walkthrough I'm going to assume you have a working Puppet Master server as outlined in the [previous post][1]. I'm also assuming that you have a client server and that you have either have DNS set up of that you have amended the hosts files of each server so that each can ping the other by hostname. If you are using hosts files your /etc/hosts files should look something like this 
 
-{% highlight bash %}192.168.3.162 puppetmaster.example.com puppetmaster puppet
+``` bash 
+192.168.3.162 puppetmaster.example.com puppetmaster puppet
 192.168.3.165 puppetclient.example puppetclient
-{% endhighlight %} 
+``` 
 
 ## Connect client to server
 
 Once we can ping each server make sure the Puppet Master is running
 
-{% highlight bash %}sudo puppet master
-{% endhighlight %} 
+``` bash 
+sudo puppet master
+``` 
 
 Then we can connect from the client to the server
 
-{% highlight bash %}puppet agent --server puppetmaster --waitforcert 60 --test{% endhighlight %} 
+``` bash 
+puppet agent --server puppetmaster --waitforcert 60 --test
+``` 
 
 You should see 
 
-{% highlight bash %}info: Creating a new SSL certificate request for puppetclient{% endhighlight %} 
+``` bash 
+info: Creating a new SSL certificate request for puppetclient
+``` 
 
 Now on the server we can see the request that has come in with
 
 
-{% highlight bash %}puppet cert --list{% endhighlight %} 
+``` bash 
+puppet cert --list
+``` 
 
 You should see 'puppetclient'. Now we can sign the certificate with
 
-{% highlight bash %}puppet cert --sign puppetclient{% endhighlight %} 
+``` bash 
+puppet cert --sign puppetclient
+``` 
 
 The first time I did this I encountered [an issue][2] that complained that the hostname did not match the server certificate. This can be resolved by setting this explicitly in /etc/puppet/puppet.conf
 
-{% highlight bash %}[master]
+``` bash 
+[master]
     certname=puppetmaster
-{% endhighlight %} 
+``` 
 
 Now you should have both servers talking to each other and everything configured to start configuring the client with the Puppet Master. After a minute or so you should see the puppet client cache the certificate - this shows that everything is ok. 
 
@@ -56,10 +67,11 @@ Now you can start building modules to be sent to the client server. I started wi
 
 Then you can send modules to nodes that you manage. In /etc/puppet/manifests/nodes.pp add this
 
-{% highlight bash %}node puppetclient {
+``` bash 
+node puppetclient {
   include motd
 }
-{% endhighlight %}
+```
 
 When the client requests an update from the server it will be sent the new configuration and the motd will be updated. 
 

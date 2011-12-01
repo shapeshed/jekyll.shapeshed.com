@@ -14,13 +14,14 @@ Historically rounded corners [were tricky to implement][2] involving a backgroun
 
 Now you can create rounds corners easily using CSS. There is a bit of variance between browser vendors at the moment but I imagine eventually the syntax will standardise. To add rounded corners you just need: 
 
-{% highlight css %}/* Gecko browsers */
+``` css 
+/* Gecko browsers */
 -moz-border-radius: 5px; 
 /* Webkit browsers */
 -webkit-border-radius: 5px; 
 /* W3C syntax - likely to be standard so use for future proofing */
 border-radius:10px;
-{% endhighlight %}
+```
 
 ![Rounded Corner with CSS3][3] 
 
@@ -30,7 +31,8 @@ And that's all there is to it. Firefox did have some problems aliasing the corne
 
 You can even specify which corners have border-radius applied to them. Again the syntax is slightly different between browsers so you'll need to list both. 
 
-{% highlight css %}/* Gecko browsers */
+``` css 
+/* Gecko browsers */
 -moz-border-radius-topleft: 20px;
 -moz-border-radius-topright: 0;
 -moz-border-radius-bottomleft: 0;
@@ -47,7 +49,7 @@ border-top-left-radius: 20px;
 border-top-right-radius: 0;
 border-bottom-right-radius: 0;
 border-bottom-left-radius:  20px;
-{% endhighlight %}
+```
 
 ![Rounded corners in CSS3][4] 
 

@@ -34,8 +34,9 @@ At this stage the image is very square. If this is your preference then you are 
 
 Although these images will improve the appearance of your site they won't be read by screen readers unless you supply meaningful alt text. This is also good for search engine robots who will crawl your site. Make sure you use alt text on your images and if you wish the title tag: 
 
-{% highlight html %}<img src="/images/yourimage.jpg" alt="A picture of a Merry Go Round with text reading Your Text Here" alt="A picture of a Merry Go Round with text reading Your Text Here" width="502" height="314" /> 
-{% endhighlight %}
+``` html 
+<img src="/images/yourimage.jpg" alt="A picture of a Merry Go Round with text reading Your Text Here" alt="A picture of a Merry Go Round with text reading Your Text Here" width="502" height="314" /> 
+```
 
 ![A picture of a Merry Go Round with text reading Your Text Here][4]
 

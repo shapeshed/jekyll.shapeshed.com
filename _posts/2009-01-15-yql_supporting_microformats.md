@@ -12,12 +12,16 @@ If you haven't seen the [Yahoo Query Language][1] you should definitely check it
 
 Any developer who uses APIs on a regular basis knows that understanding and interrogating APIs is made more difficult by that fact that no standards exist for methods and syntax within APIs. YQL pulls together APIs to allow you to interrogate a variety of APIs through a standardised language. Yahoo call this YQL but for all intents and purposes it is SQL. So to query Flickr for photos of London that are geotagged you could use. 
 
-{% highlight sql %} select * from flickr.photos.search where has_geo="true" and text="london" {% endhighlight %} 
+``` sql 
+ select * from flickr.photos.search where has_geo="true" and text="london" 
+``` 
 
 This generates the REST query 
 
-{% highlight bash %}
-%}http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20flickr.photos.search%20where%20has_geo%3D%22true%22%20and%20text%3D%22london%22&format=xml{% endhighlight %}
+``` bash 
+
+%}http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20flickr.photos.search%20where%20has_geo%3D%22true%22%20and%20text%3D%22london%22&format=xml
+```
 
 You can use this to get data however you like - JavaScript, CLI, PHP or whichever server-side language you prefer.
 

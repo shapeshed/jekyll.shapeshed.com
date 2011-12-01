@@ -15,7 +15,8 @@ But all is not lost. You can still use HTML5 video for capable browsers and fall
 
 ## The markup
 
-{% highlight html %}<!--[if IE]>
+``` html 
+<!--[if IE]>
   <script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
 <![endif]-->
 <video id="player" controls>
@@ -36,7 +37,8 @@ But all is not lost. You can still use HTML5 video for capable browsers and fall
   swfobject.embedSWF("swf/player.swf", "player", "640", "480", "9.0.0", flashvars, params, attributes);
 
 </script>
-<![endif]-->{% endhighlight %}
+<![endif]-->
+```
 
 ## Explanation
 

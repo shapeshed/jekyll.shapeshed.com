@@ -8,10 +8,11 @@ categories: [HTML5, CSS3, Ruby, Personal]
 
 One of the main drivers of wanting to redesign was a desire to move to HTML5. The <a href="http://dev.w3.org/html5/spec/">specs</a> are coming along nicely and browser support is surprisingly good. Internet Explorer is the least HTML5 friendly (i.e. no support) but thankfully clever <a href="http://ejohn.org/blog/html5-shiv/">people</a> have <a href="http://remysharp.com/2009/01/07/html5-enabling-script/">already solved this</a>. By adding the following into your <code>&lt;head&gt;</code> element Internet Explorer will interpret HTML5 correctly. If you can sleep at night with the understanding that it won't work for IE users with no JavaScript then there is nothing stopping you. 
 
-{% highlight html %}<!--[if IE]>
+``` html 
+<!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-{% endhighlight %}
+```
 
 ## If you can see this...
 

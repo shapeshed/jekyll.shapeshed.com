@@ -18,18 +18,21 @@ Using the DOM and Javascript it is possible to add content into your page dynami
 
 First of all let's create some markup that we can use to hang our Javascript off. 
 
-{% highlight html %}<h1>Leaning Javascript - Creating content</h1>  
+``` html 
+<h1>Leaning Javascript - Creating content</h1>  
 <p><a href="non_js_content.html" id="trigger">Clicking this link will dynamically create content</a></p>  
 <div id="updateDiv">
     <h2>Update panel</h2>
     <p>A new paragraph will be added in here when the user clicks the link above</p>
-</div>{% endhighlight %}
+</div>
+```
 
 There are two ids here for the Javascript to hook into. The first is "trigger". This is the link that users will click to add content to the page. The second is "updateDiv". This is where the generated content will be appended. Note if Javascript is turned off then there is a link to take the user to another page. 
 
 ## The Javascript 
 
-{% highlight javascript %}function createContent() {
+``` javascript 
+function createContent() {
     
     // Start by declaring our variables
     var updateDiv; // The div we are putting the new content in
@@ -66,7 +69,7 @@ There are two ids here for the Javascript to hook into. The first is "trigger". 
         return false;
     }
 }
-{% endhighlight %}
+```
 
 Hopefully the comments should guide you through this. Basically we look for the updateDiv and trigger ids and then wait for the user to click the link. When the link is clicked the content is created and inserted. We use appendChild to put the newly created paragraph and text into the updateDiv container. 
 

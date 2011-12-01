@@ -10,7 +10,8 @@ So in case anyone else needs it here's a cron job that works for me on Unix. You
 
 This runs the scheduled task of generating a sitemap each day at 6am. 
 
-{% highlight bash %}0 6 * * * /enter/your/path/to/python /enter/your/path/to/sitemap/_gen.py --config=/enter/your/path/to/example/_config.xml
-{% endhighlight %}
+``` bash 
+0 6 * * * /enter/your/path/to/python /enter/your/path/to/sitemap/_gen.py --config=/enter/your/path/to/example/_config.xml
+```
 
  [1]: http://uk2.php.net/phpinfo

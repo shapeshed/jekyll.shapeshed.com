@@ -10,11 +10,15 @@ categories: [Ruby, Rails]
 
 First you need to install [Redis][7]. On OSX this is trivial with [homebrew][6]
 
-{% highlight bash %}brew install redis{% endhighlight %}
+``` bash 
+brew install redis
+```
 
 If you installed Redis with homebrew it spits out some helpful information about how to start Redis on boot or you can start the server with 
 
-{% highlight bash %}redis-server{% endhighlight %}
+``` bash 
+redis-server
+```
 
 The installation notes for Resque are excellent so I won't repeat them here - head over to the [README][8].
 
@@ -22,11 +26,15 @@ The installation notes for Resque are excellent so I won't repeat them here - he
 
 Resque ships with an great GUI that lets you track jobs and workers. To launch it from the root of your site run
 
-{% highlight bash %}resque-web{% endhighlight %}
+``` bash 
+resque-web
+```
 
 Then you'll probably want to spawn some workers
 
-{% highlight bash %}COUNT=5 QUEUE=* rake resque:workers{% endhighlight %}
+``` bash 
+COUNT=5 QUEUE=* rake resque:workers
+```
 
 In the GUI you should now see 5 workers waiting to do your bidding
 
@@ -38,7 +46,9 @@ Now you can start sending jobs to Resque and watch your workers eat them up. The
 
 There are a few issues to consider in production. Firstly if your Redis server is used by other applications you might want to specify a namespace for the application to use. You can do this by adding the following to an initialiser after Redis is configured.
 
-{% highlight ruby %}Resque.Redis.namespace = "resque:YourApp"{% endhighlight %}
+``` ruby 
+Resque.Redis.namespace = "resque:YourApp"
+```
 
 As Redis supports running multiple databases on a server it may be possible to specify which database to use but that wasn't a requirement for me. I couldn't find anything in the documentation about this. If anyone knows anything about this let me know and I'll update the post. 
 

@@ -37,11 +37,15 @@ Turns out that there is [an extension already written][3] for Barclays ePDQ. I'l
 
 There is [a handy file][4] that will profile your server and tell you if it is compatible. I run CentOS servers for both development and production and the version of PHP 5.1.6 was too old for Magento. Regrettably I had to use a third party yum repo to get a newer version. There's an excellently maintained [yum repository at Utter Ramblings][5]. Add this to /etc/yum.repos.d and then run: 
 
-{% highlight bash %}yum upgrade php{% endhighlight %}
+``` bash 
+yum upgrade php
+```
 
 I then found I didn't have the mycrypt extension. Running  
 
-{% highlight bash %}yum install php-mcrypt{% endhighlight %}
+``` bash 
+yum install php-mcrypt
+```
 
 fixed that. Remember to restart Apache once you have done this.
 
@@ -51,9 +55,10 @@ I chose to [install Magento via SSH][6] and it was extremely straightforward. If
 
 Then just proceed through the GUI installation by opening your site. I got stuck when entering the site URL with the error message:
 
-{% highlight bash %}Url "http://my.domain.com/" is not accessible  
+``` bash 
+Url "http://my.domain.com/" is not accessible  
 Unable to read response, or response is empty
-{% endhighlight %}
+```
 
 Yep - there is no DNS record for the domain so I needed to add that to my local DNS server or set it in the host file. 
 

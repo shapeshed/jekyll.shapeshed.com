@@ -12,7 +12,8 @@ Whether you are coding on the fly or from a layered Photoshop file it is importa
 
 Indent your code from the left edge to allow the reader to follow the flow of a document. In this example of a simple XHTML page indenting tags allows you to follow the page elements.
 
-{% highlight html %}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+``` html 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <title>Example XHTML Page</title>
@@ -27,16 +28,17 @@ Indent your code from the left edge to allow the reader to follow the flow of a 
     </div>
   </body>
 </html>
-{% endhighlight %}
+```
 
 The same is true for CSS files. Laying out your files in a consistent manner will help maintain a website in future.  
 
-{% highlight css %}body { 
+``` css 
+body { 
   font: 76%/150% "Lucida Grande", 
   "Lucida Sans", "Trebuchet MS", Tahoma, Verdana, sans-serif color: #333366; 
   background: url(/images/backgrounds/gradient.png) repeat-x; 
 }
-{% endhighlight %}
+```
 
 ## Comments are good
 
@@ -44,9 +46,13 @@ Indenting code will help you read a document but it won't help you understand wh
 
 It is easy to comment code as you go and it will save you time in the long run: 
 
-{% highlight css %}/* CSS Comment - I can use this to highlight sections of the CSS file or explain sections of code */ {% endhighlight %}
+``` css 
+/* CSS Comment - I can use this to highlight sections of the CSS file or explain sections of code */ 
+```
 
-{% highlight html %}<!-- An XTHML comment - I can use this to denote sections or reasons why I have coded things in a certain way -->{% endhighlight %}
+``` html 
+<!-- An XTHML comment - I can use this to denote sections or reasons why I have coded things in a certain way -->
+```
 
 ## Use DOCTYPES
 

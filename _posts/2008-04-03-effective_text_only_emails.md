@@ -12,7 +12,8 @@ Structuring your content is a general practice that applies to all emails. Place
 
 Dividing your text only email into sections is a good way of breaking up the communication. Although text only does not allow styling you still have a number of characters to divide the page up.  
 
-{% highlight bash %}=======================================================
+``` bash 
+=======================================================
 Section 1
 =======================================================
 Magnus es, domine, et laudabilis valde: magna virtus tua, et 
@@ -30,34 +31,37 @@ suam, circumferens testimonium peccati sui et testimonium.
 
 *******************************************************
 Footer content here
-{% endhighlight %}
+```
 
 ## Use lists
 
 You can still use lists in text only emails. A convention is to use asterisks. 
 
-{% highlight bash %}You should be happy because:
+``` bash 
+You should be happy because:
 * You have cake
 * You have tea
 * You have a job
-{% endhighlight %}
+```
 
 ## Put links on a new line
 
 Text only links will often be converted to blue links in many email clients. For email clients that do not convert links it is a good practice to put links on a new line if possible. This allows reader to see the link clearly and to follow it if they wish. If the link is not on a new line it can get lost in the other content.  
 
-{% highlight bash %}Taudare te vult homo, aliqua portio creaturae tuae, et  
+``` bash 
+Taudare te vult homo, aliqua portio creaturae tuae, et  
 circumferens testimonium peccati sui et testimonium.
 http://www.bbc.co.uk
-{% endhighlight %}
+```
 
 ## Calls to action
 
 You can still use calls to action in emails with punchy messages followed by links. 
 
-{% highlight bash %}20% OFF FOR NEW CUSTOMERS. BOOK NOW!
+``` bash 
+20% OFF FOR NEW CUSTOMERS. BOOK NOW!
 http://www.linktopage.com
-{% endhighlight %}
+```
 
 ## Keep it short
 

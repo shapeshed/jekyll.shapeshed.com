@@ -31,27 +31,37 @@ If you've got this far you should have installed gitosis ok and have set up the 
 
 Gitosis allows access using public keys so (assuming you are on OSX or Linux) you need to generate one if you don't have one
 
-{% highlight bash %}ssh-keygen -t rsa{% endhighlight %}
+``` bash 
+ssh-keygen -t rsa
+```
 
 This generates a public key on your local machine that you'll find in ./.ssh/id_rsa.pub
 
 Then you need to copy this file to the remote server (where you installed gitosis). The gitosis documentation recommends copying it to the /tmp folder so lets do that. Replace 'myuser@7123.456.789.0' with your server details. 
 
-{% highlight bash %}scp ~/.ssh/id_rsa.pub myuser@7123.456.789.0:~/tmp{% endhighlight %}
+``` bash 
+scp ~/.ssh/id_rsa.pub myuser@7123.456.789.0:~/tmp
+```
 
 Once copied over on the remote machine import the key for the git user 
 
-{% highlight bash %}sudo -H -u git gitosis-init < /tmp/id_rsa.pub{% endhighlight %}
+``` bash 
+sudo -H -u git gitosis-init < /tmp/id_rsa.pub
+```
 
 Finally the documentation advises use to make sure the post-update hook is executable
 
-{% highlight bash %}sudo chmod 755 /home/git/repositories/gitosis-admin.git/hooks/post-update{% endhighlight %}
+``` bash 
+sudo chmod 755 /home/git/repositories/gitosis-admin.git/hooks/post-update
+```
 
 ## Administration
 
 So far we've set up gitosis, added a git user and added our public key to the git user. So now on our local machine we can clone the repository that defines access to other git repositories.
 
-{% highlight bash %}git clone git@YOUR_SERVER_HOSTNAME:gitosis-admin.git{% endhighlight %}
+``` bash 
+git clone git@YOUR_SERVER_HOSTNAME:gitosis-admin.git
+```
 
 If everything has gone to plan this will pull down a git repository. 
 
@@ -59,7 +69,8 @@ Look inside this and you'll see the a gitosis.conf file and a 'keydir' folder. T
 
 Your gitosis.conf file might look something like this
 
-{% highlight bash %}
+``` bash 
+
 [gitosis]
 
 [group gitosis-admin]
@@ -70,7 +81,7 @@ members = george_ornbo an_other_developer
 writable = myproject
 members = george_ornbo an_other_developer third_developer 
 
-{% endhighlight %}
+```
 
 The first group defines who can edit the gitosis-admin repository. This means anyone in this group can grant access to repositories. The second group 'myproject' defines who can acess the myproject repository. The members refers to the names of keys in the the 'keydir' directory. So 'george\_ornbo.pub' becomes 'george\_ornbo'. Repositories need to sit inside /home/git/repositories. You can change the home directory of the git user if you wish to something like /var/git/. This would mean repositories would sit in /var/git/repositories. 
 

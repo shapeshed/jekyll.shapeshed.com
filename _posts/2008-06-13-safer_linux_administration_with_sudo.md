@@ -20,16 +20,18 @@ Well that is stupid I hear you say! It is your fault. True it is my fault. Human
 
 Sudo allows user accounts to perform actions as root. You can limit what user accounts can do so it is possible to be very focussed about what users are and aren't allowed to do. For example if I allow the user account mickey to restart apache mickey can do so with the following commands:
 
-{% highlight bash %}[mickey@mybox ~]$   sudo /etc/init.d/httpd restart
+``` bash 
+[mickey@mybox ~]$   sudo /etc/init.d/httpd restart
 Password: #mickey's password entered
 Stopping httpd:                                            [  OK  ]
 Starting httpd:                                            [  OK  ]
-{% endhighlight %}
+```
 
 Apache is restarted. Without being root mickey has been able to restart apache. Furthermore a log of all sudo actions is kept in /var/log/messages so we can see who has used sudo and for what.  
 
-{% highlight bash %}Jun 13 08:36:26 mybox sudo:   mickey : TTY=pts/0 ; PWD=/home/mickey ; USER=root ; COMMAND=/etc/init.d/httpd restart 
-{% endhighlight %}
+``` bash 
+Jun 13 08:36:26 mybox sudo:   mickey : TTY=pts/0 ; PWD=/home/mickey ; USER=root ; COMMAND=/etc/init.d/httpd restart 
+```
 
 ## Limiting risk
 
@@ -37,9 +39,10 @@ Perhaps sudo's most powerful feature is the ability to only allow users to perfo
 
 For example we will try and poweroff the server as mickey. 
 
-{% highlight bash %}[mickey@mybox ~]$  sudo poweroff
+``` bash 
+[mickey@mybox ~]$  sudo poweroff
 Sorry, user mickey is not allowed to execute '/usr/bin/poweroff' as root on mybox.
-{% endhighlight %}
+```
 
 Great we have prevented human error from occuring!
 
@@ -47,31 +50,39 @@ Great we have prevented human error from occuring!
 
 To set up permissions for who can do what with sudo we need to login as root  
 
-{% highlight bash %}su - root
+``` bash 
+su - root
 Password: #enter your root password
-{% endhighlight %}
+```
 
 Then we use visudo to edit the sudo file. 
 
-{% highlight bash %}visudo {% endhighlight %}
+``` bash 
+visudo 
+```
 
 This is the configuration for sudoers. Here we define the commands that we want to allow sudoers to be allowed to execute and who should be able to use them. Lets say we want to allow mickey to administer Apache, MySQL, Yum and to view all log files. Under the Command Aliases section we need first to define the commands that we want to make available. 
 
 To make administration easier we can define user aliases. First we add mickey into the alias WEBSERVERADMIN 
 
-{% highlight bash %}User_Alias WEBSERVERADMIN = george{% endhighlight %}
+``` bash 
+User_Alias WEBSERVERADMIN = george
+```
 
 Then we define the services we want to allow sudoers to have access to: 
 
-{% highlight bash %}Cmnd_Alias     APACHE = /etc/init.d/httpd start, /etc/init.d/httpd stop, /etc/init.d/httpd restart, /etc/init.d/httpd graceful, /etc/init.d/httpd configtest
+``` bash 
+Cmnd_Alias     APACHE = /etc/init.d/httpd start, /etc/init.d/httpd stop, /etc/init.d/httpd restart, /etc/init.d/httpd graceful, /etc/init.d/httpd configtest
 Cmnd_Alias     MYSQL = /etc/init.d/mysqld start, /etc/init.d/mysqld stop, /etc/init.d/mysqld restart
 Cmnd_Alias     VIEW = /bin/cat, /bin/grep, /bin/more, /usr/bin/head, /usr/bin/tail, /usr/bin/less
 Cmnd_Alias     YUM = /usr/bin/yum update, /usr/bin/yum info, /usr/bin/yum remove
-{% endhighlight %}
+```
 
 Finally we give the user alias permissions to use the commands
 
-{% highlight bash %}WEBSERVERADMIN ALL= APACHE, MYSQL, VIEW, YUM{% endhighlight %}
+``` bash 
+WEBSERVERADMIN ALL= APACHE, MYSQL, VIEW, YUM
+```
 
 Hit :wq to save the file and you are all set. So now anyone in the WEBSERVERADMIN user alias will be allowed to use any of the commands defined in Cmnd_Alias when using sudo. This is exactly what we want. The user mickey can now safely administrate the web server using sudo but not shut the server down by mistake.
 

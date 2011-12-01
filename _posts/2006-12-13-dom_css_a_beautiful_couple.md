@@ -24,7 +24,8 @@ We could say this is a route for me to access my beer.
 
 Of course there are many ways you could map the house as an object. Thankfully we have a standard for web pages - HTML or XHTML. The same principles as me getting a beer from my fridge apply to finding things in an XHTML document. Look at the code below - I go through the front door, the kitchen and the fridge to get to my beer. 
 
-{% highlight html %}<html>
+``` html 
+<html>
   <head>
   <style type="text/css" media="screen">@import "css/screen.css";</style>
   </head>
@@ -63,17 +64,18 @@ Of course there are many ways you could map the house as an object. Thankfully w
     </div>
   </body>
 </html>
-{% endhighlight %}
+```
 
 If you have a well structured document you can use lean CSS where you don't need to keep creating new classes each time you want to style something. This cuts down on code weight and maintenance. If you are going to use Javascript having a well structured DOM will help you do pretty much anything you want. 
 
 Lets say I want to make "My can of beer" bold. I don't actually need to change the document at all. Using the DOM tree I can specify a rule that will make the text bold. 
 
-{% highlight css %}#front-door #kitchen #fridge p 
+``` css 
+#front-door #kitchen #fridge p 
 	{
 	font-weight: bold;
 }
-{% endhighlight %}
+```
 
 Don't believe me? [See the demo.][3]
 

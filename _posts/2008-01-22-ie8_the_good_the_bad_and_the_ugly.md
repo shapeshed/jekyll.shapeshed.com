@@ -22,7 +22,9 @@ The ugly part of all of this is the proposal to use a meta tag to push IE8 into 
 
 The idea is that you would use 
 
-{% highlight html %}<meta http-equiv="X-UA-Compatible" content="IE=8" />{% endhighlight %}
+``` html 
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+```
 
 to tell IE8 that the code is compatible. For me this is a bad idea and is introducing User Agent specific code at a time when we are getting close to being able to create websites using standards alone. It is in everyone's interest to support and adhere to a defined set of standards. For Microsoft it puts the emphasis on developers to follow agreed standards and for developers it allows them to follow one methodology to create sites on multiple platforms and browsers. Opting out of the methods that browsers and developers use to determine rendering mode is not a good approach. 
 

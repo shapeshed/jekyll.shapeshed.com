@@ -26,17 +26,19 @@ In order to create a cross-browser friendly box we need to attach the image to H
 
 Our markup looks like this 
 
-{% highlight html %}<div class="curved-box">
+``` html 
+<div class="curved-box">
   <h2>This is a curved box</h2>   
   <p>This text will resize and not break the box.</p> 
 </div>
-{% endhighlight %}
+```
 
 ## Applying the CSS
 
 We add the curves through the CSS by accessing the elements and applying a background image. The top one is applied to the h2 and the bottom to the p tag. Make sure the background to the div is the same colour too. 
 
-{% highlight css %}.curved-box
+``` css 
+.curved-box
     {
     width: 298px;
     margin: 10px;
@@ -57,7 +59,7 @@ We add the curves through the CSS by accessing the elements and applying a backg
     padding: 5px 15px 10px 15px;
     text-align: left;
 }
-{% endhighlight %}
+```
 
 Using this code the text will resize without breaking the box.
 
@@ -69,10 +71,11 @@ Browser support: IE5+, Netscape 6+, Firefox 1+, Safari 1+, Opera 7+, Flock, Cami
 
 Once CSS3 is finally agreed it will be even easier to curve the edges of boxes. "Border-radius" will curve the corner of the box. For now browser support is not great and indeed browsers have their own proprietary properties: 
 
-{% highlight css %}-webkit-border-radius: 10px; /* Safari prototype */
+``` css 
+-webkit-border-radius: 10px; /* Safari prototype */
 -moz-border-radius: 10px; /* Gecko browsers */
 border-radius: 10px; /* Everything else - limited support at the moment */
-{% endhighlight %}
+```
 
 Currently supported in Camino 1+, Firefox 1+, NOT IE. The code degrades gracefully so if it is not supported there will be no curves but it will still render. Check out [the example to see it in action.][4]
 

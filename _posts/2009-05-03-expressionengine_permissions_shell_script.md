@@ -12,7 +12,9 @@ If you are comfortable using shell scripts you can [download the file here][1]. 
 
 To use the script change directory to the root of your ExpressionEngine install and run: 
 
-{% highlight bash %} exp_permissions.sh {% endhighlight %}
+``` bash 
+ exp_permissions.sh 
+```
 
 You'll be asked for the system folder name. If you have changed this for any reason enter it here. If you have not changed it just hit return.
 

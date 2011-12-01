@@ -12,7 +12,8 @@ Let's say a client has asked for a different background color for a website at w
 
 The simple way is use a bit of PHP to serve a weekday CSS file or a weekend PHP file if it is the weekend. In the CSS files you simple specify a different background colour. 
 
-{% highlight php %}<?php
+``` php 
+<?php
 $day = date('D'); // Find out what day of the week it is
 
 // Set which days are the weekend
@@ -28,19 +29,23 @@ else {
     echo "<style type=\"text/css\" media=\"screen\">@import \"/css/screen.css\";</style>";
 }
 ?>
-{% endhighlight %} 
+``` 
 
 ## The complicated way
 
 A more complicated but sophisticated way is to tell the server to interpret CSS files as PHP. This opens up a whole world of possibilities. In order to do this you need to add the following lines to your .htaccess file. If you don't know what an .htaccess file is you can find out [about it here][1]. Add this to your .htaccess file: 
 
-{% highlight apache %}<IfModule mod_mime.c> AddType application/x-httpd-php .css </IfModule>{% endhighlight %} 
+``` apache 
+<IfModule mod_mime.c> AddType application/x-httpd-php .css </IfModule>
+``` 
 
 ## CSS files
 
 To make sure that browsers recognise CSS files as CSS make sure you add the following line to the top of your CSS files. 
 
-{% highlight php %} <?php header("Content-type: text/css"); ?>{% endhighlight %}
+``` php 
+ <?php header("Content-type: text/css"); ?>
+```
 
 That's all there is to it. You are now free to use PHP in your CSS. If you know the power of CSS you will know what you can do. If not I suggest you have a look at 
 

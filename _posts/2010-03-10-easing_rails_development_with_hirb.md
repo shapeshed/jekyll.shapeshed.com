@@ -9,12 +9,16 @@ categories: Rails
 
 When developing in Rails I spend a lot of time in the console. If you are a Rails developer you know you can fire it up in rails 2.3.x with
 
-{% highlight bash %}script/console{% endhighlight %}
+``` bash 
+script/console
+```
 
 Once in the console you can do lots of things like run ActiveRecord queries
 
-{% highlight console %}>> User.find_by_last_name('Ornbo')
-=> #<User id: 17283, login: "gornbo", email: "george@shapeshed.com", crypted_password: "05b80fd4308e8590d2892aeb774bb3a993053e26357a1a8938b...", password_salt: "rDRzbrh-YmgpTTTDGhQC", persistence_token: "109b4284438cd9c0238ebf1ffc6aea8091c8ad756c345677c2d...", single_access_token: "hqP7auU76mHQkpLxhqVI", perishable_token: "pwUKq8id1PhgCOhPkxIU", login_count: 4, failed_login_count: 0, last_request_at: "2010-03-09 18:09:35", current_login_at: "2010-03-08 11:17:13", last_login_at: "2010-03-08 10:52:05", current_login_ip: "127.0.0.1", last_login_ip: "127.0.0.1", deleted: nil, created_at: "2010-03-04 12:37:38", updated_at: "2010-03-09 18:09:35", first_name: "George", last_name: "Ornbo", photo_file_name: "avatar.jpg", photo_content_type: "image/jpeg", photo_file_size: 4268, photo_updated_at: "2010-03-04 18:15:30">{% endhighlight %}
+``` console 
+>> User.find_by_last_name('Ornbo')
+=> #<User id: 17283, login: "gornbo", email: "george@shapeshed.com", crypted_password: "05b80fd4308e8590d2892aeb774bb3a993053e26357a1a8938b...", password_salt: "rDRzbrh-YmgpTTTDGhQC", persistence_token: "109b4284438cd9c0238ebf1ffc6aea8091c8ad756c345677c2d...", single_access_token: "hqP7auU76mHQkpLxhqVI", perishable_token: "pwUKq8id1PhgCOhPkxIU", login_count: 4, failed_login_count: 0, last_request_at: "2010-03-09 18:09:35", current_login_at: "2010-03-08 11:17:13", last_login_at: "2010-03-08 10:52:05", current_login_ip: "127.0.0.1", last_login_ip: "127.0.0.1", deleted: nil, created_at: "2010-03-04 12:37:38", updated_at: "2010-03-09 18:09:35", first_name: "George", last_name: "Ornbo", photo_file_name: "avatar.jpg", photo_content_type: "image/jpeg", photo_file_size: 4268, photo_updated_at: "2010-03-04 18:15:30">
+```
   
 Ick. That's not hugely readable.
 
@@ -26,14 +30,16 @@ Ick. That's not hugely readable.
 
 Returning to our previous version hirb makes the output useful
 
-{% highlight console %}>> User.find_by_last_name('Ornbo')
+``` console 
+>> User.find_by_last_name('Ornbo')
   User Load (40.2ms)   SELECT * FROM `users` WHERE (`users`.`last_name` = 'Ornbo') LIMIT 1
 +-------+------------+-----------+
 | id    | first_name | last_name |
 +-------+------------+-----------+
 | 17283 | George     | Ornbo     |
 +-------+------------+-----------+
-1 row in set{% endhighlight %}
+1 row in set
+```
 
 Nice. We've got the query and a concise, readable view.
 
@@ -43,17 +49,21 @@ So how do we get it to work? Documentation is available round the web but takes 
 
 This is easy enough. Just run 
 
-{% highlight bash %}sudo gem install hirb{% endhighlight %}
+``` bash 
+sudo gem install hirb
+```
 
 To use hirb in Rails when you are using the console add a few lines to .ircbc. 
 
-{% highlight bash %}
+``` bash 
+
 vi ~/.irbrc
-{% endhighlight %}
+```
 
 Then the following to the file 
 
-{% highlight bash %}
+``` bash 
+
 if ENV['RAILS_ENV']
   require 'rubygems'
   require 'hirb'
@@ -61,13 +71,15 @@ if ENV['RAILS_ENV']
   Hirb.enable
   ActiveRecord::Base.logger = Logger.new(STDOUT)
 end
-{% endhighlight %}
+```
 
 Save and quit.
 
 Now go into the console and run a query. You'll see that the output should be changed to use hirb. If your records have lots of columns you'll likely see
 
-{% highlight console %}** Error: Too many fields for the current width. Configure your width and/or fields to avoid this error. Defaulting to a vertical table. **{% endhighlight %}
+``` console 
+** Error: Too many fields for the current width. Configure your width and/or fields to avoid this error. Defaulting to a vertical table. **
+```
 
 So you'll need to customise it..
 
@@ -75,25 +87,28 @@ So you'll need to customise it..
 
 You can set which columns are shown in the console and other options in a hirb.yml file. In the /config folder of your rails app create a file called hirb.yml. A feature that I really like is that you can specify which columns show for models. So for this example I can specify what shows for the User model using
 
-{% highlight yaml %}:output:
+``` yaml 
+:output:
   User:
     :options:
       :fields:
         - id
         - first_name
         - last_name
-{% endhighlight %}
+```
 
 Now when I run the query only those fields will show in the console as we saw earlier.  
 
-{% highlight console %}>> User.find_by_last_name('Ornbo')
+``` console 
+>> User.find_by_last_name('Ornbo')
   User Load (40.2ms)   SELECT * FROM `users` WHERE (`users`.`last_name` = 'Ornbo') LIMIT 1
 +-------+------------+-----------+
 | id    | first_name | last_name |
 +-------+------------+-----------+
 | 17283 | George     | Ornbo     |
 +-------+------------+-----------+
-1 row in set{% endhighlight %}
+1 row in set
+```
 
 In the project I'm working on I've created a configuration for each model so I only see what I need to see when working in the console. 
 

@@ -15,24 +15,32 @@ categories: [Linux]
 
 <p>To get ruby use yum:</p>
 
-{% highlight bash %}yum install ruby{% endhighlight %}
+``` bash 
+yum install ruby
+```
 
 <p>Once has installed check the version using</p>
 
-{% highlight bash %}ruby -v{% endhighlight %}
+``` bash 
+ruby -v
+```
 
 <p>You should see something like</p>
-{% highlight bash %}ruby 1.8.5 (2006-08-25) [i386-linux]{% endhighlight %}
+``` bash 
+ruby 1.8.5 (2006-08-25) [i386-linux]
+```
 
 <p>To use s3sync you need a version at 1.8.4 upwards. This tutorial assumes you download this to your home directory. If not you will need to change the paths in the example. The examples use "your-user" so you will obviously need to change that to whichever user you are using. Let's start by downloading, extracting s3sync and then removing the download:</p>
 
-{% highlight bash %}wget http://s3.amazonaws.com/ServEdge_pub/s3sync/s3sync.tar.gz
+``` bash 
+wget http://s3.amazonaws.com/ServEdge_pub/s3sync/s3sync.tar.gz
 tar xzf s3sync.tar.gz
 rm s3sync.tar.gz
-{% endhighlight %}
+```
 
 <p>Now you'll need to set up the configuration with the access keys you have from s3</p>
-{% highlight bash %}cd s3sync
+``` bash 
+cd s3sync
 # Copy the default configuration to the right location in /etc
 
 # You may need to be root for this
@@ -42,39 +50,43 @@ cp s3config.yml.example /etc/s3conf/s3config.yml
 
 # Edit the file 
 vi /etc/s3conf/s3config.yml
-{% endhighlight %}
+```
 
 <p>Edit the file with the following lines</p>
 
-{% highlight bash %}aws_access_key_id: ------Your Access Key here ------
+``` bash 
+aws_access_key_id: ------Your Access Key here ------
 aws_secret_access_key: ---- Your Secret Access Key here ------
 ssl_cert_dir: /home/your-user/s3sync/certs
-{% endhighlight %}
+```
 
 <p>Now we need to set up the SSL certificates so we can connect on a secure connection. I had some trouble setting up my certificates (I think because I am in Europe) so I used <a href="http://blog.eberly.org/2006/10/09/how-automate-your-backup-to-amazon-s3-using-s3sync/">John Eberly's</a> example and it worked fine. </p>
 
-{% highlight bash %} mkdir /home/your-user/s3sync/certs
+``` bash 
+ mkdir /home/your-user/s3sync/certs
 cd /home/your-user/s3sync/certs
 # Use John Eberly's example to get the certificates
 wget http://mirbsd.mirsolutions.de/cvs.cgi/~checkout~/src/etc/ssl.certs.shar
 # Run the script
 sh ssl.certs.shar
-{% endhighlight %}
+```
 
 <h3>Connecting to S3</h3>
 <p>You should be set up now to access S3. There are two scripts you can use to administer and set up your backups. Both s3sync and s3cmd are well documented at <a href="http://s3sync.net/wiki">s3sync</a> but I will take you through a basic setup. </p>
 
 <p>First we are going to set up a bucket for this server (as we may wish to back up others in the future). </p>
 
-{% highlight bash %}cd /home/your-user/s3sync
+``` bash 
+cd /home/your-user/s3sync
 # Create the bucket (add -s to use ssl)
 ruby s3cmd.rb createbucket shapeshed.com
-{% endhighlight %}
+```
 
 <p>For this backup I'm going to backup my vhosts directory. Here's the command I use (I'm still in /home/your-user/s3sync).</p>
 
-{% highlight bash %}ruby s3sync.rb -r -s -v --exclude="cache$|captchas$" --delete /var/www/vhosts/ shapeshed.com:/vhosts > /var/log/s3sync
-{% endhighlight %}
+``` bash 
+ruby s3sync.rb -r -s -v --exclude="cache$|captchas$" --delete /var/www/vhosts/ shapeshed.com:/vhosts > /var/log/s3sync
+```
 
 <p>Let's go through the options</p>
 <dl>
@@ -100,24 +112,27 @@ ruby s3cmd.rb createbucket shapeshed.com
 <h3>Automating the task</h3>
 <p>To take all the administration out of this task you can automate the backup using cron. First we need to put the command into file so cron can use it.</p>
 
-{% highlight bash %}mkdir /home/your-user/shell_scripts
+``` bash 
+mkdir /home/your-user/shell_scripts
 cd /home/your-user/shell_scripts
 # Create and edit the file
 vi s3backup.sh
-{% endhighlight %}
+```
 
 <p>Copy the script you want to run as a cron job into this file, ensuring you specify the full path to your ruby script. Rember to add #!/bin/bash or whichever shell you use at the top of the script.</p>
-{% highlight bash %}ruby /home/your-user/s3sync/s3sync.rb -r -s -v --exclude="cache$|captchas$" --delete /var/www/vhosts/ shapeshed.com:/vhosts > /var/log/s3sync
-{% endhighlight %}
+``` bash 
+ruby /home/your-user/s3sync/s3sync.rb -r -s -v --exclude="cache$|captchas$" --delete /var/www/vhosts/ shapeshed.com:/vhosts > /var/log/s3sync
+```
 
 <p>Save this file and then set up the cron job</p>
 
-{% highlight bash %}crontab -e
+``` bash 
+crontab -e
 
 # Add the following line. This runs the backup every Sunday at 6am
 0 6 * * 0 /home/your-user/shell_scripts/s3backup.sh
 
-{% endhighlight %}
+```
 
 <p>The backup will now run at 6am every Sunday without any further input from you. You can check the script is running ok by checking /var/log/s3sync (if you have created it). If you want to do it more frequently just change the cron timings.</p>
 

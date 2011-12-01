@@ -10,18 +10,20 @@ To apply an icon to links in CSS you use background-image. Although you should u
 
 In this example we have a simple link within a div 
 
-{% highlight html %}<div id="example-link">
+``` html 
+<div id="example-link">
   <a href="#">Link to journal article</a>
 </div>
-{% endhighlight %}
+```
 
 ## The CSS 
 
-{% highlight css %}#example-link a { 
+``` css 
+#example-link a { 
   padding-left: 15px; 
   background: url(/images/examples/bglinks/pencil_icon.gif) 3px 1px no-repeat; 
 } 
-{% endhighlight %}
+```
 
 ## Explanation:
 

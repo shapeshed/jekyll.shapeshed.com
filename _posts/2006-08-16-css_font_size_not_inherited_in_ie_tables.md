@@ -6,23 +6,27 @@ description: |
 
 categories: [XHTML, CSS]
 ---
-{% highlight css %}body { 
+``` css 
+body { 
   font: 72%/160%, "Lucida Grande", "Lucida Sans", "Trebuchet MS", Tahoma, Verdana, sans-serif; 
 }
-{% endhighlight %}
+```
 So off I went to find out what others had been doing. It took me a while to find the answer so incase it helps someone else find it I'm posting it up here.
 
 One hack suggested using the !important declaration to redeclare the font size for IE6 and below. That would clog up my style sheet a bit so I wasn't impressed with that one.
 
 Happily I found a much better hack. It works with just one line of code and the font size in my tables is now appearing correctly. To correct font-size in tables simple add this line to the css that controls your table: 
 
-{% highlight css %}font-size: 1em;{% endhighlight %}
+``` css 
+font-size: 1em;
+```
 
 So my CSS for my table looks like this and it is now behaving properly. 
 
-{% highlight css %}table { 
+``` css 
+table { 
   border-spacing: 0; 
   border-collapse: collapse; 
   /* fix for IE6 and below not inheriting font size */ font-size: 1em; 
 }
-{% endhighlight %}
+```

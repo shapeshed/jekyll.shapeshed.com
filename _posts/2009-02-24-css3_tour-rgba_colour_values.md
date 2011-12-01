@@ -10,13 +10,14 @@ Not interested in the explanation? Go straight to [the demonstration.][1]
 
 Opacity is well supported by all of the major browsers, albeit with differing syntax.  
 
-{% highlight css %}/* IE 8 */
+``` css 
+/* IE 8 */
 -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; 
 /* IE5 - 7 */
 filter: alpha(opacity=50); 
 /* Everyone else */
 opacity: .5;
-{% endhighlight %}
+```
 
 So what's wrong with that I hear you cry? The problem is that if you set opacity on an element it means that the opacity will also be set on all the children of that element. So it is difficult to control opacity with fine detail. You either have it all, none or have to fix it with JavaScript.
 
@@ -32,25 +33,27 @@ So we can make this
 
 Using the following HTML 
 
-{% highlight html %}<ul>
+``` html 
+<ul>
     <li class="hundred">100%</li>
     <li class="eighty">80%</li>
     <li class="sixty">60%</li>
     <li class="forty">40%</li>
     <li class="twenty">20%</li>
 </ul>
-{% endhighlight %}
+```
 
 And CSS 
 
-{% highlight css %}ul{list-style: none}
+``` css 
+ul{list-style: none}
 ul li{padding:.5em}
 ul li.hundred{background:rgba(0,0,255,1)}
 ul li.eighty{background:rgba(0,0,255,0.8)}
 ul li.sixty{background:rgba(0,0,255,0.6)}
 ul li.forty{background:rgba(0,0,255,0.4)}
 ul li.twenty{background:rgba(0,0,255,0.2)}
-{% endhighlight %}
+```
 
 Furthermore anything that is underneath the list items will show through with varying strength depending on the alpha channel of the list item. 
 
@@ -58,15 +61,18 @@ Furthermore anything that is underneath the list items will show through with va
 
 CSS 2.1 developers will be used to using Hex colours (e.g. #ccc) which in my experience is the most widely used colour declaration. CSS2.1 supports [RGB color declarations][5] though:  
 
-{% highlight css %}/* Hex value */
+``` css 
+/* Hex value */
 #yourid {color:#46d5de}
  /* The same as a RGB colour declaration */
 #yourid {color:rgb(70,213,222)}
-{% endhighlight %}
+```
 
 CSS3 RGBa colour values add the alpha channel with a slight amend to the syntax: 
 
-{% highlight css %}#yourid {color:rgba(70,213,222,0.5)} {% endhighlight %}
+``` css 
+#yourid {color:rgba(70,213,222,0.5)} 
+```
 
 Note that these 'color:rgb' and 'color:rgba' are treated separately by browsers.
 
@@ -74,11 +80,12 @@ Note that these 'color:rgb' and 'color:rgba' are treated separately by browsers.
 
 RGBa colour values work for current Webkit and Gecko browsers. They are not supported in Internet Explorer or Opera. As [Chris Coyer notes in his excellent article on RGBa][6] you can use a standard RGB colour value to specify a fall back for these browsers.  
 
-{% highlight css %}div {
+``` css 
+div {
    background: rgb(200, 54, 54); /* The Fallback */
    background: rgba(200, 54, 54, 0.5);
 }
-{% endhighlight %}
+```
 
 Another example of [Progressive Enhancement][7].
 

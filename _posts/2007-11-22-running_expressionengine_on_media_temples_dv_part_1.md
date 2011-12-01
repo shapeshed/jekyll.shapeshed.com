@@ -42,7 +42,8 @@ One area where EE is a little weak (probably so it is easy to install and use on
 
 Here's an the default file I use for .htaccess 
 
-{% highlight apache %}FileETag none  # Turn off ETag 
+``` apache 
+FileETag none  # Turn off ETag 
 
 # Set Language and Character Set
 AddDefaultCharset utf-8
@@ -72,11 +73,13 @@ php_value display_errors off
 AcceptPathInfo On
 Options +FollowSymLinks
 
-{% endhighlight %}
+```
 
 Let's go through this a little. Firstly we turn off [ETags][8]. You can find out about why ETags should be off at the [Yahoo Performance site][9]. Secondly I set the default character set and language. Then we make sure GZIP compression is on. Now the important bit. ExpressionEngine is poor at sending Expiry Headers (I'm sure there is a good reason) so often the browser will reload things it could easily cache. These rules set a short default expiry and a longer one for images. Next we want CSS and Javascript to be GZipped. To keep Firefox happy you need to add these lines to the top of your CSS files. 
 
-{% highlight php %}<?php header("Content-type: text/css"); ?>{% endhighlight %}
+``` php 
+<?php header("Content-type: text/css"); ?>
+```
 
 Finally I want to make absolutely sure PHP errors are not shown and I turn on a couple of settings for EE. If you get an internal server error it is likely your host does not allow you to override certain settings. Get in touch with you host and ask. These work ok on (mt)(dv)3.
 

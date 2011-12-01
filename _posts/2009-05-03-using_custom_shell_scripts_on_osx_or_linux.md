@@ -10,11 +10,15 @@ categories: [OSX, Linux]
 
 I'm assuming here that you are on a POSIX compliant system (namely OSX or Linux). First let's make sure we are in our home directory. On OSX or Linux in a terminal run:  
 
-{% highlight bash %} cd {% endhighlight %} 
+``` bash 
+ cd 
+``` 
 
 Standard practice is to keep user shell scripts in a bin folder in your home directory. You may or may not have this folder depending on your operating system. If it doesn't exist create it: 
 
-{% highlight bash %} mkdir bin {% endhighlight %} 
+``` bash 
+ mkdir bin 
+``` 
 
 So on OSX the folder path will be /Users/george/bin. On Linux it will be /home/george/bin. Remember 'george' will be whatever your username is.
 
@@ -24,26 +28,36 @@ To be able to use the shell scripts from our bin folder we need to make sure tha
 
 If you are comfortable with vi use these commands. If you are not comfortable with vi you can use [textedit][1] in OSX or gedit on Linux. 
 
-{% highlight bash %} cd #change to home directory 
-vi .bash_profile {% endhighlight %} 
+``` bash 
+ cd #change to home directory 
+vi .bash_profile 
+``` 
 
 Add the following line to this file 
 
-{% highlight bash %} PATH=$PATH:$HOME/bin {% endhighlight %} 
+``` bash 
+ PATH=$PATH:$HOME/bin 
+``` 
 
 For the changes to take effect you need to reload your profile. I'm assuming you are still in your home directory. 
 
-{% highlight bash %} . ./.bash_profile {% endhighlight %} 
+``` bash 
+ . ./.bash_profile 
+``` 
 
 ## Adding scripts
 
 Now we can just drop shell scripts into the bin folder. To use them we must make sure they are executable: 
 
-{% highlight bash %} chmod +x yourshellscript.sh {% endhighlight %} 
+``` bash 
+ chmod +x yourshellscript.sh 
+``` 
 
 That's it. Now you can call your shell script from the command line using 
 
-{% highlight bash %} yourshellscript.sh {% endhighlight %} 
+``` bash 
+ yourshellscript.sh 
+``` 
 
 ## Related reading
 

@@ -12,7 +12,9 @@ This article is written for Ubuntu Intrepid 8.10 and should work for Linux distr
 
 First we need to create an sftp group. This group will hold users who we want to chroot.  
 
-{% highlight bash %}sudo groupadd sftp{% endhighlight %}
+``` bash 
+sudo groupadd sftp
+```
 
 This group is used in the ssh config file so in future we can easily add more users if we want to.
 
@@ -20,33 +22,47 @@ This group is used in the ssh config file so in future we can easily add more us
 
 Now we create a user that we want to have sftp access only. This user won't be able to login on a standard ssh login but will be able to login using sftp to transfer files. Replace user with whatever you wish. Set the home directory (in this case /var/www/vhosts/theirsite.com) to the folder you want the user to have access to.  
 
-{% highlight bash %}sudo useradd -d /var/www/vhosts/theirsite.com user{% endhighlight %}
+``` bash 
+sudo useradd -d /var/www/vhosts/theirsite.com user
+```
 
 Now set a password for the user: 
 
-{% highlight bash %}sudo passwd user{% endhighlight %}
+``` bash 
+sudo passwd user
+```
 
 Change the user's primary group to the sftp group we just created 
 
-{% highlight bash %}sudo usermod -g sftp user{% endhighlight %}
+``` bash 
+sudo usermod -g sftp user
+```
 
 Then we need to set the user's shell to /bin/false
 
-{% highlight bash %}sudo usermod -s /bin/false user{% endhighlight %}
+``` bash 
+sudo usermod -s /bin/false user
+```
 
 ## Configuring OpenSSH
 
 Now we need to configure OpenSSH. 
 
-{% highlight bash %}sudo vi /etc/ssh/sshd_config {% endhighlight %}
+``` bash 
+sudo vi /etc/ssh/sshd_config 
+```
 
 Change the Subsystem: 
 
-{% highlight bash %}#Subsystem sftp /usr/lib/openssh/sftp-server Subsystem sftp internal-sftp{% endhighlight %}
+``` bash 
+#Subsystem sftp /usr/lib/openssh/sftp-server Subsystem sftp internal-sftp
+```
 
 At the bottom of the file add 
 
-{% highlight bash %}Match group sftp X11Forwarding no ChrootDirectory %h AllowTcpForwarding no ForceCommand internal-sftp{% endhighlight %}
+``` bash 
+Match group sftp X11Forwarding no ChrootDirectory %h AllowTcpForwarding no ForceCommand internal-sftp
+```
 
 
 ## Correct permissions
@@ -55,15 +71,21 @@ OpenSSH is sensitive to permissions so you need to make sure permissions are cor
 
 My vhost layout is:
 
-{% highlight bash %}theirsite.com - conf - logs - httpdocs - httpdocs - private - subdomains{% endhighlight %}
+``` bash 
+theirsite.com - conf - logs - httpdocs - httpdocs - private - subdomains
+```
 
 The important thing here is that the folder theirsite.com must be owned by root and in the root group. Providing you want to allow write access everything else must be owned by the user and in the sftp group. You could of course set custom permissions on sub-folders as you wish. 
 
-{% highlight bash %}chown user:sftp -R theirsite.com chown root:root theirsite.com{% endhighlight %}
+``` bash 
+chown user:sftp -R theirsite.com chown root:root theirsite.com
+```
  
 In order for jailing to work correctly every folder above the theirsite.com directory must also be owned by root and in the root group. In this case this means the following folders.  
  
-{% highlight bash %}/ - var - www - vhosts{% endhighlight %}
+``` bash 
+/ - var - www - vhosts
+```
 
 If these folders are not owned by root and in the root group the user login will fail. 
 

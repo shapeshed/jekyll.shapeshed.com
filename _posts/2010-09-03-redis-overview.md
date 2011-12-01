@@ -8,34 +8,46 @@ categories: [redis]
 
 The 2.0.0 release of Redis is out and offers a super-fast key value store that stores data in-memory. It offers a persistent data store along with support for sets, string values and hashes. Performance wise it is [extremely][1] [fast][7] and offers replication without too much fuss. As a developer it is a joy to use. On OSX you can install it using homebrew:
 
-{% highlight bash %}brew install redis{% endhighlight %}
+``` bash 
+brew install redis
+```
 
 and then start the server with 
 
-{% highlight bash %}redis-server{% endhighlight %}
+``` bash 
+redis-server
+```
 
 Now you can connect to it with a client and start adding and retrieving data with a client
 
-{% highlight bash %}redis-cli{% endhighlight %}
+``` bash 
+redis-cli
+```
 
 ## Basics
 
 Here's a basic example of setting and getting a value 
 
-{% highlight bash %}redis> set favorite_drink gin
+``` bash 
+redis> set favorite_drink gin
 OK
 redis> get favorite_drink
-"gin"{% endhighlight %}
+"gin"
+```
 
 Once you have a value you can get information from Redis as to its type:
 
-{% highlight bash %}redis> type favorite_drink
-string{% endhighlight %}
+``` bash 
+redis> type favorite_drink
+string
+```
 
 And whether a key exists
 
-{% highlight bash %}redis> exists favorite_drink
-(integer) 1{% endhighlight %}
+``` bash 
+redis> exists favorite_drink
+(integer) 1
+```
 
 I'll cover more of the excellent features in subsequent posts. 
 
@@ -43,24 +55,30 @@ I'll cover more of the excellent features in subsequent posts.
 
 Redis has wrappers for most lanugages including Ruby, Python and PHP. For Ruby you can install the wrapper with
 
-{% highlight bash %}sudo gem install redis{% endhighlight %}
+``` bash 
+sudo gem install redis
+```
 
 You can then use it in scripts with
 
-{% highlight ruby %}require 'rubygems'
+``` ruby 
+require 'rubygems'
 require 'redis'
 
 redis = Redis.new
-redis.set "foo", "bar"{% endhighlight %}
+redis.set "foo", "bar"
+```
 
 ## Great for caches and counters
 
 Redis is great for things like counters. Say for example you want to track the number of times a page has been viewed. This is simple with Redis:
 
-{% highlight ruby %}redis.incr "views"
+``` ruby 
+redis.incr "views"
 => 1
 redis.incr "views"
-=> 2{% endhighlight %}
+=> 2
+```
 
 For non-persistent data like caching it is a really good solution too. You can even use it as the [cache in Rack applications.][3]
 

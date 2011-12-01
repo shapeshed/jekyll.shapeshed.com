@@ -11,14 +11,17 @@ This article is provided as it and no responsibility will be taken for things go
 ## Using Aptitude
 
 If you've ever tried out Ubuntu you'll probably know what aptitude is and how to manage packages. Updating your system is as simple as 
-{% highlight bash %}sudo aptitude udpate && sudo aptitude upgrade{% endhighlight %} 
+``` bash 
+sudo aptitude udpate && sudo aptitude upgrade
+``` 
 
 This updates the package lists and presents any upgrades.
 
 ## Automating the process
 
 Wouldn't it be easier if you could automate this and forget about it? That way your server can stay up to date without you ever having to worry about it.</p>Create a file called autoupdate.sh and put the following into it:</p> 
-{% highlight bash %}#!/bin/bash
+``` bash 
+#!/bin/bash
 
 # A script to run Aptitude and install any upgrades automatically. 
 # Add this to /etc/cron.daily to run the script every 24 hours. 
@@ -29,14 +32,15 @@ PATH="$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin"
 aptitude update
 aptitude safe-upgrade -y
 aptitude autoclean
-{% endhighlight %} 
+``` 
 
 To run this script daily move it to /etc/cron.daily (making sure it is executable). 
 
-{% highlight bash %}chmod +x autoupdate.sh
+``` bash 
+chmod +x autoupdate.sh
 sudo chown root:root autoupdate.sh
 sudo mv autoupdate /etc/cron.daily 
-{% endhighlight %} 
+``` 
 
 The update will run automatically once a day ensuring you stay up-to-date. 
 
@@ -44,12 +48,18 @@ The update will run automatically once a day ensuring you stay up-to-date.
 
 You can keep a check on packages that have been installed and removed via the log file that Aptitude generates. 
 
-{% highlight bash %}sudo tail -n 30 /var/log/aptitude{% endhighlight %} 
+``` bash 
+sudo tail -n 30 /var/log/aptitude
+``` 
 
 If you want to check that an upgrade has been applied you can search for it like this 
 
-{% highlight bash %}sudo cat /var/log/aptitude | grep -A 20 -B 20 php5{% endhighlight %} 
+``` bash 
+sudo cat /var/log/aptitude | grep -A 20 -B 20 php5
+``` 
 
 Or you can check the currently installed version using (this example is php5) 
 
-{% highlight bash %}aptitude show php5{% endhighlight %}
+``` bash 
+aptitude show php5
+```

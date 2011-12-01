@@ -17,7 +17,9 @@ Sass still outputs CSS files but provides a great way to manage files before the
 
 If you've got Rubygems installed on your system installation is simple
 
-{% highlight bash %}sudo gem install haml{% endhighlight %}
+``` bash 
+sudo gem install haml
+```
 
 (You may be prompted for the password for the account you are logged in as at this point.)
 
@@ -27,7 +29,9 @@ There is information on how to install RubyGems available <a href="http://docs.r
 
 If you've got existing css files that you'd like to convert to sass files there is a handy utility available to you via the command line
 
-{% highlight bash %}css2sass style.css style.sass{% endhighlight %}
+``` bash 
+css2sass style.css style.sass
+```
 
 ## Syntax
 
@@ -39,15 +43,19 @@ At last! Variables in CSS. For this feature alone using Sass is worth it.
 
 The following is an example of defining variables for colours
 
-{% highlight css %}!warning = #cc3333
-!success = #33cc33{% endhighlight %}
+``` css 
+!warning = #cc3333
+!success = #33cc33
+```
 
 These variables are then available for you to use within your css
 
-{% highlight css %}#mydiv
+``` css 
+#mydiv
   color: !warning
 #anotherdiv
-  color: !warning{% endhighlight %}
+  color: !warning
+```
   
 This makes maintaining and re-skinning much simpler!
 
@@ -55,18 +63,20 @@ This makes maintaining and re-skinning much simpler!
 
 Mixins are another great feature allowing you to define reusable bits of CSS. Take this example where we want to apply rounded corners
 
-{% highlight css %}=rounded-corners
+``` css 
+=rounded-corners
   -moz-border-radius: 5px
   -webkit-border-radius: 5px
   border-radius: 5px
-{% endhighlight %}
+```
 
 We can then apply rounded corners to any div like this
 
-{% highlight css %}
+``` css 
+
 #mydiv
   +rounded-corners-5px
-{% endhighlight %}
+```
 
 ## More features
 
@@ -81,18 +91,24 @@ If you are using Rails in development mode you don't even have to think about it
 If you are developing in PHP or a static site you'll need to install <a href="http://wiki.github.com/chriseppstein/compass">Compass</a>. Compass is a CSS Framework in its own right but comes with a useful utility to re-generate your CSS files when your Sass files change. 
 
 To install it use
-{% highlight bash %}gem sources --add http://gems.github.com/
-sudo gem install chriseppstein-compass{% endhighlight %}
+``` bash 
+gem sources --add http://gems.github.com/
+sudo gem install chriseppstein-compass
+```
 
 Then you'll need to set compass up to watch your directories using the command line tool in the root of your site. 
 
-{% highlight bash %}compass --sass-dir=src/sass --css-dir=assets/stylesheets --javascript-dir=assets/javascripts --images-dir=assets/images my_project{% endhighlight %}
+``` bash 
+compass --sass-dir=src/sass --css-dir=assets/stylesheets --javascript-dir=assets/javascripts --images-dir=assets/images my_project
+```
 
 This will generate a config.rb file in the root of your site, so if you ever need to change folder locations you can do it there.
 
 Then to set compass off run
 
-{% highlight bash %}compass --watch{% endhighlight %}
+``` bash 
+compass --watch
+```
 
 This will then run and regenerate the css files in realtime if there are any changes to the Sass file (as you edit).
 

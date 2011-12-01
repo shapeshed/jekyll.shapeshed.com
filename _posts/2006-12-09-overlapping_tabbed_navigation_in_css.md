@@ -30,7 +30,8 @@ To combat cross browser and image flicker problems this method uses one image as
 
 The XHTML is the classic unordered list navigation. This means it will be good for search engines and good for screen readers. This method makes use of an id on the body tag to define the on state so you will need to either hard code the body id on the pages or handle this with some server side code. Each li item also needs a unique id so the background can be positioned correctly. 
 
-{% highlight html %}<html>
+``` html 
+<html>
 <body id="home-page">
   <div id="nav">
     <ul>
@@ -42,13 +43,14 @@ The XHTML is the classic unordered list navigation. This means it will be good f
   </div>
 </body>
 </html>
-{% endhighlight %}
+```
 
 ## Step 4 - Positioning the navigation
 
 Using the background-position property we position the image correctly for each list item. You need to be pixel perfect on this so this is where the guides or rulers and the marquee tool in Photoshop or Illustrator come in. You can measure the dimensions exactly and transfer it to the CSS. For the on states we position the tabs with a negative margin. 
 
-{% highlight css %}li#home a:link, li#home a:visited 
+``` css 
+li#home a:link, li#home a:visited 
   { 
   background-position: -0px -0px; 
 } 
@@ -56,20 +58,21 @@ body#home-page li#home a:link, body#home-page li#home a:visited
   { 
   background-position: -1px -38px; 
 }
-{% endhighlight %}
+```
 
 ## Step 5 - Fixing IE6 & Below
 
 IE6 and below have problems with interpreting negative margins on floated elements. To fix this we make the states where we need a hover absolutely positioned, and then apply a negative positioning. To make sure it shows on top z-index is used. This method works for IE5, 5.5 and 6. To keep things clean we put things in a sepearate stylesheet and serve this to older version of Internet Explorer using conditional comments. This also makes sure that IE7 gets served code that takes account improved CSS support.  
 
-{% highlight css %}body#about-page li#home a:hover,body#about-page li#home a:focus
+``` css 
+body#about-page li#home a:hover,body#about-page li#home a:focus
   {
   position:absolute;
   margin-left:-134px;
   width:150px;
   z-index:1;
 }
-{% endhighlight %}
+```
 
 ## Demo
 

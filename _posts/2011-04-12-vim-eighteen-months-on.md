@@ -38,7 +38,7 @@ Vim does take time to learn. Initially it would be fair to say that I became slo
 My tip is to take a little at a time and when you come up against a common problem read the manual and learn how to do. For example you might want to lowercase some text. You could do this through deleting the text and rewriting it or you could you use Vim's excellent help to learn how Vim does it:
 
 ``` bash
-:help lowercase{% endhighlight %}
+:help lowercase
 ```
 
 ![Screenshot of Vim's help showing lowercase entry][19]

@@ -15,7 +15,8 @@ The assignment is to create a simple command line script to make an introduction
 
 The first thing that was a little bit different for me was understanding main which basically functions a bit like a constructor class in PHP (excuse my Objective-C ignorance if this is totally wrong). Objective C is also upside down from what I'm used to so main comes at the end. 
 
-{% highlight objectivec %}#import <Foundation/Foundation.h>
+``` objectivec 
+#import <Foundation/Foundation.h>
 - void PrintPathInfo() {
   // Code from path info section here
 }
@@ -25,15 +26,19 @@ int main (int argc, const char * argv[]) {
   PrintProcessInfo(); 
   PrintBookmarkInfo(); 
   PrintIntrospectionInfo(); 
-{% endhighlight %}
+```
 
 Syntax is more verbose from say Ruby so declaring a string is 
 
-{% highlight objectivec %}NSString *path = @"~";{% endhighlight %}
+``` objectivec 
+NSString *path = @"~";
+```
 
 instead of 
 
-{% highlight ruby %}path = "~"{% endhighlight %}
+``` ruby 
+path = "~"
+```
 
 The whole NS thing relates to [NeXTSTEP][2], an operating system that Apple bought back in the day. The NS prefix has stuck around (I'm not really sure why) so pretty NS is everywhere in Objective C - NSLog, NSAutoreleasepool etc. 
 

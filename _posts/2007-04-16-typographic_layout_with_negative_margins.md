@@ -17,7 +17,8 @@ Initially I thought this would be difficult to achieve in CSS but in fact it is 
 
 ## The XHTML 
 
-{% highlight html %}
+``` html 
+
 <div id="my-holding-div">
     <h3>Subtitle 1</h3>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla nisl velit snip...</p>
@@ -26,11 +27,12 @@ Initially I thought this would be difficult to achieve in CSS but in fact it is 
     <h3>Subtitle 3</h3>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla nisl velit snip...</p>
 </div>
-{% endhighlight %}
+```
 
 ## The CSS 
 
-{% highlight css %}
+``` css 
+
 #right-box
     {
     float: left;
@@ -53,7 +55,7 @@ Initially I thought this would be difficult to achieve in CSS but in fact it is 
     margin-top: 2em;
     float: left;
 } 
-{% endhighlight %}
+```
 
 ## Good semantics and good typography
 

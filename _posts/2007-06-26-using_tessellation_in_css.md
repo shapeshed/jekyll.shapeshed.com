@@ -22,11 +22,12 @@ One of the main drivers of tessellation is that it allows designers to cover spa
 
 Adding backgrounds to your site is simple. On the body you add this: 
 
-{% highlight css %}
+``` css 
+
 body {
 	background: url(/path/to/your/image/image.gif) repeat;
 }
-{% endhighlight %}
+```
 
 This repeats the image accross the body of your site. So if you have designed something to tessellate it will repeat correctly across the screen. Exactly how Esher and Morris used it.
 

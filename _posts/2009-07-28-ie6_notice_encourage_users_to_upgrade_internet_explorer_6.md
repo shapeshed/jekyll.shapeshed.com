@@ -14,10 +14,11 @@ IE6 Notice adds a notice for IE6 users encouraging them to upgrade their browser
 
 Adding the notice to your site just requires you to include a single 2kb JavaScript file in your HTML. Copy the following and paste it before the closing body tag of your HTML. If you'd rather not include a remote JavaScript file on your site you can [download the source][1] and host it locally.  
 
-{% highlight html %}<!--[if IE 6]>
+``` html 
+<!--[if IE 6]>
 <script type="text/javascript" src="http://shapeshed.github.com/ie6-notice/ie6notice-1.0.0.min.js"></script>
 <![endif]-->
-{% endhighlight %}
+```
 
 ## Find out more
 

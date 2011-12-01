@@ -14,7 +14,8 @@ I saw a few forum entries saying 'You should tell users not to use the back butt
 
 Post your form data to a page that processes the variable into a session variable. Then redirect to the page that uses that variable. Following processing the variable is now $\_SESSION['foo'] rather than $\_POST['bar']. This means you can move around as much as you like without triggering the browser message. I do not recommend this for any sensitive information though!
 
-{% highlight php %}<?php
+``` php 
+<?php
 //This eliminates the back button messages of expired POST data by translating POST data in to a SESSION variable and then redirecting
 
 // Start session
@@ -30,6 +31,6 @@ if (isset($_POST['bar']))
 // All done so redirect  
 header('Location: http://www.example.com');
 ?>
-{% endhighlight %}
+```
 
 The POST data is available at the redirect page and subsequent pages as $_SESSION['foo'] and no ugly back button messages will be seen.

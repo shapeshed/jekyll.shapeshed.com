@@ -25,23 +25,28 @@ Once you've installed the servers we can get going with the interesting stuff - 
 
 First install packages required by Puppet via aptitude
 
-{% highlight bash %}sudo apt-get update
-sudo apt-get install irb libopenssl-ruby libreadline-ruby rdoc ri ruby ruby-dev{% endhighlight %}
+``` bash 
+sudo apt-get update
+sudo apt-get install irb libopenssl-ruby libreadline-ruby rdoc ri ruby ruby-dev
+```
 
 Now we can install RubyGems
 
-{% highlight bash %}cd /usr/local/src
+``` bash 
+cd /usr/local/src
 sudo wget http://production.cf.rubygems.org/rubygems/rubygems-1.5.2.tgz
 sudo tar -xzf rubygems-1.5.2.tgz
 cd rubygems-1.5.2
 sudo ruby setup.rb
 sudo update-alternatives --install /usr/bin/gem gem /usr/bin/gem1.8 1
 sudo gem update --system
-{% endhighlight %}
+```
 
 And finally Puppet
 
-{% highlight bash %}sudo gem install puppet{% endhighlight %}
+``` bash 
+sudo gem install puppet
+```
 
 All done!
 
@@ -49,46 +54,59 @@ All done!
 
 I'm assuming you have completed the installation of Puppet on both the puppet master and client servers. I'm working locally so I need to explicity set the ip addresses of my Puppet Master and client in my /etc/hosts file. To find out the internally assigned ip address run
 
-{% highlight bash %}ifconfig{% endhighlight %}
+``` bash 
+ifconfig
+```
 
 You want the entry that say inet addr: - it should be something like 192.168.3.162
 
 Then you need to update the /etc/hosts file on each machine with each machine's ip address
 
-{% highlight bash %}
+``` bash 
+
 192.168.3.162 puppetmaster.example.com puppetmaster puppet
 192.168.3.165 puppetclient.example puppetclient
-{% endhighlight %}
+```
 
 Now on the Puppet Master you need to set up the puppet configuration in /etc. John Arundel of [Bitfield Consulting][5] has created a [handy tarball][6] that you can use as a template. Let's get it
 
-{% highlight bash %}cd /etc
+``` bash 
+cd /etc
 sudo wget http://bitfieldconsulting.com/files/powering-up-with-puppet.tar.gz
 sudo tar -xzf powering-up-with-puppet.tar.gz
-{% endhighlight %}
+```
 
 This provides a basic stucture for Puppet configuration. We'll come onto writing manifests in a later post. Now we can start the Puppet daemon, making the relevant system users in the process
 
-{% highlight bash %}sudo puppet master --mkusers --verbose --no-daemonize{% endhighlight %}
+``` bash 
+sudo puppet master --mkusers --verbose --no-daemonize
+```
 
 If you see it start then great. I encountered a [bug][7] here that meant the Puppet Master Deamon failed to start. The issue here is that file ownership isn't set correctly I fixed this with
 
-{% highlight bash %}chown -R puppet:puppet /var/lib/puppet{% endhighlight %}
+``` bash 
+chown -R puppet:puppet /var/lib/puppet
+```
 
 Once you are sure everything is ok you can daemonize Puppet with
 
-{% highlight bash %}sudo puppet master{% endhighlight %}
+``` bash 
+sudo puppet master
+```
 
 Finally we can run a local test to make sure that everything is running as expected
 
-{% highlight bash %}sudo puppet agent --test --server=`hostname`{% endhighlight %}
+``` bash 
+sudo puppet agent --test --server=`hostname`
+```
 
 You should see something like
 
-{% highlight bash %}info: Caching catalog for puppetmaster
+``` bash 
+info: Caching catalog for puppetmaster
 info: Applying configuration version '1298651839'
 notice: Finished catalog run in 0.25 seconds
-{% endhighlight %}
+```
 
 Next we'll look at connecting the client to the Puppet Master, creating manifests before moving on to managing users. Stay tuned!
 

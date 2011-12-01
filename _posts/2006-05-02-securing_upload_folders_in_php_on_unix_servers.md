@@ -21,20 +21,25 @@ Firstly you'll need root access to your server. If you don't have root access as
 
 Ensure that php is not running in safe mode. Ask your hosts. If it is you can stop it running in safe mode by accessing your sever as root via SSH and typing. 
 
-{% highlight bash %}perl -p -i -e 's/safe_mode\s*=\s*on/safe_mode = off/i;' /etc/php.ini [hit enter]
+``` bash 
+perl -p -i -e 's/safe_mode\s*=\s*on/safe_mode = off/i;' /etc/php.ini [hit enter]
 /etc/init.d/httpd stop [hit enter]
 /etc/init.d/httpd start [hit enter]
-{% endhighlight %}
+```
 
 
 
 Then browse to the folder one above your upload directory. Change the upload directory and all folders within the directory to 755 by typing 
 
-{% highlight bash %}chmod -R 755 youruploaddirectory{% endhighlight %}
+``` bash 
+chmod -R 755 youruploaddirectory
+```
 
 Then you need to change the owner name of the folder and all folders within the upload folder to the name running Apache and PHP. This is usually "www", "apache" or "nobody." Ask your hosting company if you are unsure. Then type
 
-{% highlight bash %}[root@yourservername] chown -R apache youruploaddirectory{% endhighlight %}
+``` bash 
+[root@yourservername] chown -R apache youruploaddirectory
+```
 
 This should complete the process. You can test your upload permissions by uploading a file. It should only work when apache completes the process.
 

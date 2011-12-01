@@ -14,7 +14,8 @@ I discovered that through creating a local config file for ssh you can declare s
 
 Open terminal and get going: 
 
-{% highlight bash %}cd /Users/yourname/.ssh
+``` bash 
+cd /Users/yourname/.ssh
 
 # If you get ""-bash: cd: .ssh: No such file or directory"
 # You need to create it
@@ -40,7 +41,7 @@ ServerAliveInterval 10
 
 # Set correct permissions on the config file
 chmod 644 /Users/yourname/.ssh/config
-{% endhighlight %}
+```
 
 Now try connecting via SSH and this should stop your SSH sessions freezing. This instantly fixed the issue for me anyway. Hopefully it might help a few other people.
 

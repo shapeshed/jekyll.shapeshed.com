@@ -20,13 +20,14 @@ Jam, Eggs, Butter, Beer
 
 We could leave this list in between paragraph tags as it is at the moment. But HTML provides structure to create documents that capture the semantic meaning. In this case an unordered list can be used to put this list on a web page. 
 
-{% highlight html %}<ul>
+``` html 
+<ul>
     <li>Jam</li>
     <li>Eggs</li>
     <li>Butter</li>
     <li>Beer</li>
 </ul>
-{% endhighlight %}
+```
 
 ## The danger of CSS
 
@@ -46,7 +47,8 @@ Thirdly many other user agents won't understand your stylesheet, whether it be a
 
 Here are two examples of the same event: 
 
-{% highlight html %}<p>My birthday: Time to celebrate and shake your rump! 25th Jan 2007 8pm til 4am.</p>
+``` html 
+<p>My birthday: Time to celebrate and shake your rump! 25th Jan 2007 8pm til 4am.</p>
 
 <div class="vevent">
   <abbr class="dtstart" title="20070125T2000Z">January 25th 8pm</abbr>, 
@@ -55,7 +57,7 @@ Here are two examples of the same event:
   <span class="location">London</span>
   <div class="description">Time to celebrate and shake your rump!</div>
 </div>
-{% endhighlight %}
+```
 
 Using Microformats gives the document much more meaning and allows other software and applications to access the code and use it. One great use of Microformats is giving users the ability to download this information to their Calendar software. Without semantic markup you can't do this.
 

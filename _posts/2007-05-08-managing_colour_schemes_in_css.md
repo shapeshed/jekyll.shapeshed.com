@@ -18,20 +18,24 @@ Here's an example colour scheme. I usually like to have five colours ranging fro
 
 PHP allows you to parse any document using the PHP engine. This means you can use PHP in your CSS files. To do this you need to add the following lines to your [.htaccess][2] file: 
 
-{% highlight apache %}<IfModule mod_mime.c>
+``` apache 
+<IfModule mod_mime.c>
 AddType application/x-httpd-php .css
 </IfModule>
-{% endhighlight %}
+```
 
 You also need to add the following to the top of all of your css files, even if you don't use PHP in them 
 
-{% highlight php %}<?php header("Content-type: text/css"); ?>{% endhighlight %}
+``` php 
+<?php header("Content-type: text/css"); ?>
+```
 
 ## Colour scheme as variables
 
 Once you have set up your CSS files to use PHP you can declare your colour scheme as variables. 
 
-{% highlight php %}<?php
+``` php 
+<?php
 // Colour scheme
 $primary = "#669966";
 $secondary = "#99cc99";
@@ -39,17 +43,18 @@ $tertiary = "#ccffcc";
 $quaternary = "#e8fed8";
 $quinary = "#effce4";
 ?>
-{% endhighlight %}
+```
 
 This can sit at the top of your css file or you can choose to keep it in a separate file and include it. It is up to you.
 
 When you write CSS rules instead of writing the colour use the variable instead. 
 
-{% highlight css %}#example-id h4
+``` css 
+#example-id h4
     {
     background-color:<?php echo $secondary ?>;
 }
-{% endhighlight %}
+```
 
 ## Many benefits
 

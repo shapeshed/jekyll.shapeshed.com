@@ -33,19 +33,21 @@ Let's take the example of an Apache .htaccess file. It is common for many web de
 
 For example removing www: 
 
-{% highlight apache %}Options +FollowSymLinks
+``` apache 
+Options +FollowSymLinks
 RewriteEngine On
 RewriteBase /
 RewriteCond %{HTTP_HOST} !^yourdomain\.com$ [NC]
 RewriteRule ^(.*)$ http://yourdomain.com/$1 [R=301,L]
-{% endhighlight %} 
+``` 
 
 The issue is if the mod_rewrite module is not available in Apache you'll get a nice 500 Internal Error message. But you can prevent this with a simple if statement: 
 
-{% highlight apache %} <IfModule mod_rewrite.c>
+``` apache 
+ <IfModule mod_rewrite.c>
 # put any rules relating to the mod_rewrite module here 
 </IfModule>
-{% endhighlight %} 
+``` 
 
 If the module is not available it will be ignored, so no error. It is a simple if statement that avoids an error. 
 
@@ -53,21 +55,23 @@ If the module is not available it will be ignored, so no error. It is a simple i
 
 This article is less about examples and more about the idea of using an if statement to test for things that may or may not be available. Here's an example in Javascript where we are looking for an element with the id "clickme". Have a look at this code: 
 
-{% highlight javascript %}var clickme = document.getElementById("clickme");
+``` javascript 
+var clickme = document.getElementById("clickme");
 clickme.onclick = function(){
   // run some code
 } 
-{% endhighlight %} 
+``` 
 
 There's two points at which this script could fail. Firstly if the browser doesn't support getElementByID and secondly if an element with the id of clickme does not exist. We can fix that with a couple of defensive if statements: 
 
-{% highlight javascript %}if(!document.getElementById) { return; }
+``` javascript 
+if(!document.getElementById) { return; }
 var clickme = document.getElementById("clickme");
 if (!clickme) { return; }
 clickme.onclick = function(){
   // run some code
 }
-{% endhighlight %} 
+``` 
 
 Via a couple of defensive if statements we have bulletproofed the script. It anticipates things that might not be available and provides an exit strategy if they are not. If the browser does not support getElementById the script will exit and if an element with the id of clickme is not present it will also exit. So you won't a javascript error. This is also good for future-proofing the code. The markup on the page may well change and if the element with the id of clickme is removed the script will not error. 
 

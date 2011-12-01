@@ -14,11 +14,15 @@ Recently I came across a couple of shortcuts that have greatly reduced the time 
 
 Using :! from within vi you can run a shell command. This is great as you don't need to exit vi to test your code. Let's say for example your script is called myscript.sh. You can run your script from within the vi editor by using. 
 
-{% highlight bash %}:!myscript.sh{% endhighlight %} 
+``` bash 
+:!myscript.sh
+``` 
 
 Furthermore you can make more changes in vi, save the file and then run the script again by using 
 
-{% highlight bash %}:!!{% endhighlight %} 
+``` bash 
+:!!
+``` 
 
 This is a shortcut to the last command issued to the shell, allowing you to retest your shell script without even typing the filename. 
 
@@ -26,6 +30,8 @@ This is a shortcut to the last command issued to the shell, allowing you to rete
 
 Within vi the % variable refers to the file that you are currently editing. So to run the script you are editing from within vi you can also use: 
 
-{% highlight bash %}:%{% endhighlight %}
+``` bash 
+:%
+```
 
  [1]: http://oreilly.com/catalog/9780596005955/

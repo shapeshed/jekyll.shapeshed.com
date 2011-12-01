@@ -39,7 +39,8 @@ It is also quite straightforward to change the text. Using the DOM you can be as
 
 The function below is crude but shows how you can switch both content and styles using the methods described above. It is also very cross browser friendly (tested browsers given after the function). Hopefully you should be able to follow the comments. Again I'm using [Simon Willison's addEvent][3] to make sure the function is ready when the page has loaded.  
 
-{% highlight javascript %}function alterContent() {
+``` javascript 
+function alterContent() {
     
     var updateDiv, // The div for which the styles are switched    
         trigger, // The link that fires the function
@@ -86,7 +87,7 @@ The function below is crude but shows how you can switch both content and styles
         }
     }    
 } 
-{% endhighlight %}
+```
 
 You can view this [code in action here][1] or [download the source code][2]. If you have any insight or don't understand anything please let a comment below
 

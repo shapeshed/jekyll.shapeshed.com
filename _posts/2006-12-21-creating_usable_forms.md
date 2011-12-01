@@ -17,11 +17,12 @@ Too many forms use the default styling for input boxes. This crushes the text up
 
 Until CSS3 arrives you will need to define a class for each input type. I like to match this to the type. So for input type="text" I have: 
 
-{% highlight css %}input.text	{
+``` css 
+input.text	{
   padding: 5px;
   border: 1px solid #999999;	
 }
-{% endhighlight %}
+```
 
 ![Forms that breathe][1] 
 

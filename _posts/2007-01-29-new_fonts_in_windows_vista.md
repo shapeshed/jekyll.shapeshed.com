@@ -38,7 +38,9 @@ You can degrade your font choice gracefully using CSS so that if a user is on Vi
 
 In this example if the user does not have Corbel they get Lucida Sans. If they don't have Lucida Sans they will get Verdana and so on. 
 
-{% highlight css %}font: 62.5%/1.5 "Candara", "Lucida Sans", Verdana, Tahoma, sans-serif;{% endhighlight %}
+``` css 
+font: 62.5%/1.5 "Candara", "Lucida Sans", Verdana, Tahoma, sans-serif;
+```
 
 With such a limited choice of system fonts this is something for typography fans to cheer about (well a little bit!).
 

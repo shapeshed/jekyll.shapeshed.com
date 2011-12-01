@@ -14,13 +14,14 @@ How you divide up your stylesheets is very much a matter of personal choice. You
 
 Knowing where you are starting from is very important. Often you will be perplexed as to why padding has been applied by a particluar browser. For that reason I like to remove padding, margins and borders from everything using a universal selector. I then reapply padding, margins and borders to specific elements and know exactly where I am starting from 
 
-{% highlight css %}/* Remove padding and margin */
+``` css 
+/* Remove padding and margin */
 * {
   margin: 0;
   padding: 0;
   border: 0;
 }
-{% endhighlight %}
+```
 
 ## Code defensively
 
@@ -28,21 +29,23 @@ The more you code CSS the more you will become aware of browser inconsistencies.
 Note: Both examples assume the div is floated left within a container. 
 
 Example one - applying the margin directly to the div. This will result in IE misinterpreting it and probable hacking.
-{% highlight css %}#left-content {
+``` css 
+#left-content {
   float: left;
   margin-left: 10px; /* This margin will be doubled in IE6 and below */
 }
-{% endhighlight %} 
+``` 
 
 Example two - float the div left and then move everything in it away from the edge by 10px using a universal selector. No hacking needed. 
-{% highlight css %}#left-content {
+``` css 
+#left-content {
   float: left;
 }
 
 #left-content * {
   margin-left: 10px;
 }
-{% endhighlight %}
+```
 
 ## Avoid hacks
 
@@ -52,10 +55,11 @@ Hacking CSS is lazy and unless completely necessary should be avoided. With the 
 
 If you have done more than 10 minutes of CSS you will realise that Internet Explorer is the most buggy of all browsers. Thankfully you can use [conditional comments][4] to manage the CSS that is served to IE. If I need it I have a stylesheet called ie6\_and\_below.css that targets older versions of IE. It allows me to manage CSS for older browsers quickly and easily.  
 
-{% highlight css %}<!--[if lte IE 6]>
+``` css 
+<!--[if lte IE 6]>
   <link rel="stylesheet" href="/css/ie6_and_below.css" type="text/css" media="screen" />
 <![endif]-->
-{% endhighlight %}
+```
 
 ## Test, test, test
 
@@ -65,12 +69,13 @@ If you want to create robust CSS based layouts there is no way to avoid testing.
 
 Almost every book ever written on coding advises commenting. Comments explaining why and how you did something will make maintaining the CSS much easier.
 
-{% highlight css %}/*-----------------------------------------------------------------------------
+``` css 
+/*-----------------------------------------------------------------------------
 I use this for block comments
 -----------------------------------------------------------------------------*/
 
 /* I use this for short commments */
-{% endhighlight %}
+```
 
 ## Read blogs
 

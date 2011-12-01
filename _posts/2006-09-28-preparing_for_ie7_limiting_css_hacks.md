@@ -30,11 +30,12 @@ Very often however the Box Model Hack simply isn't necessary. If you need to app
 
 Look at this XHTML: 
 
-{% highlight html %}<div id="content">
+``` html 
+<div id="content">
   <h3>Title</h3>
   <p>Paragraph</p>
 </div>
-{% endhighlight %}
+```
 
 If the content needs to be given a margin from the edge of the div then many developers will apply margin and padding to the div. This will of course cause problems in IE5/Win so it will be necessary to use a hack.
 
@@ -42,10 +43,11 @@ Providing you don't have to specify a width, you can avoid hacking by applying t
 
 Furthermore you can use [conditional comments][4] to keep your hacks for IE in one external file. This means you can manage hacks more easily and not serve these stylesheets to browsers that interpret things correctly. The example below serves a stylesheets to IE6 and below but is ignored by non IE browsers:
 
-{% highlight css %}<!--[if lte IE 6]>
+``` css 
+<!--[if lte IE 6]>
 <link rel="stylesheet" href="/css/ie6_and_below.css" type="text/css" media="screen" />
 <![endif]-->
-{% endhighlight %}
+```
 
 There is no doubt that at times hacks are unavoidable but with the arrival of IE7 is important to consider how you are using them and to limit their use wherever possible. Otherwise you may well find that your new best friend is your worst enemy.
 

@@ -24,10 +24,11 @@ At this point you might want to [view the example][1] or [download the source co
 
 This might seem very familiar to front end developers who have made the transition to CSS. Historically Javascript was placed in the markup, just like font tags. Javascript was in between the body tags, it was in links, it was in onclick events. 
 
-{% highlight html %}<a onclick="oldJS(); return false;" href="#">old school javascript</a>
+``` html 
+<a onclick="oldJS(); return false;" href="#">old school javascript</a>
 <a onclick="javascript: oldJS(); return false;" href="#">more old school javascript</a>
 <a href="javascript: oldJS();">yet more old school javascript</a>
-{% endhighlight %}
+```
 
 This is bad for a number of reasons: accessibility, browser support, maintenance and the fact that it causes real problems when javascript is turned off. It can cause search engine spiders to stop indexing a page too if there are javascript errors.
 
@@ -37,7 +38,8 @@ If you are a CSS coder then you are probably familiar with the DOM. This is the 
 
 Using the DOM we can find a link with the id "good-js" and do something with it. In this case we will attach an onclick event to it. 
 
-{% highlight javascript %}function modernJS() {
+``` javascript 
+function modernJS() {
     
     // Check the browser supports getElementById so we can find our link
     if(!document.getElementById) { return; }
@@ -55,7 +57,7 @@ Using the DOM we can find a link with the id "good-js" and do something with it.
         return false;
         }
 }
-{% endhighlight %} 
+``` 
 
 ## Attaching the function to onload
 
@@ -63,7 +65,8 @@ Adding the function to the onload event is basically getting it ready for when t
 
 Traditionallly window.onload was used but this wasn't perfect so a number of onload scripts have been created. Most Javascript libraries have scripts that handle onload. Simon Willison wrote [a short script][4] that seems to do the trick.  
 
-{% highlight javascript %}function addLoadEvent(func) {
+``` javascript 
+function addLoadEvent(func) {
   var oldonload = window.onload;
   if (typeof window.onload != 'function') {
     window.onload = func;
@@ -78,7 +81,7 @@ Traditionallly window.onload was used but this wasn't perfect so a number of onl
 }
 
 addLoadEvent(modernJS);
-{% endhighlight %}
+```
 
 You will see that we have asked the function to load in the modernJS function when the page loads. So everything is ready.
 
@@ -86,7 +89,9 @@ You will see that we have asked the function to load in the modernJS function wh
 
 Using the DOM and onload we can keep our markup clean and lean. It also means that if Javascript is turned off then the user is taken through to alternative content rather going nowhere. 
 
-{% highlight html %}<a id="good-js" href="non_js_content.html">The modern way of doing it</a>{% endhighlight %}
+``` html 
+<a id="good-js" href="non_js_content.html">The modern way of doing it</a>
+```
 
 So when a user with Javascript clicks the link the modernJS function is fired. If they don't have Javascript they will be taken to another page. So it is good for all users, search engines and accessibility. We have separated our markup and Javascript and hopefully you can see why this is important. 
 

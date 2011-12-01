@@ -18,15 +18,21 @@ The simple answer is that it will save you time. Take this example. Let's say th
 
 To create an alias you will need to login to your home directory. Run 'ls -a' and you should see a hidden file .bash_profile. This is the file we need to add the alias to. So let's edit that file: 
 
-{% highlight bash %} vi bash_profile {% endhighlight %} 
+``` bash 
+ vi bash_profile 
+``` 
 
 Then we add the alias - you can add this anywhere in the file.  
 
-{% highlight bash %} alias ls='ls -lhF' {% endhighlight %} 
+``` bash 
+ alias ls='ls -lhF' 
+``` 
 
 Quit and save by hitting ':wq'. Then we need to reload the profile 
 
-{% highlight bash %} source .bash_profile {% endhighlight %} 
+``` bash 
+ source .bash_profile 
+``` 
 
 All done! Now whenever you use the 'ls' command the .bash_profile file will override the default options and return the options that you have specified in the alias, so you'll see a human readable directory listing without having to add the flags
 

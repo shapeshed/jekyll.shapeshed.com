@@ -10,7 +10,8 @@ It is easy to get into good practices that will lower the size of your CSS files
 
 Using CSS shorthand can significantly lower the file size of you CSS size. Look at the following two rules. They are both exactly the same.  
 
-{% highlight css %}h1 { 
+``` css 
+h1 { 
   font-weight: bold; 
   font-size: 12pt; 
   line-height: 14pt; 
@@ -20,7 +21,7 @@ Using CSS shorthand can significantly lower the file size of you CSS size. Look 
 } 
 
 h1 { font: bold 12pt/14pt Helvetica }
-{% endhighlight %}
+```
 
 You can use shorthand for the following:
 
@@ -36,11 +37,12 @@ Browser support can be an issue with some legacy browsers so if you need to supp
 
 As different browsers apply different amounts of padding and margin to different elements I find it useful to simply remove all padding and margin from every element using the following rule: 
 
-{% highlight css %}* { 
+``` css 
+* { 
   margin: 0px;
   padding: 0px; 
 }
-{% endhighlight %}
+```
 
 This means that when you code your CSS you know where you are. Hopefully you won't have to add extra rules for different browsers as all browsers will render margins and borders as 0px unless you specify otherwise. 
 
@@ -48,14 +50,15 @@ This means that when you code your CSS you know where you are. Hopefully you won
 
 It is easy to get carried away with multiple classes. Where possible it is good practice to start by defining rules for HTML elements. As you code your (x)HTML you will find that you will save on the page weight of both your HTML and CSS files. For example let's say that you want all h1 text to be Georgia. Rule one is more efficient than rule two which also requires a class to be added to the (X)HTML. 
 
-{% highlight css %}h1 {  
+``` css 
+h1 {  
   font-family: Georgia; 
 } 
 
 .georgia-heading {  
   font-family: Georgia; 
 }
-{% endhighlight %}
+```
 
 Furthermore you will speed up your coding if you can use this approach throughout your documents. 
 

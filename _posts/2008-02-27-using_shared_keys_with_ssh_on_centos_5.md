@@ -20,49 +20,70 @@ The second benefit is that if you use scripts to backup your server to another o
 
 On my Mac I'm logged in as the user myuser. On the remote machine I also login using the user myuser. On my Mac I open Terminal (you'll find this in Applications > Utilities). First I need to generate the keys on my machine. I run this command: 
 
-{% highlight bash %}ssh-keygen -t rsa{% endhighlight %} 
+``` bash 
+ssh-keygen -t rsa
+``` 
 
 You will be prompted for a password. If you don't want a password just hit return. This means however that anyone who gets control of your machine will be able to login to your server. This generates a public and a private key in a hidden folder /Users/myuser/.ssh
 
 It is possible that you won't be able to see hidden files on your Mac by default. If this is the case you can enable this across your system by running the commands 
 
-{% highlight bash %}defaults write com.apple.finder AppleShowAllFiles TRUE 
+``` bash 
+defaults write com.apple.finder AppleShowAllFiles TRUE 
 killall Finder 
-{% endhighlight %} 
+``` 
 
 Now on the remote machine login as your user using your normal password. In your home directory (/home/myuser in this example) create a new folder and then a file to hold your authorized keys.  
 
-{% highlight bash %}mkdir .ssh cd .ssh touch authorized_keys{% endhighlight %} 
+``` bash 
+mkdir .ssh cd .ssh touch authorized_keys
+``` 
 
 Now we copy the public key to the server using the scp command. This transfers the file using SSH so is secure as no one can see it. You will be asked for your regular password.  
-{% highlight bash %}scp ~/.ssh/id_rsa.pub myuser@7123.456.789.0:~/{% endhighlight %} 
+``` bash 
+scp ~/.ssh/id_rsa.pub myuser@7123.456.789.0:~/
+``` 
 
 Now SSH into your remote server in the standard way and in your home directory (/home/myuser in this example) you will see the file id_rsa.pub. We want to import this into our list of authorized keys so on the remote machine run this command.  
 
-{% highlight bash %}cat id_rsa.pub >> ~/.ssh/authorized_keys{% endhighlight %} 
+``` bash 
+cat id_rsa.pub >> ~/.ssh/authorized_keys
+``` 
 
 This writes the contents of the key to our authorized keys list. Once you are done we want to clean things up and set permissions on the files to ensure that no one can else can use our key. On the remote machine: 
-{% highlight bash %}rm id_rsa.pub chmod 700 ~/.ssh chmod 600 ~/.ssh/authorized_keys{% endhighlight %} 
+``` bash 
+rm id_rsa.pub chmod 700 ~/.ssh chmod 600 ~/.ssh/authorized_keys
+``` 
 
 On the local machine 
 
-{% highlight bash %}chmod 700 ~/.ssh chmod 600 ~/.ssh/id_rsa {% endhighlight %} 
+``` bash 
+chmod 700 ~/.ssh chmod 600 ~/.ssh/id_rsa 
+``` 
 
 You should now be set up to access your machine with your shared key. Login as normal and if all goes to plan you will be granted access with your key. You can debug logging in by adding the verbose flag to your SSH request. 
 
-{% highlight bash %}ssh -v myuser@123.456.789.0 {% endhighlight %} 
+``` bash 
+ssh -v myuser@123.456.789.0 
+``` 
 
 Once you are sure everything is ok you can now disable password logins for addtional security. On the remote machine you will need root access and run the following commands 
 
-{% highlight bash %}vi /etc/ssh/sshd_config {% endhighlight %} 
+``` bash 
+vi /etc/ssh/sshd_config 
+``` 
 
 Find the line  
 
-{% highlight bash %}PasswordAuthentication yes {% endhighlight %} 
+``` bash 
+PasswordAuthentication yes 
+``` 
 
 Change this to no. Then hit escape : wq to save the file. Finally restart the sshd daemon: 
 
-{% highlight bash %}/etc/init.d/sshd restart {% endhighlight %} 
+``` bash 
+/etc/init.d/sshd restart 
+``` 
 
 You will now only be able to login to your server using a shared key.
 

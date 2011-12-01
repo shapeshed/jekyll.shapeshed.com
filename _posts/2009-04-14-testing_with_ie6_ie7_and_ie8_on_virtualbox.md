@@ -12,15 +12,21 @@ Microsoft make a [series of downloads available][1] for web developers to ensure
 
 The downloads are available as .exe files so you will need to extract them first. On OSX I use [Stuffit][2] which extracts .exe files on the free version. [Andrew Odri][3] also has a write up on this and he recommends using [The Unarchiver][4] although this didn't work for me.
 
-On Ubuntu you can use Wine: {% highlight bash %} sudo apt-get install wine {% endhighlight %} 
+On Ubuntu you can use Wine: ``` bash 
+ sudo apt-get install wine 
+``` 
 
-Once installed you can use Wine to extract the exe: {% highlight bash %} wine /path/to/yourexe.exe {% endhighlight %} 
+Once installed you can use Wine to extract the exe: ``` bash 
+ wine /path/to/yourexe.exe 
+``` 
 
 ## Get VirtualBox
 
 Next download and install VirtualBox. On OSX you can [download a .dmg file][5]. On Ubuntu the following will install it for you: 
 
-{% highlight bash %} sudo apt-get install virtualbox {% endhighlight %} 
+``` bash 
+ sudo apt-get install virtualbox 
+``` 
 
 ## Fixing Microsoft's duplicate identifiers
 
@@ -28,28 +34,36 @@ The Microsoft images all [share the same Hard Disk Identifier][6] which means th
 
 For OSX [Download Q][7] and then for each vhds we need to convert it to a vdi. This will allow us to test in parallel. On OSX run: 
 
-{% highlight bash %}/Applications/Q.app/Contents/MacOS/qemu-img convert -O raw -f vpc yourVHD.vhd RAWimage.raw 
+``` bash 
+/Applications/Q.app/Contents/MacOS/qemu-img convert -O raw -f vpc yourVHD.vhd RAWimage.raw 
 VBoxManage convertdd RAWimage.raw NewVDIImage.vdi 
-{% endhighlight %} 
+``` 
 
 For Ubuntu get QEMU: 
-{% highlight bash %}sudo apt-get install qemu{% endhighlight %} 
+``` bash 
+sudo apt-get install qemu
+``` 
 
 Once installed on Ubuntu you can then convert the .vhd to a .vdi 
 
-{% highlight bash %}qemu-img convert -O raw -f vpc yourVHD.vhd 
+``` bash 
+qemu-img convert -O raw -f vpc yourVHD.vhd 
 RAWimage.raw VBoxManage convertdd RAWimage.raw NewVDIImage.vdi 
-{% endhighlight %} 
+``` 
 
 ## Fixing drivers
 
 Once you have set up your Virtual Machine and booted you will see a blue screen of death. This is because we still need to install some drivers. When booting hold down F8 and boot into Safe Mode with Command Prompt. Cancel any prompts that come up and at the DOS prompt enter 
-{% highlight bash %}cd \WINDOWS\system32\drivers ren processr.sys processr.old{% endhighlight %} 
+``` bash 
+cd \WINDOWS\system32\drivers ren processr.sys processr.old
+``` 
 
 Restart the machine and then in the VirtualBox menu go to Devices > Install Guest Additions. Follow the prompts and install the additions. On Ubuntu I found I had to manually download the iso from the link supplied, then mount it in the machine settings before booting. Reboot when you are done. 
 
 Once rebooted at the DOS prompt type 
-{% highlight bash %}D:\VBoxWindowsAdditions-x86.exe /extract /D=C:\Drivers{% endhighlight %} 
+``` bash 
+D:\VBoxWindowsAdditions-x86.exe /extract /D=C:\Drivers
+``` 
 
 This will extract the VirtualBox drivers
 

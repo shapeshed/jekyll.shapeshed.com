@@ -8,7 +8,8 @@ categories: [CSS]
 
 To start with it is important that you document your code. I like Andy Budd's approach of writing the version number and adding your email and website address before applying any rules. You can ease maintenance by noting changes, or at least saying where the log of amends is kept. 
 
-{% highlight css %}/*----------------------------------------------------------------------------- 
+``` css 
+/*----------------------------------------------------------------------------- 
 [client] Screen Stylesheet 
 
 version:   1.0 
@@ -18,36 +19,39 @@ email:     [you at domain dot com]
 website:   [your domain] 
 version history: [location of file] 
 -----------------------------------------------------------------------------*/
-{% endhighlight %}
+```
 
 ## Decide how you want to divide your stylesheets
 
 I find that most of the time I can get away with one stylesheet. Sometimes though a site will become large enough to warrant more than one stylesheet. Indeed some CSS authors prefer to split them up. It is a matter of personal choice. So next in my default stylesheet I have a section where any other stylesheets can be pulled in to the main one. 
 
-{% highlight css %}/* Import other stylesheets 
+``` css 
+/* Import other stylesheets 
 -----------------------------------------------------------------------------*/ 
 @import url("typography.css");
-{% endhighlight %}
+```
 
 ## Remove default styles
 
 [Tantek Celik][1] wrote a stylesheet to remove default styles from elements. This might suit you so have a look. Personally I find that one universal rule is enough to rebase elements. I haven't experience any performance issues using this on many different projects. 
 
-{% highlight css %}/* Remove padding and margin */ 
+``` css 
+/* Remove padding and margin */ 
 *  
     { 
     margin: 0; 
     padding: 0; 
     border: 0; 
 }
-{% endhighlight %}
+```
 
 Why do this? Browsers apply different styles to different elements. So it makes sense for me to know where I am starting from. This simple rule allows me to know that all elements will start by having no margin, padding or border.
 
 ## Have classes for floating and clearing
 
 Next I have a class for clearing, again something I learnt from [Andy Budd][2] and his [excellent book][3]. Clearing floated elements is a common task so it is well worth it. Also you will probably want to float elements left and right so I like to have these too. I use these for images quite a lot.  
-{% highlight css %}.clear 
+``` css 
+.clear 
     { 
     clear:both; 
 } 
@@ -61,7 +65,7 @@ Next I have a class for clearing, again something I learnt from [Andy Budd][2] a
     { 
     float: left; 
 }
-{% endhighlight %}
+```
 
 ## Set the document up
 
@@ -69,7 +73,8 @@ I have found that a good framework for setting up a document is to set font size
 
 Then I have a wrapper div to hold the content and set the width of the page. This also centres the content and applies a white background. 
 
-{% highlight css %}body 
+``` css 
+body 
     { 
     font: 62.5%/1.5  "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif; 
     background: url(/images/wallpaper.png) repeat; 
@@ -85,13 +90,14 @@ Then I have a wrapper div to hold the content and set the width of the page. Thi
     margin-right:auto;  
     background-color: #FFFFFF; 
 }
-{% endhighlight %} 
+``` 
 
 ## Handling typography
 
 Then I like to set up the default font sizes. Using Richard Rutter's method we know the default size is 10pt so we can create accurate sizings. 
 
-{% highlight css %}h1 
+``` css 
+h1 
     { 
     font-size: 2.2em; 
 } 
@@ -120,12 +126,13 @@ p
     { 
     font-size: 1.2em;     
 }
-{% endhighlight %}
+```
 ## Create sections
 
 Large CSS documents are diffiuclt to manage. I like to divide mine up using sections of the page or even templates. Each project will vary but I like put some sections in by default and then change it if necessary: 
 
-{% highlight css %}/* Header 
+``` css 
+/* Header 
 -----------------------------------------------------------------------------*/ 
 
 /* Navigation 
@@ -139,13 +146,14 @@ Large CSS documents are diffiuclt to manage. I like to divide mine up using sect
 
 /* Your template 
 -----------------------------------------------------------------------------*/
-{% endhighlight %} 
+``` 
 
 ## Forms
 
 By default on forms I like to give text input boxes a little padding to move the text away from the edge of the box and give it a grey border. 
 
-{% highlight css %}/* Forms 
+``` css 
+/* Forms 
 -----------------------------------------------------------------------------*/ 
 
 input.text 
@@ -153,13 +161,14 @@ input.text
   padding: 3px; 
   border: 1px solid #999999;     
 }
-{% endhighlight %}
+```
 
 ## Tables
 
 Finally for tables I again use [Andy Budd's][2] default to know where I am in tables - I've found it works well. 
 
-{% highlight css %}* Tables  
+``` css 
+* Tables  
 -----------------------------------------------------------------------------*/ 
 
 table 
@@ -173,13 +182,14 @@ td
   text-align: left; 
   font-weight: normal; 
 }
-{% endhighlight %}
+```
 
 ## Default XHTML
 
 My default XTHML is as follows. Normally I add in print stylesheets, icons and RSS feeds as the project progresses. 
 
-{% highlight html %}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+``` html 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
 <head> 
     <title>Page title here</title> 
@@ -197,7 +207,7 @@ My default XTHML is as follows. Normally I add in print stylesheets, icons and R
   </div> 
 </body> 
 </html>
-{% endhighlight %}
+```
 
 ## A matter of personal choice
 

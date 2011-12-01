@@ -11,13 +11,16 @@ I'm an unashamed command line <del>kid</del> old git. For getting things done qu
 
 It doesn't have the power of other tools like [sed][1] or [awk][2] but for basic string manipulation it is pretty good. One example would be that we want to change uppercase text to lower case
 
-{% highlight bash %}echo 'HI THERE' |  tr '[:upper:]' '[:lower:]'
+``` bash 
+echo 'HI THERE' |  tr '[:upper:]' '[:lower:]'
 hi there
-{% endhighlight %}
+```
 
 Or we might have a comma separated list that we want to strip the commas out of and to replace them with a new line 
 
-{% highlight bash %}cat file.csv | tr ',' '\n' > new.txt{% endhighlight %}
+``` bash 
+cat file.csv | tr ',' '\n' > new.txt
+```
 
 This translates each comma to a new line so 'dog, cat, horse' becomes
 
@@ -29,23 +32,30 @@ horse
 
 tr also lets you delete characters. So if you need to quickly clean up a string you can do:
 
-{% highlight bash %}echo 'clean$ me$ $up$ please$' | tr -d '$'
+``` bash 
+echo 'clean$ me$ $up$ please$' | tr -d '$'
 clean me up please
-{% endhighlight %}
+```
 
 Because Unix lets you pipe the output we can write this to a file easily
 
-{% highlight bash %}echo 'clean$ me$ $up$ please$' | tr -d '$' > file.txt{% endhighlight %}
+``` bash 
+echo 'clean$ me$ $up$ please$' | tr -d '$' > file.txt
+```
 
 We could also read in a big file, pipe it to the tr command and then send the output to another file
 
-{% highlight bash %}cat big_file.txt | tr -d '$' > clean_file.txt{% endhighlight %}
+``` bash 
+cat big_file.txt | tr -d '$' > clean_file.txt
+```
 
 ## More complex uses
 
 You can pipe replacements together for more complex translations. Let's say someone sends you a file with spaces in it. You want to remove the spaces and whilst you are at it make the filename lowercase. 
 
-{% highlight bash %}mv Crap\ File\ nAme.txt `echo Crap\ File\ nAme.txt | tr -d '\' | tr ' ' '_' | tr '[:upper:]' '[:lower:]'`{% endhighlight %}
+``` bash 
+mv Crap\ File\ nAme.txt `echo Crap\ File\ nAme.txt | tr -d '\' | tr ' ' '_' | tr '[:upper:]' '[:lower:]'`
+```
 
 This will rename 'Crap File nAme.txt' to 'crap\_file\_name.txt'
 

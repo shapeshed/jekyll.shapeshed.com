@@ -16,14 +16,15 @@ Imagine you are walking down a street in Edinburgh and you see a robot standing 
 
 Here's what an if statement looks like using the example of the if robot. 
 
-{% highlight php %}<?php
+``` php 
+<?php
 $button = "pressed";
 
 if ($button == "pressed") {
     echo "I am alive and will now perform Sex Machine by James Brown";
 }
 ?> 
-{% endhighlight %} 
+``` 
 
 First of all we have a php tag. This allows PHP code to be run. Then we have the $button variable. A variable is just something that could be more than one thing. Variables allow you to hold a piece of information temporarily. PHP variables are identified by a dollar sign followed by the name. In this case it is the button on the robot. It can be pressed, unpressed or broken. If the button is pressed the robot will perform a song. The if statement tests whether the statement within the brackets is true. The == operator tests whether the two options are equivalent. In this case they are and we are using the echo statement to write the status to the page. Finally we have our closing PHP tag.
 
@@ -31,7 +32,8 @@ First of all we have a php tag. This allows PHP code to be run. Then we have the
 
 For our example we have used an if statement to do something if the button is pressed. But there are two further options available to test for different conditions - elseif and else. Using elseif we can test for something else and we can then use else to pick up anything that didn't match any of our conditions. Let's say we want to test if the button is broken or if nothing has happened. We can do this: 
 
-{% highlight php %}<?php
+``` php 
+<?php
 $button = "pressed";
 if ($button == "pressed") {
     echo "I am alive and will now perform Sex Machine by James Brown";
@@ -43,13 +45,14 @@ else {
 	echo "Nobody wants to press my button. I am so alone.";
 }
 ?> 
-{% endhighlight %} 
+``` 
 
 ## Shorter syntax
 
 When you are starting out I recommend that you use the syntax above as it is easier to read and understand. Once you are comfortable though if you are just testing for two conditions (true and false would be a good example) you can use a shorter way of writing an if statement. Here's the standard way of finding out if someone is hungry: 
 
-{% highlight php %}<?php
+``` php 
+<?php
 $hungry = true;
 if($hungry) {
     echo "Feed me now! I need food!";
@@ -57,15 +60,16 @@ if($hungry) {
     echo "Thank you my good man but I am not hungry";
 }
 ?> 
-{% endhighlight %} 
+``` 
 
 This can be also be written like this: 
 
-{% highlight php %}<?php
+``` php 
+<?php
 $hungry = true;
 echo $hungry ? "Feed me now! I need food!" : "Thank you my good man but I am not hungry";
 ?> 
-{% endhighlight %} 
+``` 
 
 The alternative syntax is more difficult to read but much shorter.
 

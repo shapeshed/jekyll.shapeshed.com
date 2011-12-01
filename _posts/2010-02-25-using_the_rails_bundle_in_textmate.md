@@ -15,33 +15,39 @@ I had mostly been using the command line for things like running tests but the b
 
 The first issue I came up against was that TextMate wasn't finding the right version of Rails. 
 
-{% highlight bash %}Missing the Rails 2.3.5 gem. Please `gem install -v=2.3.5 rails`, update your RAILS_GEM_VERSION setting in config/environment.rb for the Rails version you do have installed, or comment out RAILS_GEM_VERSION to use the latest version installed.
-{% endhighlight %}
+``` bash 
+Missing the Rails 2.3.5 gem. Please `gem install -v=2.3.5 rails`, update your RAILS_GEM_VERSION setting in config/environment.rb for the Rails version you do have installed, or comment out RAILS_GEM_VERSION to use the latest version installed.
+```
 
 
 I assumed this was a path issue so added /usr/local/bin to /etc/profile but no luck. The solution is to add this to TextMate's Shell Variables. Go to Preferences > Advanced > Shell Variables. Then add a row with the variable "PATH" and the value "/usr/local/bin" (or wherever you want TextMate to look). 
 
 This allows individual tests to be run but when running all tests via the bundle I got
 
-{% highlight bash %}rake aborted! stack level too deep /Users/george/Sites/istink/Rakefile:10 (See full trace by running task with --trace) (in /Users/george/Sites/istink)
+``` bash 
+rake aborted! stack level too deep /Users/george/Sites/istink/Rakefile:10 (See full trace by running task with --trace) (in /Users/george/Sites/istink)
 Done
-{% endhighlight %}
+```
 
 There is a [ticket on the Macromates][2] site about this. The solution is to add this line to the top of your Rakefile
 
-{% highlight ruby %}$:.reject! { |e| e.include? 'TextMate' }{% endhighlight %}
+``` ruby 
+$:.reject! { |e| e.include? 'TextMate' }
+```
 
 This gets over that problem but I then ran into a conflict with TextMate's Builder file which was throwing another error
 
-{% highlight bash %}/Applications/TextMate.app/Contents/SharedSupport/Support/lib/builder.rb:86:in `blank_slate_method_added': stack level too deep (SystemStackError) 	from 
+``` bash 
+/Applications/TextMate.app/Contents/SharedSupport/Support/lib/builder.rb:86:in `blank_slate_method_added': stack level too deep (SystemStackError) 	from 
 ... snip ...
-{% endhighlight %}
+```
 
 I found a [helpful comment][3] on [Dr Nic's][4] site that fixes the problem. So I did
 
-{% highlight bash %}cd /Applications/TextMate.app/Contents/SharedSupport/Support/lib/
+``` bash 
+cd /Applications/TextMate.app/Contents/SharedSupport/Support/lib/
 mv Builder.rb Builder.rb.old
-{% endhighlight %}
+```
 
 It works! Now I can run any tests I want from within TextMate with the shortcut ^/. Productivity up!
 

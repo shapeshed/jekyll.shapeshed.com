@@ -33,9 +33,12 @@ This article assumes you have command line access to your box. If you don't then
 
 It is likely you'll be using [Name Based Virtual Hosts][1] in Apache. If you haven't set up Virtual Hosts it is a great way to manage sites so be sure to read up on it. Presuming you have an entry for monkeyworld.com we need to edit/create it in our virtual hosts file. The location of where you should place this varies depending on what flavour of Linux you are running. On Centos 5 you can create a file in /etc/httpd/conf.d with the appenedix .conf and it will be picked up when Apache is started.  
 
-{% highlight bash %}vi /etc/httpd/conf.d/httpd-vhosts.conf {% endhighlight %} 
+``` bash 
+vi /etc/httpd/conf.d/httpd-vhosts.conf 
+``` 
 
-{% highlight apache %}NameVirtualHost *:80 
+``` apache 
+NameVirtualHost *:80 
 # Monkey World 
 <VirtualHost *:80> 
   <Directory /var/www/vhosts/monkeysarecool.com/httpdocs> 
@@ -46,7 +49,7 @@ It is likely you'll be using [Name Based Virtual Hosts][1] in Apache. If you hav
     ServerAlias ilovemonkeys.com monkeysarecool.co.uk monkeysrockmyworld.co.uk 
     ServerAlias www.ilovemonkeys.com www.monkeysarecool.co.uk www.monkeysrockmyworld.co.uk Include /var/www/vhosts/monkeysarecool.com/conf/vhost.conf 
 </VirtualHost> 
-{% endhighlight %} 
+``` 
 
 You'll see the lines Server Alias have listings for the domains both with www and without. This ensures you can receive requests with and without www. I like to put them on separate lines so I can see I have what's happening.
 
@@ -58,25 +61,32 @@ So far we've set up requests for Apache to serve up monkeyworld.com for our addi
 
 So we want to forward the domain. To do that lets open our additional configuration file: 
 
-{% highlight bash %}vi /var/www/vhosts/monkeysarecool.com/conf/vhost.conf{% endhighlight %} 
+``` bash 
+vi /var/www/vhosts/monkeysarecool.com/conf/vhost.conf
+``` 
 
-{% highlight apache %}RewriteEngine On
+``` apache 
+RewriteEngine On
 RewriteCond %{HTTP_HOST} ^(monkeyworld.com|ilovemonkeys.com|monkeysarecool.co.uk|monkeysrockmyworld.co.uk) [NC] 
 RewriteRule ^(.*)$ http://www.monkeyworld.com$1 [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^(www.ilovemonkeys.com|www.monkeysarecool.co.uk|www.monkeysrockmyworld.co.uk) [NC] 
 RewriteRule ^(.*)$ http://www.circalibrary.com$1 [R=301,L]
-{% endhighlight %} 
+``` 
 
 We're using Apache's [mod_rewrite][2] to send redirect requests and return a 301 Moved Permanently Header. This should help Google and any other bots to understand what we're doing. Again I like separate entries for with and without www but that's personal preference.
 
 Save this file. We should be done but before restarting Apache let's test that we haven't made any syntax errors that will stop the server from starting up. 
 
-{% highlight bash %}/etc/init.d/httpd configtest{% endhighlight %} 
+``` bash 
+/etc/init.d/httpd configtest
+``` 
 
 If you get "Syntax OK" you are good to restart the server: 
 
-{% highlight bash %}/etc/init.d/httpd restart{% endhighlight %} 
+``` bash 
+/etc/init.d/httpd restart
+``` 
 
 All done! So now when you hit www.ilovemonkeys.com, monkeysarecool.co.uk or monkeysrockmyworld.co.uk you will be forwarded monkeyworld.com, with the address being changed as well.
 

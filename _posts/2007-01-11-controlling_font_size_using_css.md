@@ -10,11 +10,12 @@ Controlling the size of type is the first challenge a web typographer will face.
 
 The idea is that you take the default browser text size of 16pt and work with this to control the size of typography. First the body tag is used to reduce the default size to 62.5% of 16pt. This results in a default size of 10pt, which makes creating new rules and managing CSS rules easy. 
 
-{% highlight css %}body{ 
+``` css 
+body{ 
     /* Reduce default font size to 10pt */
     font: 62.5%/1.5  "Lucida Grande", "Trebuchet MS", Tahoma, Verdana, sans-serif;
 }
-{% endhighlight %}
+```
 
 Now we are ready to control the font size using ems
 
@@ -26,10 +27,11 @@ An em is a traditional unit of measurement among typographers. It is a sliding s
 
 Using the CSS rule above all text is resizable and by default is 10pt. To increase or shrink the font size we define subsequent rules that are inherited in the cascade.  
 
-{% highlight css %}p {font-size:1em} /* This keeps the font at 10pt */
+``` css 
+p {font-size:1em} /* This keeps the font at 10pt */
 h2 {font-size:1.2em} /* This increases the font to 12pt */
 .small {font-size: 0.8em} /* This decreases the font to 8pt */
-{% endhighlight %}
+```
 
 Want to see this code in action? [Check out the demo page][3]
 

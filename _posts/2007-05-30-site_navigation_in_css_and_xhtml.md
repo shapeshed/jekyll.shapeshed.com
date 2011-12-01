@@ -14,7 +14,8 @@ HTML doesn't currently have any semantic syntax for navigation. HTML 5 is propos
 
 Most if not all clients have common elements to the header of websites. Specifically the logo and navigation. It seems strange that semantics do not exist in HTML for these elements. The logo is the title of the site so I give this a big fat h1 tag. I also make it a link to the homepage. For the navigation an unordered list works well. Here's the HTML I use. 
 
-{% highlight html %}
+``` html 
+
 <div id="header"> 
     <h1><a href="/" title="Return to the Home Page">Your Company Name</a></h1> 
     <ul> 
@@ -25,11 +26,12 @@ Most if not all clients have common elements to the header of websites. Specific
         <li><a href="/contact">Contact</a></li> 
     </ul> 
 </div>
-{% endhighlight %}
+```
 
 With stylesheets turned off this makes sense. Now for the CSS.  
 
-{% highlight css %}
+``` css 
+
 #header 
     { 
     width: 760px;  
@@ -76,7 +78,7 @@ With stylesheets turned off this makes sense. Now for the CSS.
     background-color: #fff;     
     color: #000; 
 }
-{% endhighlight %}
+```
 
 I'm using image replacement to move the h1 text off the screen and replace it with an image. The unordered list is switched to display:inline to make it a vertical line.
 
