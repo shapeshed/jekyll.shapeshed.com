@@ -37,11 +37,8 @@ Creativetechs have produced a great cheat sheet for this tool. You can [get a co
 
 In the video below I've drawn a face. But there are areas I am not happy with. So I am going to use the Direct Selection tool to fix a few things.
 
+<iframe src="http://player.vimeo.com/video/32964527?title=0&amp;byline=0&amp;portrait=0" width="640" height="480" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><p><a href="http://vimeo.com/32964527">Illustrator 101 - The Pen Tool</a> from <a href="http://vimeo.com/shapeshed">George Ornbo</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 <video controls>
-  <source src="/movies/mp4/head_pen_tool.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-  <source src="/movies/ogv/head_pen_tool.ogv" type='video/ogg; codecs="theora, vorbis"' />
-  To view this video you need the latest version of <a href="http://www.apple.com/safari/">Safari</a>, <a href="http://www.mozilla.com/firefox/">Firefox</a> or <a href="http://www.google.com/chrome">Chrome</a>. Alterantively download the videos and watch them offline. <a href="/movies/mp4/head_pen_tool.mp4">Windows / Mac (mp4)</a>, <a href="/movies/ogv/head_pen_tool.ogv">Linux (ogv)</a>
-</video>
 
  [1]: /images/articles/pen_line.jpg "Drawing a line using the pen tool"
  [2]: /images/articles/pen_curve_copy.jpg "Anchor and direction points"
