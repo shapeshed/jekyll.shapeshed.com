@@ -17,7 +17,9 @@ Many people recommend using [MacVim][3] to ease the transition. [Henrik Nyh][4] 
 
 Installation of MacVim via [homebrew][17] on OSX is easy
 
-{% highlight bash %}brew install macvim{% endhighlight %}
+``` bash Installing macvim
+brew install macvim
+```
 
 MacVim works like a standard application so you don't need to edit directly in the terminal and comes with many common keyboard shortcuts that you'll likely be used to. 
 
@@ -35,7 +37,9 @@ Vim does take time to learn. Initially it would be fair to say that I became slo
 
 My tip is to take a little at a time and when you come up against a common problem read the manual and learn how to do. For example you might want to lowercase some text. You could do this through deleting the text and rewriting it or you could you use Vim's excellent help to learn how Vim does it:
 
-{% highlight bash %}:help lowercase{% endhighlight %}
+``` bash
+:help lowercase{% endhighlight %}
+```
 
 ![Screenshot of Vim's help showing lowercase entry][19]
 
@@ -66,6 +70,7 @@ But if you stick with it you might just see the light. I did and can only give V
 * [TextMate to Vim with Training Wheels][5]
 * [MacVim][3]
 * [Everyone Who Tried to Convince Me to use Vim was Wrong][14]
+* [Janus][21]
 
 [1]: http://vimeo.com/6999927
 [2]: http://en.wikipedia.org/wiki/RTFM
@@ -87,3 +92,4 @@ But if you stick with it you might just see the light. I did and can only give V
 [18]: https://github.com/mislav/dotfiles
 [19]: http://shapeshed.com/images/articles/lowercase_vim_help.png
 [20]: http://shapeshed.com/images/articles/express_screenshot.png
+[21]: https://github.com/carlhuda/janus

@@ -2,7 +2,8 @@
 layout: post
 title: Nifty Unix Tools - wc
 description: Word Count (wc) is a great tool to quickly give information on text files and becomes very powerful when piped with other commands
-categories: [Unix]
+categories:
+- Unix
 ---
 
 ## Word Count
@@ -14,37 +15,46 @@ Text files have lots of statitics that can be really useful when you want to ext
 * The number of characters
 * The number of words
 
-{% highlight bash %}wc /usr/share/dict/words{% endhighlight %}
+``` bash 
+wc /usr/share/dict/words
+```
 
 This gives us
 
-{% highlight bash %}234936  234936 2486813 /usr/share/dict/words {% endhighlight %}
+``` bash 
+234936  234936 2486813 /usr/share/dict/words 
+```
 
 The output is \[number of lines\] \[number of words\] \[number of bytes\] \[filename\].
 
 We can access each of these statistics individually by passing an option to the command.
 
-{% highlight bash %}# The number of bytes
+``` bash 
+# The number of bytes
 wc -c /usr/share/dict/words
 # The number of lines
 wc -l /usr/share/dict/words
 # The number of words
 wc -w /usr/share/dict/words
-{% endhighlight %}
+```
 
 ## Piping is powerful
 
 The wc command really starts to become useful when it is piped to other commands. Here's an example we have 5 csv files that are full of data. We want to find out a sum of how many records there are in all five files. We can do this easily by piping the output of the [cat][2] command to wc.
 
-{% highlight bash %}cat *.csv | wc -l 
-1866{% endhighlight %}
+``` bash 
+cat *.csv | wc -l 
+1866
+```
 
 Done - we have 1866 records across the 5 files.
 
 Another example might be looking for the number of occurences of a word or pattern in a file. We can combine [grep][3] with wc to achieve this.
 
-{% highlight bash %}grep "union" /usr/share/dict/words | wc -l
-41{% endhighlight %}
+``` bash 
+grep "union" /usr/share/dict/words | wc -l
+41
+```
 
 wc is a really useful tool for summing up results and gathering information on text files or streams.
 

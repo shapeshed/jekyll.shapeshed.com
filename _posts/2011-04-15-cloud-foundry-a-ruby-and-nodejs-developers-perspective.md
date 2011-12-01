@@ -2,7 +2,11 @@
 layout: post
 title: Cloud Foundry - a Ruby and node.js developer's perspective
 description: This week VMware announced Cloud Foundry, their open source PaaS offering. Here's my take. 
-categories: [JavaScript, node.js, Ruby, Rails]
+categories: 
+- JavaScript
+- node.js
+- Ruby
+- Rails
 ---
 
 ## Open Source PaaS
@@ -27,12 +31,16 @@ So I took it for a spin firing up a [VirtualBox][9] [Ubuntu 10.04.2 LTS][10] VM.
 
 The VMware team have thought hard about the API. If you are a RubyGems user you can check it out by installing the vmc rubygem and then running help
 
-{% highlight bash %}gem install vmc --no-ri --no-rdoc
-vmc --help{% endhighlight %}
+``` bash Installing the vmc gem
+gem install vmc --no-ri --no-rdoc
+vmc --help
+```
 
 Once you have setup a user on your private cloud deploying an app is super simple. Here's the process of deploying an app
 
-{% highlight bash %}vmc push [yourappname]{% endhighlight %}
+``` bash Deploying with vmc
+vmc push [yourappname]
+```
 
 Err.. that's it. Amazing!
 
@@ -40,7 +48,8 @@ Err.. that's it. Amazing!
 
 Then I set about deploying a node.js app. It was a simple express based node.js application with express, jade and stylus as dependencies. So let's give it a go
 
-{% highlight bash %}[george@orwell myapp]$ vmc push myapp
+``` bash Deploying a Node.js app
+vmc push myapp
 Would you like to deploy from the current directory? [Yn]: y
 Application Deployed URL: 'myapp.vcap.me'? 
 Detected a Node.js Application, is this correct? [Yn]: y
@@ -55,11 +64,12 @@ Uploading Application:
 Push Status: OK
 Staging Application: OK                                                         
 Starting Application: ..........................Error 306: Error retrieving file 'logs/startup.log'
-{% endhighlight %}
+```
 
 It failed. I used the log commands but there wasn't any useful output - I guess this is early days. But I did find [this article][16] which required changing a couple of things in the app file. After that it was as easy as 
 
-{% highlight bash %}[george@orwell myapp]$ vmc update myapp
+``` bash
+vmc update myapp
 Uploading Application:
   Checking for available resources: OK
   Processing resources: OK
@@ -69,11 +79,11 @@ Push Status: OK
 Stopping Application: OK
 Staging Application: OK                                                         
 Starting Application: OK 
-{% endhighlight %}  
+```
 
 Lovely! The API follows exactly the same process for deploying a Sinatra / Rails which is really attractive. 
 
-At [pebble.it][12] where I work I'm responsible for managing servers and setting up development sites for the team. This can be a time-consuming chore and I've been working towards a [Puppet][13] setup to allow me to automate much of this. A private cloud where developers can spin up apps with three words is massively better. 
+At [pebble.code][12] where I work I'm responsible for managing servers and setting up development sites for the team. This can be a time-consuming chore and I've been working towards a [Puppet][13] setup to allow me to automate much of this. A private cloud where developers can spin up apps with three words is massively better. 
 
 ## What's good about Cloud Foundry
 
@@ -119,7 +129,7 @@ What are you waiting for? [Give it a go][2], or [fork it][8].
 [9]: http://www.virtualbox.org/
 [10]: http://releases.ubuntu.com/lucid/
 [11]: https://github.com/cloudfoundry/vcap/blob/master/README
-[12]: http://pebbleit.com
+[12]: http://pebblecode.com
 [13]: http://www.puppetlabs.com/
 [14]: http://git-scm.com/
 [15]: http://redis.io/
