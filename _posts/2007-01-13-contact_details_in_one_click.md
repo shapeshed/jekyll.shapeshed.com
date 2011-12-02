@@ -39,7 +39,7 @@ categories: [Microformats, CSS, XHTML]
 </div>
 ```
 
-<p class="highlight">Have a look at <a href="http://www.shapeshed.com/examples/hcard/">the example page</a>. You can place this XHTML in the same page or a page anywhere on the web - it doesn't matter.</p>
+<p>Have a look at <a href="http://www.shapeshed.com/examples/hcard/">the example page</a>. You can place this XHTML in the same page or a page anywhere on the web - it doesn't matter.</p>
 
 
 <h3>Creating the vcard</h3>

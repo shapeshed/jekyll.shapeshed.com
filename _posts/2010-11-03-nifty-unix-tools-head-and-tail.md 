@@ -9,7 +9,8 @@ tags: [Unix]
 
 Head is simple tool to view the top of files. In its simplest form you can use it to see the first ten lines of a file.
 
-{% highlight bash %}head /usr/share/dict/words
+``` bash 
+head /usr/share/dict/words
 A
 a
 aa
@@ -20,30 +21,33 @@ Aani
 aardvark
 aardwolf
 Aaron
-{% endhighlight %}
+```
 
 By default it outputs the first ten lines of a file but you can modify that by passing the -n option
 
-{% highlight bash %}head -n 1 /usr/share/dict/words
+``` bash 
+head -n 1 /usr/share/dict/words
 A
-{% endhighlight %}
+```
 
 In fact you don't even need to use -n. You can just use a number.
 
-{% highlight bash %}head -1 /usr/share/dict/words
+``` bash 
+head -1 /usr/share/dict/words
 A
-{% endhighlight %}
+```
 
 This is useful for viewing comments and the the top of files in general but becomes really useful when you pipe things together. 
 
-{% highlight bash %}FILES=/some/dir/*.zip
+``` bash 
+FILES=/some/dir/*.zip
 SEARCH_STRING="findme"
 
 for f in $FILES
 do
   zipinfo -1 $f | grep $SEARCH_STRING | head -1 | awk '{ print "Found in: " $1 }'
 done
-{% endhighlight %}
+```
 
 Here we are searching the contents of zip files with a search string but we only want the first occurence. So we can use head to filter the results to just one. 
 
@@ -51,8 +55,9 @@ Here we are searching the contents of zip files with a search string but we only
 
 Tail is the opposite to head but operates on the end of files.
 
-{% highlight bash %}tail /usr/share/dict/words
-izymotoxic
+``` bash 
+tail /usr/share/dict/words
+zymotoxic
 zymurgy
 Zyrenian
 Zyrian
@@ -62,25 +67,29 @@ Zythia
 zythum
 Zyzomys
 Zyzzogeton
-{% endhighlight %}
+```
 
 It also accepts the -n argument for the number of lines you want
 
-{% highlight bash %}tail -n 1 /usr/share/dict/words
+``` bash 
+tail -n 1 /usr/share/dict/words
 Zyzzogeton
-{% endhighlight %}
+```
 
 This also works passing just a number
 
-{% highlight bash %}tail -1 /usr/share/dict/words
+``` bash 
+tail -1 /usr/share/dict/words
 Zyzzogeton
-{% endhighlight %}
+```
 
 ## Watching log files
 
 Tail has the option to watch files in real time so you can keep an eye on log files. You can enable this by passing the -f option.
 
-{% highlight bash %}tail -f /Users/george/Sites/myrailspp/log/development.log{% endhighlight %}
+``` bash 
+tail -f /Users/george/Sites/myrailspp/log/development.log
+```
 
 This is really useful for watching logs. You can use it for watching apache, mail logs - any file! 
 

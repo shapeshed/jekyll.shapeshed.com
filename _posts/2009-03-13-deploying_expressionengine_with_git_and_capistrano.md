@@ -1,86 +1,78 @@
 --- 
 layout: post
 title: Deploying ExpressionEngine with Git and Capistrano
-description: "A tutorial on how to publish an ExpressionEngine website using Git and Capistrano. "
-categories: [Linux, ExpressionEngine]
+description: A tutorial on how to publish an ExpressionEngine website using Git and Capistrano.
+categories: 
+- Linux
+- ExpressionEngine
 ---
-<h3>Prerequisites</h3>
-<p>I'm going to make a few assumptions in this article. Firstly that you are working on a POSIX compliant operating system. That might be OSX or Linux. This article does not support Windows although you might be able to get it working using <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">Putty</a>. Secondly I'm assuming that you are comfortable working with the shell (in this case bash). </p>
 
-<h3>Software requirements</h3> 
-<ul>
-<li>Git on the local and remote machine. <a href="http://git-scm.com/download/">Installation instructions here.</a></li>
-<li>Ruby is installed on your local machine. (It ships with OSX).</li>
-<li>Capistrano is installed on your local machine. <a href="http://www.capify.org/getting-started/basics/">Installation options here</a>. </li>
-<li><a href="http://shapeshed.com/journal/using_shared_keys_with_ssh_on_centos_5/">SSH shared keys</a> are set up between local and remote keys</li>
-<li>You have SSH access to your web server. </li>
-</ul>
+## Prerequisites
+I'm going to make a few assumptions in this article. Firstly that you are working on a POSIX compliant operating system. That might be OSX or Linux. This article does not support Windows although you might be able to get it working using <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">Putty.</a> Secondly I'm assuming that you are comfortable working with the shell (in this case bash). 
 
-<h3>Capifying ExpressionEngine</h3>
+## Software requirements 
 
-<p>In order to prepare ExpressionEngine for use with Capistrano we need to shift our folder structure around a tiny bit. For my development I normally have all my ExpressionEngine files in one folder. For Capistrano to be able to do the magic we need to move all public files to a folder called public. Then we also need to create a folder called config.</p>
+* Git on the local and remote machine. <a href="http://git-scm.com/download/">Installation instructions here.</a>
+* Ruby is installed on your local machine. (It ships with OSX).
+* Capistrano is installed on your local machine. <a href="http://www.capify.org/getting-started/basics/">Installation options here.</a>
+* <a href="http://shapeshed.com/journal/using_shared_keys_with_ssh_on_centos_5/">SSH shared keys are set up between local and remote keys</a>
+You have SSH access to your web server. 
 
-<p>So now my site folder structure looks like this:</p>
 
-[code]
+## Capifying ExpressionEngine
+
+In order to prepare ExpressionEngine for use with Capistrano we need to shift our folder structure around a tiny bit. For my development I normally have all my ExpressionEngine files in one folder. For Capistrano to be able to do the magic we need to move all public files to a folder called public. Then we also need to create a folder called config.
+
+So now my site folder structure looks like this:
+
+``` bash
 - mysite.com
   - public (holds ExpressionEngine files)
   - config
-[/code]
+```
 
+Optionally you can add a README file for other developers to get quick information on the project. So now it looks like this
 
-<p>Optionally you can add a README file for other developers to get quick information on the project. So now it looks like this</p>
-
-[code]
+``` bash
 - mysite.com
   - public
   - config
   - README
-[/code]
+```
 
-<p>Then when you are in the mysite.com directory run the following command:</p>
+Then when you are in the mysite.com directory run the following command:
 
-[code]
+``` bash
 capify .
-[/code]
+```
 
-<p>This creates two files "Capfile" and "config/deploy.rb". The latter is the one we are interested in - we'll come back to that when we configure deployment. </p>
+This creates two files `Capfile` and `config/deploy.rb`. The latter is the one we are interested in - we'll come back to that when we configure deployment. 
 
-<h3>Source control</h3>
+## Source control
 
-<p>So now we've got a folder structure and our source code in the right folders. We are going to add the whole thing to git. In the the mysite.com directory run. (I assuming you have a bare git repo to push your commit to somewhere). You can find more information on setting up a bare git repo <a href="http://toolmantim.com/articles/setting_up_a_new_remote_git_repository">here</a>.  </p>
+So now we've got a folder structure and our source code in the right folders. We are going to add the whole thing to git. In the the mysite.com directory run. (I assuming you have a bare git repo to push your commit to somewhere). You can find more information on setting up a bare git repo <a href="http://toolmantim.com/articles/setting_up_a_new_remote_git_repository">here.</a>  
 
-[code]
+``` bash
 git init
 git add .
 git commit -m 'initial commit'
 git remote add origin git@yourserver.com:foo 
 git push origin master
-[/code]
+```
 
+Great - so now we've got a Capified folder structure and the source code in Git. 
 
-<p>Great - so now we've got a Capified folder structure and the source code in Git. </p>
+## Publishing the website
 
-<h3>Publishing the website</h3>
+We need to edit the `/config/deploy.rb` file. Here's my Capistrano recipe. 
 
-<p>We need to edit the /config/deploy.rb file. Here's my Capistrano recipe. </p>
-
-[code]
-#########################################
-# Application
-#########################################
+``` ruby
 set :application, "mysite.com"
 
-#########################################
-# Source Control 
-#########################################
 set :repository,  "ssh://yourserver.com:/var/git/foo.git"
 set :scm, "git"
 set :branch, "master"
 
-#########################################
-# Remote server
-#########################################
 set :deploy_to, "/var/www/vhosts/#{application}"
 set :deploy_via, :remote_cache
 set :copy_strategy, :checkout
@@ -98,41 +90,41 @@ desc "This is here to overide the original :restart"
 deploy.task :restart, :roles => :app do
   # do nothing but overide the default
 end
-[/code]
+```
 
-<p>Set the relevant paths and setting, save the file and you are done. </p>
+Set the relevant paths and setting, save the file and you are done. 
 
-<h3>And deploy</h3>
+## And deploy
 
-<p>Deploying an ExpressionEngine website is now just a case of </p>
-[code]
+Deploying an ExpressionEngine website is now just a case of 
+
+``` bash
 cap deploy
-[/code]
+```
 
-<p>This does the following:</p>
-<ul>
-<li>Fetches the latest commit from your git repository</li>
-<li>Checks this against the remote cache and updates if necessary</li>
-<li>Copies the release to a new release in /releases</li>
-<li>Updates the symlink in current to the new release</li>
-</ul>
+This does the following:
 
-<p>That's it. The latest greatest version of your website is published.</p>
+* Fetches the latest commit from your git repository
+* Checks this against the remote cache and updates if necessary
+* Copies the release to a new release in /releases
+* Updates the symlink in current to the new release
 
-<h3>Advantages</h3>
-<p>Since moving to Capistrano for deployment I've saved a massive amount of time. I no longer have to track which files have changed and manually transfer them using FTP when a client is ready to deploy. I simply type one line on the command line and git does the heavy lifting for me. </p>
+That's it. The latest greatest version of your website is published.
 
-<p>I can easily and quickly roll back if there are any problems.</p>
+## Advantages
 
-<h3>Shared folders</h3>
+Since moving to Capistrano for deployment I've saved a massive amount of time. I no longer have to track which files have changed and manually transfer them using FTP when a client is ready to deploy. I simply type one line on the command line and git does the heavy lifting for me. 
 
-<p>Advanced users might wish to use the Shared folder feature of Capistrano. This is a folder that shares content across releases. One example of this would be the FCKEditor folder that contains all the necessary code to generate a rich text editor. I don't particularly need to version this so I've extracted this from source control and it is in the shared folder. </p>
+I can easily and quickly roll back if there are any problems.
 
-<h3>More information</h3>
+## Shared folders
 
-<p>I appreciate that this tricky to set up so for more information the following links might be useful</p>
+Advanced users might wish to use the Shared folder feature of Capistrano. This is a folder that shares content across releases. One example of this would be the FCKEditor folder that contains all the necessary code to generate a rich text editor. I don't particularly need to version this so I've extracted this from source control and it is in the shared folder. 
 
-<ul>
-<li><a href="http://www.madebymany.co.uk/using-capistrano-with-php-specifically-wordpress-0087">Using Capistrano with PHP, specifically Wordpress</a></li>
-<li><a href="http://devblog.imedo.de/2008/6/23/wordpress-deployment-with-capistrano-2-and-git">Wordpress Deployment with Capistrano 2 and git</a></li>
-</ul>
+## More information
+
+I appreciate that this tricky to set up so for more information the following links might be useful
+
+* <a href="http://www.madebymany.co.uk/using-capistrano-with-php-specifically-wordpress-0087">Using Capistrano with PHP, specifically Wordpress</a>
+* <a href="http://devblog.imedo.de/2008/6/23/wordpress-deployment-with-capistrano-2-and-git">Wordpress Deployment with Capistrano 2 and git</a>
+

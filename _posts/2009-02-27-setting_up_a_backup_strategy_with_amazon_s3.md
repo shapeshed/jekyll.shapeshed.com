@@ -19,10 +19,10 @@ categories: [Linux]
 
 <p>I also back up the virtual hosts to /var/backups/vhosts/ using a cron job:</p>
 
-[code]
+``` bash
 #!/bin/bash
 rsync -a /var/www/vhosts/ /var/backups/vhosts/
-[/code]
+```
 
 <p>So I have a local copy of everything. Eventually I'd like to rotate the vhosts backup but that is a to do. </p>
 
@@ -30,11 +30,11 @@ rsync -a /var/www/vhosts/ /var/backups/vhosts/
 
 <p>Next I send a backup to my remote backup server. This means I have a remote copy in the cloud so if the server blows up I can recover everything. I set up <a href="http://shapeshed.com/journal/using_shared_keys_with_ssh_on_centos_5/">shared keys</a> between the production server and the backup machine. This means I don't need passwords so I can also create a cron job and forget about it. First of all I copied the vhosts and mysql folders as .tar.bz2 files to the backup server. For daily backup I'm using <a href="http://samba.anu.edu.au/rsync/">Rsync</a> to push changes to the backup server, again in a cron job:</p>
 
-[code]
+``` bash
 #!/bin/bash
 rsync -a --exclude-from="/home/george/exclude.txt" --del -e ssh /var/www/vhosts/  george@1.234.56.789:/mnt/dionysus/backups/shapeshed.com/var/www/vhosts/
 rsync -a --del -e ssh /var/backups/mysql/  george@1.234.56.789:/mnt/dionysus/backups/shapeshed.com/var/backups/mysql/
-[/code]
+```
 
 <p>Note the --exlude-from option. This references a text file that excludes certain files and folder that don't need to be backed up (e.g cache folders).</p>
 
@@ -46,11 +46,11 @@ rsync -a --del -e ssh /var/backups/mysql/  george@1.234.56.789:/mnt/dionysus/bac
 
 <p>From the backup box I send the backups to Amazon S3 daily using the following script in again in cron job:</p>
 
-[code]
+``` bash
 #!/bin/bash
 s3cmd sync -r --delete-removed /mnt/dionysus/backups/shapeshed.com/var/backups/mysql/ s3://shapeshed.com/var/backups/mysql/
 s3cmd sync -r --delete-removed /mnt/dionysus/backups/shapeshed.com/var/www/vhosts/ s3://shapeshed.com/var/www/vhosts/
-[/code]
+```
 
 <p>So now I have three backups - a local one, a remote one and a backup on Amazon S3</p>
 

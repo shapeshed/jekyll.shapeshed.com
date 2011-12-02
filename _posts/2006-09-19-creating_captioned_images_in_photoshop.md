@@ -37,9 +37,6 @@ Although these images will improve the appearance of your site they won't be rea
 ``` html 
 <img src="/images/yourimage.jpg" alt="A picture of a Merry Go Round with text reading Your Text Here" alt="A picture of a Merry Go Round with text reading Your Text Here" width="502" height="314" /> 
 ```
-
-![A picture of a Merry Go Round with text reading Your Text Here][4]
-
 Captioned images are very effective but should be used sparingly in order not to hinder the accessibility and search engine optimisation of your site.
 
 ![The Finished Image][5]
@@ -47,5 +44,5 @@ Captioned images are very effective but should be used sparingly in order not to
  [1]: /images/articles/original_file.jpg "Image of a Merry Go Round"
  [2]: /images/articles/adding_text.jpg "Add text to the Merry Go Round Image"
  [3]: /images/articles/breaking_the_box.jpg "Adding a mask to the Merry Go Round image"
- [4]: /images/yourimage.jpg
+ [4]: /images/articles/yourimage.jpg
  [5]: /images/articles/final_graphic_text.jpg "The Finished Image"
