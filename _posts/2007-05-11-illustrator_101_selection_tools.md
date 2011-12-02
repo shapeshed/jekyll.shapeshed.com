@@ -17,11 +17,7 @@ Hovering a little way away from the edge of the white square you will see that t
 
 Followed everything? Try is yourself along with the video below.
 
-<video controls>
-  <source src="/movies/mp4/selection.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-  <source src="/movies/ogv/selection.ogv" type='video/ogg; codecs="theora, vorbis"' />
-  To view this video you need the latest version of <a href="http://www.apple.com/safari/">Safari</a>, <a href="http://www.mozilla.com/firefox/">Firefox</a> or <a href="http://www.google.com/chrome">Chrome</a>. Alterantively download the videos and watch them offline. <a href="/movies/mp4/selection.mp4">Windows / Mac (mp4)</a>, <a href="/movies/mp4/selection.mp4">Linux (ogv)</a>
-</video>
+<iframe src="http://player.vimeo.com/video/33020856?title=0&amp;byline=0&amp;portrait=0" width="400" height="357" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 To group different shapes together hold down the shift key as you select. You can perform exactly the same tasks on a group of selections as a single selection. 
 

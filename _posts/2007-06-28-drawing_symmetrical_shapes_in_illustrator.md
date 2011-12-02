@@ -38,11 +38,7 @@ If everything has gone to plan you now have a complete, joined path which you ca
 
 Watch the whole process in the video below
 
-<video controls>
-  <source src="/movies/mp4/reflection_illustrator.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-  <source src="/movies/ogv/reflection_illustrator.ogv" type='video/ogg; codecs="theora, vorbis"' />
-  To view this video you need the latest version of <a href="http://www.apple.com/safari/">Safari</a>, <a href="http://www.mozilla.com/firefox/">Firefox</a> or <a href="http://www.google.com/chrome">Chrome</a>. Alterantively download the videos and watch them offline. <a href="/movies/mp4/reflection_illustrator.mp4">Windows / Mac (mp4)</a>, <a href="/movies/ogv/reflection_illustrator.ogv">Linux (ogv)</a>
-</video>
+<iframe src="http://player.vimeo.com/video/33020843?title=0&amp;byline=0&amp;portrait=0" width="400" height="279" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
  [1]: /images/articles/heart_shape.png "Heart shape"
  [2]: /images/articles/left_heart.png "Left heart shape"

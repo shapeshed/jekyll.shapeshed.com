@@ -16,11 +16,7 @@ One of the main drivers of wanting to redesign was a desire to move to HTML5. Th
 
 ## If you can see this...
 
-<video controls>
-  <source src="http://shapeshed.com/movies/mp4/html5_is_alive.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-  <source src="http://shapeshed.com/movies/ogv/html5_is_alive.ogv" type='video/ogg; codecs="theora, vorbis"' />
-  To view this video you need the latest version of <a href="http://www.apple.com/safari/">Safari</a>, <a href="http://www.mozilla.com/firefox/">Firefox</a> or <a href="http://www.google.com/chrome">Chrome</a>. Alterantively download the videos and watch them offline. <a href="http://shapeshed.com/movies/mp4/html5_is_alive.mp4">Windows / Mac (mp4)</a>, <a href="http://shapeshed.com/movies/mp4/html5_is_alive.ogv">Linux (ogv)</a>
-</video>
+<iframe src="http://player.vimeo.com/video/33020750?title=0&amp;byline=0&amp;portrait=0" width="640" height="480" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><p><a href="http://vimeo.com/33020750">HTML5 is alive</a> from <a href="http://vimeo.com/shapeshed">George Ornbo</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 
 ..you are in the future.
 

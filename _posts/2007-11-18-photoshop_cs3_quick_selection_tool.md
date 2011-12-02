@@ -26,11 +26,7 @@ Then simply move the sliders until you get your desired color. Easy!
 ![Color changing with the quick selection tool][6] 
 Here's a video of the whole thing so you can see how quickly it can be done. 
 
-<video controls>
-  <source src="/movies/mp4/quick_selection_tool.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-  <source src="/movies/ogv/quick_selection_tool.ogv" type='video/ogg; codecs="theora, vorbis"' />
-  To view this video you need the latest version of <a href="http://www.apple.com/safari/">Safari</a>, <a href="http://www.mozilla.com/firefox/">Firefox</a> or <a href="http://www.google.com/chrome">Chrome</a>. Alterantively download the videos and watch them offline. <a href="/movies/mp4/quick_selection_tool.mp4">Windows / Mac (mp4)</a>, <a href="/movies/ogv/quick_selection_tool.ogv">Linux (ogv)</a>
-</video>
+<iframe src="http://player.vimeo.com/video/33020832?title=0&amp;byline=0&amp;portrait=0" width="400" height="232" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 Of course you could also use the Color Replacement Tool but I like this way!
 

@@ -8,12 +8,7 @@ categories: [Illustrator 101, Illustrator]
 
 With the Lasso tool you can select objects by freehand. This can be quicker than using the [Selection Tool][1] and holding shift. To select objects by freehand select the Lasso tool and draw a shape around the objects you want to select. You don't have to close the line you draw - if you don't illustrator will infer the selection with a straight line between your start point and end point. Have a look at this in action in the video below, firstly with a closed line and secondly with an open line. Note with the open line how only part of the object is selected.
 
-<video controls>
-  <source src="/movies/mp4/lasso.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-  <source src="/movies/ogv/lasso.ogv" type='video/ogg; codecs="theora, vorbis"' />
-  To view this video you need the latest version of <a href="http://www.apple.com/safari/">Safari</a>, <a href="http://www.mozilla.com/firefox/">Firefox</a> or <a href="http://www.google.com/chrome">Chrome</a>. Alterantively download the videos and watch them offline. <a href="/movies/mp4/lasso.mp4">Windows / Mac (mp4)</a>, <a href="/movies/ogv/lasso.ogv">Linux (ogv)</a>
-</video>
-
+<iframe src="http://player.vimeo.com/video/33020763?title=0&amp;byline=0&amp;portrait=0" width="400" height="328" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 ## Adding and removing
 
@@ -27,11 +22,7 @@ Using the Lasso tool you can just choose parts of objects. If for example your L
 
 Watch the video below to see how this works. Drawing the lasso over parts of shapes just selects anchor points within that area. Then we add and remove some anchor points. Finally with the direct selection tool we can move just the anchor points we have selected.
 
-<video controls>
-  <source src="/movies/mp4/partial_selection.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-  <source src="/movies/ogv/partial_selection.ogv" type='video/ogg; codecs="theora, vorbis"' />
-  To view this video you need the latest version of <a href="http://www.apple.com/safari/">Safari</a>, <a href="http://www.mozilla.com/firefox/">Firefox</a> or <a href="http://www.google.com/chrome">Chrome</a>. Alterantively download the videos and watch them offline. <a href="/movies/mp4/partial_selection.mp4">Windows / Mac (mp4)</a>, <a href="/movies/ogv/partial_selection.ogv">Linux (ogv)</a>
-</video>
+<iframe src="http://player.vimeo.com/video/33020788?title=0&amp;byline=0&amp;portrait=0" width="400" height="328" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
  [1]: http://www.shapeshed.com/journal/illustrator_101_selection_tools/
  [2]: /images/articles/selected.png "Picture showing anchor points selected and not selected"

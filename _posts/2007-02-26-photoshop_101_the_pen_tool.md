@@ -15,11 +15,7 @@ Learning what happens when you draw will help you to understand the tool. So sel
 
 We are going to draw a curve. Create a document of 300 x 100. First watch the video below and then I'll walk you through how to do it.
 
-<video controls>
-  <source src="/movies/mp4/pen_tool.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-  <source src="/movies/ogv/pen_tool.ogv" type='video/ogg; codecs="theora, vorbis"' />
-  To view this video you need the latest version of <a href="http://www.apple.com/safari/">Safari</a>, <a href="http://www.mozilla.com/firefox/">Firefox</a> or <a href="http://www.google.com/chrome">Chrome</a>. Alterantively download the videos and watch them offline. <a href="/movies/mp4/pen_tool.mp4">Windows / Mac (mp4)</a>, <a href="/movies/mp4/pen_tool.mp4">Linux (ogv)</a>
-</video>
+<iframe src="http://player.vimeo.com/video/33020803?title=0&amp;byline=0&amp;portrait=0" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 Select the pen tool and then click on the right hand starting point. Don't drag just yet. This is the starting point of the path. You should see a small dark square, known as an anchor point. Now click, hold and drag the mouse to the left. You will see a line come out with a small square on the end. This is known as a direction point. This defines the nature of the curve you are going to draw. Then click another point in the middle of the page. A curve will be created. Play around with this - the more you drag the line out the more pronounced your curve will be. If you can grasp this then you are on your way to understanding the pen tool. Click and drag again on the new anchor point and repeat the process. Finally you need to close off the path. Hold down shift and click on the corners to close off the path. You should end up with something like this:
 
@@ -31,11 +27,7 @@ The great thing about paths drawn with the pen tool is that they are easy to mov
 
 Using the pen tool you can also add in additional anchors points, remove anchor points and move direction paths to alter the shape. The video below shows these actions in order. Watch how you can alter the shape using these tools and then remove the anchor point entirely.
 
-<video controls>
-  <source src="/movies/mp4/reworking_paths.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-  <source src="/movies/ogv/reworking_paths.ogv" type='video/ogg; codecs="theora, vorbis"' />
-  To view this video you need the latest version of <a href="http://www.apple.com/safari/">Safari</a>, <a href="http://www.mozilla.com/firefox/">Firefox</a> or <a href="http://www.google.com/chrome">Chrome</a>. Alterantively download the videos and watch them offline. <a href="/movies/mp4/reworking_paths.mp4">Windows / Mac (mp4)</a>, <a href="/movies/mp4/reworking_paths.mp4">Linux (ogv)</a>
-</video>
+<iframe src="http://player.vimeo.com/video/33020847?title=0&amp;byline=0&amp;portrait=0" width="400" height="255" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 ## The joy of vectors
 
