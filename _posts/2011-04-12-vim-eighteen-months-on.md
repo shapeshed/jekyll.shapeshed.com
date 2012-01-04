@@ -63,6 +63,10 @@ I accept that Vim is not for everyone. Casual coders, or anyone who doesn't want
 
 But if you stick with it you might just see the light. I did and can only give Vim a massive ringing endorsement. 
 
+## Translations of this article
+
+* [Bulgarian - Albert Ward][22]
+
 ## Further reading
 
 * [Derek Wyatt's videos on Vim][15]
@@ -93,3 +97,4 @@ But if you stick with it you might just see the light. I did and can only give V
 [19]: http://shapeshed.com/images/articles/lowercase_vim_help.png
 [20]: http://shapeshed.com/images/articles/express_screenshot.png
 [21]: https://github.com/carlhuda/janus
+[22]: http://www.fatcow.com/edu/eighteen-months-bg/
