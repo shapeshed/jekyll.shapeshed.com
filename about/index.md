@@ -16,8 +16,10 @@ If you would like to get in touch please email hello at shapeshed dot com.
 
 * [Github][2]
 * [Twitter][3]
+* [Google+][5]
 
 [1]: http://pebblecode.com
 [2]: https://github.com/shapeshed
 [3]: http://twitter.com/shapeshed
 [4]: http://nodejsbook.io
+[5]: https://plus.google.com/u/0/112147367550950112369?rel=author
