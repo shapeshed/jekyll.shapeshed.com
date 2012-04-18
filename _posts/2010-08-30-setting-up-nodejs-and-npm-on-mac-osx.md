@@ -1,19 +1,19 @@
 --- 
 layout: post
-title: Setting up node.js and npm on Mac OSX
-description: node.js is gaining a lot of speed and is an exciting new development framework. Here's a quick overview of how to get node.js working on OSX along with npm, the package manager for node. 
-categories: [node.js, JavaScript]
+title: Setting up Node.js and npm on Mac OSX
+description: Node.js is gaining a lot of speed and is an exciting new development framework. Here's a quick overview of how to get node.js working on OSX along with npm, the package manager for node. 
+categories: [Node.js, JavaScript]
 ---
 
-Update: There are now packages available [12] for OSX and Windows if you prefer a one click install for NodeJS and NPM.
+Update: There are now [packages available][12] for OSX and Windows if you prefer a one click install for Node.js and NPM. To install from source you probably know what you are doing but this [article might help][13]. 
 
 ## Install Homebrew
 
 [Homebrew][1] is the package manager that Apple forgot. Written in Ruby it allows you to quickly and easily compile software on your Mac. Instructions for installing Homebrew are in the [README][2] so I won't repeat them here. You will need to install Developer Tools for Mac which you are installed as part of [Xcode][3]. Xcode is available for free - it is a pretty hefty download but you'll need it.
 
-## Install node.js via homebrew
+## Install Node.js via homebrew
 
-Once Homebrew is installed you can go ahead and install node.js
+Once Homebrew is installed you can go ahead and install Node.js
 
 ``` bash 
 brew install node
@@ -38,11 +38,11 @@ node server.js
 
 Now you can visit http://127.0.0.1:8124/ with your favourite browser and you are up and running with server side JavaScript.
 
-At this point it is probably a good idea to consult the excellent [node.js documentation][4]. This will help you understand what node.js is and what it can do. 
+At this point it is probably a good idea to consult the excellent [Node.js documentation][4]. This will help you understand what Node.js is and what it can do. 
 
 ## Installing npm
 
-node.js is pretty low level so lots of people have created modules for node. Thankfully there is already a package manager for node in [npm][5] to help you manage these.
+Node.js is pretty low level so lots of people have created modules for Node. Thankfully there is already a package manager for Node in [npm][5] to help you manage these.
 
 For [various reasons][10] the package was recently removed from Homebrew so you'll need to install it manually.
 
@@ -60,7 +60,7 @@ sudo make install
 
 The install will spit out some advice about paths. I found on my setup everything worked other than having to set NODE\_PATH. 
 
-NODE\_PATH tells node.js where to look for modules. This means you can do things like 
+NODE\_PATH tells Node.js where to look for modules. This means you can do things like 
 
 ``` javascript 
 var client = require 'redis-client'
@@ -68,7 +68,7 @@ var client = require 'redis-client'
 
 instead of specifying the full path.
 
-To make sure my shell knows where to find node modules I added 
+To make sure my shell knows where to find Node.js modules I added 
 
 ``` bash 
 export NODE_PATH="/usr/local/lib/node"
@@ -90,13 +90,13 @@ so the changes are applied.
 
 ## Installing modules
 
-Now we are set up we can install node modules using npm. [Express][6] is a good place to start - it is a node framework inspired by [Sinatra][7]. 
+Now we are set up we can install Node modules using npm. [Express][6] is a good place to start - it is a Node framework inspired by [Sinatra][7]. 
 
 ``` bash 
 npm install express
 ```
 
-This provides a solid base to start developing with node.js including [jade][8] the haml inspired node tempting engine. There is more [excellent documentation][9] available for express too.
+This provides a solid base to start developing with Node.js including [jade][8] the haml inspired Node tempting engine. There is more [excellent documentation][9] available for express too.
 
 That's it - go create!
 
@@ -112,3 +112,4 @@ That's it - go create!
 [10]: http://blog.izs.me/post/3295261330/on-npm-and-homebrew
 [11]: https://github.com/shapeshed/dotfiles/blob/master/bashrc
 [12]: http://nodejs.org/#download
+[13]: http://shapeshed.com/compiling-nodejs-from-source-on-ubuntu-10-04/
