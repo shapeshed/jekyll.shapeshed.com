@@ -5,7 +5,7 @@ description: node.js is gaining a lot of speed and is an exciting new developmen
 categories: [node.js, JavaScript]
 ---
 
-Update: There is now also a [package available][12] for OSX if you prefer a one click install for NodeJS and NPM.
+Update: There are now packages available [12] for OSX and Windows if you prefer a one click install for NodeJS and NPM.
 
 ## Install Homebrew
 
@@ -111,4 +111,4 @@ That's it - go create!
 [9]: http://expressjs.com/guide.html
 [10]: http://blog.izs.me/post/3295261330/on-npm-and-homebrew
 [11]: https://github.com/shapeshed/dotfiles/blob/master/bashrc
-[12]: https://sites.google.com/site/nodejsmacosx/
+[12]: http://nodejs.org/#download
