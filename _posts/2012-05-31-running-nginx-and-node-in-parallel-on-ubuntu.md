@@ -21,9 +21,9 @@ You will need the ability to assign additional IP addresses to your server so yo
 * An additional LAN IP address
 * Ability to configure your router & firewall
 
-Configuring your route is beyond the scope of this article so I'm assuming from here that you have assigned the LAN and WAN ips to the machine.
+Configuring your router and firewall is beyond the scope of this article so I'm assuming from here that you have assigned the LAN and WAN IPs to the machine.
 
-To add the additional network interface open /etc/network/interfaces. You should see that the primary network interface is already there. Add the secondary IP address. You will need to change the values as appropriate for your network. This assigns the LAN IP as an additional network interface. 
+To add the additional network interface open /etc/network/interfaces. You should see that the primary network interface is already there. Add the secondary IP address. You will need to change the values as appropriate for your network. This assigns the secondary LAN IP as an additional network interface. 
 
 ``` bash Adding a second network interface
 # The primary network interface
@@ -58,11 +58,11 @@ If you have an existing Nginx configuration it is likely that it is configured t
 # listen 80;
 listen 192.168.3.5:80;
 ```
-As the WAN ip forwards to the LAN one this also serves WAN traffic.
+As the WAN IP forwards to the LAN one this also serves WAN traffic.
 
 ## Configure Node.js
 
-Node.js applications also need to updated to listen on a specific IP address. A hello world server looks like this
+Node.js applications also need to updated to listen on the secondary IP address. A hello world server looks like this
 
 ``` javascript Configuring Node.js
 var http = require('http');
@@ -72,7 +72,7 @@ http.createServer(function (req, res) {
 }).listen(80, '192.168.3.37');
 console.log('Server running at http://192.168.3.37/');
 ```
-As the WAN ip forwards to the LAN one this also serves WAN traffic.
+As the WAN IP forwards to the LAN one this also serves WAN traffic.
 
 ## A happy marriage
 
