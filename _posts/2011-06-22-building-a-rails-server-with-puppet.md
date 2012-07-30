@@ -67,7 +67,7 @@ I chose to deploy using Capistrano and a git based workflow. I have an init scri
 
 ## Still to do...
 
-I still need to create a good framework for testing. Currently I run things against a blank VM. There are a [few][17] [patterns][16] for testing which I would like to become a bit more familiar with and use. I'd like to extend a few existing modules and write a few new ones, particularly for user managemet. 
+I still need to create a good framework for testing. Currently I run things against a blank VM. There are a [few][17] [patterns][16] for testing which I would like to become a bit more familiar with and use. I'd like to extend a few existing modules and write a few new ones, particularly for user management. 
 
 ## The good bit
 
