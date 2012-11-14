@@ -8,7 +8,7 @@ footer: true
 ---
 I'm George Ornbo, a web developer with 8 years experience. I work at [pebble {code}][1] in London, UK.
 
-I'm currently authoring [Sam's Teach Yourself Node.js in 24 Hours][4], a beginner's book on Node.js.
+I'm the author of [Sam's Teach Yourself Node.js in 24 Hours][4], a beginner's book on Node.js.
 
 If you would like to get in touch please email hello at shapeshed dot com.
 
