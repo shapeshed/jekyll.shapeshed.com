@@ -124,7 +124,7 @@ d.run(function() {
 
 ### Conclusion
 
-If you are running Node.js in production you need to at least have an opinion about what to do with uncaught exceptions. For now I suspect most people are restarting their application (maybe gracefully) when exception is thrown. Domains offer the ability for an application to be more intelligent about what to do when an error is thrown. Exception handlers might choose to clean up after an error is thrown, close some connections or if worst comes to the worst exit the process. The point is you can choose. 
+If you are running Node.js in production you need to at least have an opinion about what to do with uncaught exceptions. For now I suspect most people are restarting their application (maybe gracefully) when an exception is thrown. Domains offer the ability for an application to be more intelligent about what to do when an error is thrown. Exception handlers might choose to clean up after an error is thrown, close some connections or if worst comes to the worst exit the process. The point is you can choose. 
 
 It is probably time I dropped the hammer and picked up the surgical knife. 
 
